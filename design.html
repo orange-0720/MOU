@@ -106,7 +106,7 @@
             <div class="design_detail">
                 <h3>設計圖稿</h3>
                 <label class="file_bt"> 
-                    <input type="file" value="選擇檔案">
+                    <input type="file" id="pick_photo">
                     <span>上傳圖稿點這</span>
                 </label>
                 <input type="checkbox" id="simple">
@@ -114,12 +114,12 @@
                     <span>單買素色點這</span>
                 </label>
 
-                <h3>圖稿內容確認</h3>
+                <h3>圖稿內容確認<span id="check_logo"> (範本)</span></h3>
                 <div class="logo_detail">
-                    <img src="./images/logo.png" alt="" width="130px">
+                    <img src="./images/logo.png" alt="" width="130px" id="photo">
                     <section>
-                        <p><span class="name">圖稿檔名 :</span>logo.png</p>
-                        <p><span class="name">印刷品質 :</span>良好 / 514DPI</p>
+                        <p>圖稿檔名 :<span class="name">logo.png</span></p>
+                        <p>檔案類型 :<span class="name">image/png</span></p>
                     </section>
                 </div>
 
@@ -142,7 +142,7 @@
             <input type="radio" name="hat_color" id="color4">
             <input type="radio" name="hat_color" id="color5">
             <section class="img_change" ></section>
-            <img src="./images/logo.png" alt="" width="120px">
+            <img src="./images/logo.png" alt="" width="120px" id="big_photo">
         </div>
     </main>
     <div class="put_in">
@@ -163,5 +163,6 @@
     </div>
 
     <script src="./js/change_number.js"></script>
+    <script src="./js/test.js"></script>
   </body>
 </html>

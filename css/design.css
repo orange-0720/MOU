@@ -276,6 +276,10 @@ div.design_detail div.logo_detail{
     margin-top: 20px;
     vertical-align: bottom;
 }
+span#check_logo{
+    display: inline-block;
+    margin-left: 10px;
+}
 
 div.design_detail div.logo_detail > img{
     display: inline-block;
@@ -291,7 +295,7 @@ div.design_detail div.logo_detail > section p{
 
 div.design_detail div.logo_detail > section span.name{
     display: inline-block;
-    margin-right: 10px;
+    margin-left: 10px;
     font-weight: bold;
 }
 
