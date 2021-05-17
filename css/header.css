@@ -28,8 +28,8 @@ a.logo{
 }
 
 a.logo:hover{
-    transform: scale(1.1) rotate(360deg) ;
-    transition: 1s;
+    transform: scale(1.1) ;
+    transition: 0.5s;
 }
 
 nav.header_nav{
