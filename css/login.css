@@ -46,6 +46,7 @@ div.login_list ul > li{
     text-align: center;
     border: 1px solid #737578;
     border-radius: 5px;
+    transition: 0.4s;
 }
 
 div.login_list ul > li:first-child{
@@ -54,8 +55,7 @@ div.login_list ul > li:first-child{
 
 div.login_list ul > li:hover{
     background-color: #ffd900;
-    transform: scale(1.1);
-    transition: ;
+    transform: scale(1.05);
 }
 
 div.login_list ul li a.facebook{
@@ -117,6 +117,7 @@ div.login_list form label.form_password > input{
     border: 1px solid #737578;
     border-radius: 5px;
     height: 40px;
+    transition: 0.3s;
 }
 
 div.login_list form label.form_mail > input:focus,
@@ -144,11 +145,13 @@ div.login_list form input.login_bt{
     font-size: 20px;
     cursor: pointer;
     outline: none;
+    transition: 0.3s;
 }
 
 div.login_list form input.login_bt:hover{
     background-color: #ffd900;
     color: black;
+    transform: translateY(-10px);
 }
 
 div.forget{
@@ -167,11 +170,11 @@ div.forget > a{
     color:#737578;
     display: inline-block;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 div.forget > a:hover{
     transform: scale(1.2);
-    transition: 0.3s;
 }
 
 div.forget span{

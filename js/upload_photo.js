@@ -5,6 +5,7 @@ var photo = document.getElementById("photo");
 var big_photo = document.getElementById("big_photo");
 var check_logo = document.getElementById("check_logo");
 var simple = document.getElementById("simple");
+var file_bt = document.getElementsByClassName("file_bt")[0];
 
 pick_photo.addEventListener("change", function(){
     console.log(this.files[0]);
@@ -32,4 +33,6 @@ pick_photo.addEventListener("change", function(){
 
 simple.addEventListener("change", function(){
     big_photo.style.display = "none";
+    file_bt.classList.toggle("prevent");
+
 })

@@ -92,6 +92,7 @@ div.hothat div.bestseller section{
     border: 1px solid black;
     background-color: #f8f8f8;
     border-radius: 8px;
+    transition: 0.5s;
 }
 
 div.hothat div.bestseller section > img{
@@ -152,7 +153,6 @@ div.hothat div.bestseller section:last-child::after{
 div.hothat div.bestseller section:hover{
     box-shadow: 0 0 6px #737578;
     transform: scale(1.1);
-    transition: 0.5s;
 }
 
 

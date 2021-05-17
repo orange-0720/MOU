@@ -160,27 +160,27 @@ div.middle > a{
     color: black;
     text-decoration: none;
     position: relative;
+    transition: 0.5s ease;
 }
 
 div.middle > a:hover{
     opacity: 0.7;
-    transition: 0.5s ease;
 }
 
 div.middle > a:hover > p{
     font-size: 20px;
-    transition: 0.4s ;
 }
 
 div.middle > a:hover p.startmaking{
     visibility: visible;
     transform: translateY(-125px);
-    transition: opcity 0s , visibility 1s , transform 0.6s;
+    
 }
 
 div.middle > a > p{
     text-align: center;
     margin-top: 10px;
+    transition: 0.4s ;
 }
 
 div.middle > a >p.startmaking{
@@ -194,6 +194,7 @@ div.middle > a >p.startmaking{
     color: white;
     font-size: 24px;
     padding: 5px 10px;
+    transition: opcity 0s , visibility 0s , transform 0.6s;
 }
 
 

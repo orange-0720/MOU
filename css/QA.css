@@ -344,6 +344,8 @@ div.anyquestion form.qa_form div.qa_block > input{
     width: 300px;
     padding: 10px;
     margin-left: 130px;
+    transition: 0.3s;
+    border: 1px solid #737578;
 }
 
 div.anyquestion form.qa_form div.qa_block > input:focus{
@@ -364,7 +366,12 @@ div.anyquestion form.qa_form div.question > p{
 div.anyquestion form.qa_form div.question > textarea{
     display: block;
     margin: 0 auto;
-    
+    transition: 0.3s;
+}
+
+div.anyquestion form.qa_form div.question > textarea:focus{
+    box-shadow: 2px 2px 5px 1px #737578;
+    outline: none;
 }
 
 div.anyquestion form.qa_form > p{

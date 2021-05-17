@@ -290,12 +290,12 @@ article#about-wear div.flat_hat{
     overflow: hidden;
     background-color: black;
     margin-left: 200px;
+    transition: 0.5s;
 
 }
 
 article#about-wear div.flat_hat:hover{
     width: 1200px;
-    transition: 0.5s;
     margin-left: 0;
 }
 
@@ -340,12 +340,12 @@ article#about-wear div.canvas_hat{
     overflow: hidden;
     background-color: black;
     margin-left: 550px;
+    transition: 0.5s;
 }
 
 article#about-wear div.canvas_hat:hover{
     width: 1200px;
     margin-left: 0;
-    transition: 0.5s;
 }
 
 article#about-wear div.canvas_hat div.canvas_block{
@@ -386,12 +386,11 @@ article#about-wear div.knitted_hat{
     overflow: hidden;
     background-color: black;
     margin-left: 200px;
-
+    transition: 0.5s;
 }
 
 article#about-wear div.knitted_hat:hover{
     width: 1200px;
-    transition: 0.5s;
     margin-left: 0px;
 }
 
@@ -440,12 +439,12 @@ article#about-wear div.cap_hat{
     overflow: hidden;
     background-color: black;
     margin-left: 550px;
+    transition: 0.5s;
 }
 
 article#about-wear div.cap_hat:hover{
     width: 1200px;
     margin-left: 0;
-    transition: 0.5s;
 }
 
 article#about-wear div.cap_hat div.cap_block{
