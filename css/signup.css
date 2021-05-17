@@ -1,0 +1,341 @@
+/* @import "./header.css"; */
+
+:root{
+    background-color: #f8f8f8;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+main{
+    margin: 0 auto;
+    position: relative;
+    margin-top: 20px;
+    padding: 50px 0 100px 0 ;
+    background-image: url(../images/erik-mclean-W52IJbtsrfM-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+
+main div.signup_list{
+    width: 500px;
+    margin-top: 3%;
+    margin-left: 10%;
+    z-index: 50;
+    background-color: #f8f8f8;
+    position: relative;
+}
+
+div.signup_list > h1{
+    padding: 20px;
+    text-align: center;
+}
+
+div.signup_list ul{
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+div.signup_list ul > li{
+    width: 300px;
+    margin: 0 auto;
+    padding: 5px;
+    margin-top: 30px;
+    text-align: center;
+    border: 1px solid #737578;
+    border-radius: 5px;
+}
+
+div.signup_list ul > li:hover{
+    background-color: #ffd900;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+div.signup_list ul li a.facebook{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 5px 5px;
+    vertical-align: middle;
+    text-decoration: none;
+    background-image: url(../icon/facebook-logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 35px;
+    color: black;
+}
+
+div.signup_list ul li a.inst{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 5px 5px;
+    text-decoration: none;
+    background-image: url(../icon/instagram.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 35px;
+    color: black;
+}
+
+div.signup_list ul li a.twitter{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 5px 5px;
+    text-decoration: none;
+    background-image: url(../icon/twitter\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 35px;
+    color: black;
+}
+
+div.sign_up{
+    display: block;
+    margin-top: 30px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+div.sign_up > input{
+    display: none;
+}
+
+div.signup_list div.sign_up > label{
+    display: inline-block;
+    width: 300px;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: black;
+    color: #f8f8f8;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+div.signup_list div.sign_up > label:hover{
+    background-color: #ffd900;
+    color: black;
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+div.sign_up > section.signup_detail{
+    width: 500px;
+    margin: 0 auto;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #f8f8f8;
+}
+
+div.sign_up input#signup_bt:checked ~ section.signup_detail {
+    display: block;
+}
+
+
+
+/* 點擊註冊鈕後 */
+
+div.signup_list section.signup_detail label.back{
+    position: absolute;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../icon/x-mark.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: left 10px top 10px;
+    cursor: pointer;
+}
+
+div.signup_list section.signup_detail label.back:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
+div.signup_list section.signup_detail > h1{
+    padding: 20px;
+    text-align: center;
+    font-size: 32px;
+}
+
+div.signup_list section.signup_detail  label{
+    width: 300px;
+    margin: 0 auto;
+}
+
+div.signup_list section.signup_detail label.form_mail > input ,
+div.signup_list section.signup_detail label.form_password > input,
+div.signup_list section.signup_detail label.password_check > input{
+    width: 300px;
+    margin-top: 5px;
+    border: 1px solid #737578;
+    border-radius: 5px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+
+div.signup_list section.signup_detail label.form_mail,
+div.signup_list section.signup_detail label.form_password,
+div.signup_list section.signup_detail label.password_check{
+    display: block;
+    margin-top: 10px;
+}
+
+div.signup_list  section.signup_detail label.form_mail > input:focus,
+div.signup_list  section.signup_detail label.form_password > input:focus,
+div.signup_list  section.signup_detail label.password_check > input:focus{
+    border: 1px solid #737578;
+    box-shadow: 2px 2px 5px 1px #737578;
+    outline: none;
+}
+div.signup_list form section.signup_detail.form_password{
+    display: block;
+    margin-top: 20px; 
+}
+
+section.signup_detail > section.signup_note{
+    margin:10px 0;
+    text-align: center;
+}
+
+section.signup_detail > a.signup_checked{
+    display: block;
+    width: 300px;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 5px;
+    border: 0;
+    background-color: black;
+    color: #f8f8f8;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+section.signup_detail > a.signup_checked:hover{
+    background-color: #ffd900;
+    color: black;
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+div.forget{
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #737578;
+    color: #737578;
+    padding-bottom: 30px;
+}
+
+div.forget > a{
+    color:#737578;
+    display: inline-block;
+    text-decoration: none;
+}
+
+div.forget > a:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+div.forget span{
+    display: inline-block;
+    margin: 0px 6px;
+}
+
+/* 彈窗 */
+
+@keyframes fadein{
+    0%{
+      opacity:0;
+    }
+    100%{
+      opacity:1
+    }
+}
+  
+@keyframes fadeout{
+    0%{
+      opacity:1;
+    }
+    100%{
+      opacity:1;
+    }
+}
+
+div#qa_alert{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    background-color:rgba(0,0,0,0.5);
+    display:none;
+}
+  
+#qa_jump{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:500px;
+    padding:50px 0;
+    background-color:white;
+    text-align:center;
+    border-radius:30px;
+    z-index: 999;
+    background-image: url(../icon/success.png);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: center top 30px ;
+}
+
+#qa_jump > h1{
+    margin: 50px 0;
+    font-size: 32px;
+}
+
+#qa_close{
+    appearance: none;
+    padding: 15px;
+    width: 120px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+#qa_close:hover{
+    background-color: #ffd900;
+    color: black;
+    font-weight: bold;
+}
+
+.fadein{
+    opacity:0;
+    animation:fadein 1s ease 1 forwards;
+}
+  
+.fadeout{
+    opacity:1;
+    animation:fadeout 1s ease 1 forwards;
+}

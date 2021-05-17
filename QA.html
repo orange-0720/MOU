@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA</title>
+    <link rel="stylesheet" href="./css/QA.css">
+    <link rel="stylesheet" href="./css/header.css">
+</head>
+<body>
+    <header>
+        <a href="./index.html" class="logo">
+            <img src="./images/logo.png" alt="logo" width="80px" >
+        </a>
+        <nav class="header_nav">
+            <div class="nav_brand">
+                <a href="./brand_intro.html">品牌介紹</a>
+                <div class="brand_list">
+                    <a href="./brand_intro.html#story">品牌故事</a>
+                    <a href="./brand_intro.html#think">品牌理念</a>
+                    <a href="./brand_intro.html#advantage">品牌優勢</a>
+                    <a href="./brand_intro.html#insist">品牌堅持</a>
+                </div>
+            </div>
+            <div class="nav_shopping">
+                <a href="./shopping _page.html">商品一覽</a>
+                <div class="shopping_list">
+                    <a href="./product_page.html">鴨舌帽</a>
+                    <a href="./product_page.html">漁夫帽</a>
+                    <a href="./product_page.html">毛帽</a>
+                    <a href="./product_page.html">棒球帽</a>
+                </div>
+            </div>
+            <a href="./process.html">客製化流程</a>
+            <div class="nav_knowledge">
+                <a href="./knowledge.html">豆知識</a>
+                <div class="knowledge_list">
+                    <a href="./knowledge.html#about-size">帽子尺寸</a>
+                    <a href="./knowledge.html#wash1">帽子清潔</a>
+                    <a href="./knowledge.html#about-wear">帽子戴法</a>
+                </div>
+            </div>
+            <a href="./QA.html" id="on_page">常見問題</a>
+        </nav>
+        <section class="member">
+            <div class="search">
+                <input type="text" placeholder="搜尋商品">
+                <button type="submit"></button>
+            </div>
+            <a href="./login.html">
+                <img src="./icon/enter.png" alt="login" width="21x">
+            </a>
+            <a href="./signup.html">
+                <img src="./icon/add-user.png" alt="signup" width="21px">
+            </a>
+            <div class="shopping_cart">
+                <input type="checkbox" id="cart">
+                <label for="cart" class="open" id="shopping_scale">
+                    <img src="./icon/shopping-cart.png" alt="shopping" width="21x">
+                </label>
+                <div class="shopping_list">
+                    <label for="cart" class="close"></label>
+                    <section>
+                        <p>購物車清單</p>
+                        <p>共 0 元</p>
+                        <input type="button" value="確定結帳">
+                    </section>
+                </div>
+
+            </div>
+        </section>  
+    </header>
+    <div class="page_guide">
+        <a href="#first_part">商品及退換貨</a>
+        <a href="#second_part">關於LOGO設計</a>
+        <a href="#third_part">付款及物流</a>
+    </div>
+    <div class="inside">
+        <aside class="aside">
+            <h2>商品列表</h2>
+            <section>
+                <input type="checkbox" id="control_1">
+                <label for="control_1">鴨舌帽 </label>
+                <ul>
+                    <li class="item1">
+                        <a href="./product_page.html">素色鴨舌帽</a>
+                    </li>
+                    <li class="item2">
+                        <a href="./product_page.html">運動鴨舌帽</a>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <input type="checkbox" id="control_2">
+                <label for="control_2">漁夫帽</label>
+                <ul>
+                    <li class="item3">
+                        <a href="./product_page.html">素色漁夫帽</a>
+                    </li>
+                    <li class="item4">
+                        <a href="./product_page.html">丹寧漁夫帽</a>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <input type="checkbox" id="control_3">
+                <label for="control_3">棒球帽</label>
+                <ul>
+                    <li class="item5">
+                        <a href="./product_page.html">素色棒球帽</a>
+                    </li>
+                    <li class="item6">
+                        <a href="./product_page.html">網狀棒球帽</a>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <input type="checkbox" id="control_4">
+                <label for="control_4">毛帽</label>
+                <ul>
+                    <li class="item7">
+                        <a href="./product_page.html">素色毛帽</a>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+        <div class="middle">
+            <div class="qa_block">
+                <h3 id="first_part">商品及退換貨</h3>
+                <div class="qa_block_list">
+                    <input type="checkbox" id="block_q1">
+                    <label for="block_q1" class="open">是否可以實際看一下帽子商品呢?
+                        <span class="q_icon">
+                            <img src="./icon/Q.png" alt="Q" width="27px">
+                        </span>
+                    </label>
+                    <label for="block_q1" class="back">非常抱歉，目前實體店鋪還在規劃當中，因此目前還是只能透過照片及相關內容進行確認。
+                        <span class="a_icon">
+                            <img src="./icon/A.png" alt="A" width="27px">
+                        </span>
+                    </label>
+                </div>
+                <div class="qa_block_list">
+                    <input type="checkbox" id="block_q2">
+                    <label for="block_q2" class="open">若不確定哪種加工方法適合的話，貴公司是否會提供建議呢?
+                        <span class="q_icon">
+                            <img src="./icon/Q.png" alt="Q" width="27px">
+                        </span>
+                    </label>
+                    <label for="block_q2" class="back">當然，針對客人提供的設計稿，我們也會建議相對適合的加工方法給客人參考。
+                        <span class="a_icon">
+                            <img src="./icon/A.png" alt="A" width="27px">
+                        </span>
+                    </label>
+                </div>
+
+                <div class="qa_block_list">
+                    <input type="checkbox" id="block_q3">
+                    <label for="block_q3" class="open">商品會跟照片有色差嗎?
+                        <span class="q_icon">
+                            <img src="./icon/Q.png" alt="Q" width="27px">
+                        </span>
+                    </label>
+                    <label for="block_q3" class="back">電腦上看到的顏色與實際印出來的顏色，一定會有色差，每台電腦看到的顏色也都會不一樣，<br>所以請無法接受色差的朋友請斟酌後再下單，我們無法接受因色差問題的退換貨。
+                        <span class="a_icon">
+                            <img src="./icon/A.png" alt="A" width="27px">
+                        </span>
+                    </label>
+                </div>
+
+                <div class="qa_block_list">
+                    <input type="checkbox" id="block_q4">
+                    <label for="block_q4" class="open">若我對商品不滿意，是否可以退貨嗎?
+                        <span class="q_icon">
+                            <img src="./icon/Q.png" alt="Q" width="27px">
+                        </span>
+                    </label>
+                    <label for="block_q4" class="back">基本上客製化商品是不提供退貨的，但若商品破損或有瑕疵，<br>請於收到商品後七天內與我們聯絡，我們會依據商品狀況看是否重新製作商品。
+                        <span class="a_icon">
+                            <img src="./icon/A.png" alt="A" width="27px">
+                        </span>
+                    </label>
+                </div>
+
+                <div class="qa_block_list">
+                    <input type="checkbox" id="block_q5">
+                    <label for="block_q5" class="open">是否可以直接訂素色帽子呢? 客製化報價單會多久收到呢?
+                        <span class="q_icon">
+                            <img src="./icon/Q.png" alt="Q" width="27px">
+                        </span>
+                    </label>
+                    <label for="block_q5" class="back">可以。若要購買素帽請直接於商品頁面勾選素色選項，素帽的價格也都可以於商品頁面上確認。<br>客製化報價單基本上會於三個工作天內提供。
+                        <span class="a_icon">
+                            <img src="./icon/A.png" alt="A" width="27px"> 
+                        </span>
+                    </label>
+                </div> 
+
+                <h3 id="second_part">關於LOGO設計</h3>
+                <div class="qa_block_list">
+                    <input type="checkbox" id="block_q6">
+                    <label for="block_q6" class="open">若我對於LOGO沒有想法，是否可以由貴公司提案呢? 
+                        <span class="q_icon">
+                            <img src="./icon/Q.png" alt="Q" width="27px">
+                        </span>
+                    </label>
+                    <label for="block_q6" class="back">可以。請先將您的設計理念及想使用的顏色先告知我們，我們會根據此向客人進行提案(無須設計費)。
+                        <span class="a_icon">
+                            <img src="./icon/A.png" alt="A" width="27px"> 
+                        </span>
+                    </label>
+                </div> 
+
+                <div class="qa_block_list">
+                    <input type="checkbox" id="block_q7">
+                    <label for="block_q7" class="open">是否只能針對帽子正面進行LOGO客製化呢?
+                        <span class="q_icon">
+                            <img src="./icon/Q.png" alt="Q" width="27px">
+                        </span>
+                    </label>
+                    <label for="block_q7" class="back">除了帽子正面外，帽子兩側及後側都可以進行加工，只是根據設計稿及加工內容有時候無法達成客人的要求。<br>因此若有特殊要求的話，麻煩請先與我們進行連絡。
+                        <span class="a_icon">
+                            <img src="./icon/A.png" alt="A" width="27px"> 
+                        </span>
+                    </label>
+                </div> 
+
+                <div class="qa_block_list">
+                    <input type="checkbox" id="block_q8">
+                    <label for="block_q8" class="open">請問LOGO設計稿用甚麼檔案類型提供呢?
+                        <span class="q_icon">
+                            <img src="./icon/Q.png" alt="Q" width="27px">
+                        </span>
+                    </label>
+                    <label for="block_q8" class="back">ai、psd、pdf、word、excel、jpg等等都可以，但為了方便我們進行微調，還是建議先以AI、PSD檔為主。
+                        <span class="a_icon">
+                            <img src="./icon/A.png" alt="A" width="27px"> 
+                        </span>
+                    </label>
+                </div> 
+
+                <div class="qa_block_list">
+                    <input type="checkbox" id="block_q9">
+                    <label for="block_q9" class="open">看完套圖後，發現不適合是否可以更換設計稿呢?
+                        <span class="q_icon">
+                            <img src="./icon/Q.png" alt="Q" width="27px">
+                        </span>
+                    </label>
+                    <label for="block_q9" class="back">可以，且我們不會收取任何費用。但變更設計圖稿會延誤到出貨時間，請見諒。
+                        <span class="a_icon">
+                            <img src="./icon/A.png" alt="A" width="27px"> 
+                        </span>
+                    </label>
+                </div> 
+
+                <div class="qa_block_list">
+                    <input type="checkbox" id="block_q10">
+                    <label for="block_q10" class="open">甚麼樣的圖片或照片都可以做嗎?
+                        <span class="q_icon">
+                            <img src="./icon/Q.png" alt="Q" width="27px">
+                        </span>
+                    </label>
+                    <label for="block_q10" class="back">基本上不違反版權問題(明星照片、卡通人物等)的話，都是可以做的。
+                        <span class="a_icon">
+                            <img src="./icon/A.png" alt="A" width="27px"> 
+                        </span>
+                    </label>
+                </div> 
+
+                <h3 id="third_part">付款及物流</h3>
+                <div class="qa_block_list">
+                    <input type="checkbox" id="block_q11">
+                    <label for="block_q11" class="open">若我對於LOGO沒有想法，是否可以由貴公司提案呢? 
+                        <span class="q_icon">
+                            <img src="./icon/Q.png" alt="Q" width="27px">
+                        </span>
+                    </label>
+                    <label for="block_q11" class="back">可以。請先將您的設計理念及想使用的顏色先告知我們，我們會根據此向客人進行提案(無須設計費)。
+                        <span class="a_icon">
+                            <img src="./icon/A.png" alt="A" width="27px"> 
+                        </span>
+                    </label>
+                </div> 
+
+                <div class="qa_block_list">
+                    <input type="checkbox" id="block_q12">
+                    <label for="block_q12" class="open">是否只能針對帽子正面進行LOGO客製化呢?
+                        <span class="q_icon">
+                            <img src="./icon/Q.png" alt="Q" width="27px">
+                        </span>
+                    </label>
+                    <label for="block_q12" class="back">除了帽子正面外，帽子兩側及後側都可以進行加工，只是根據設計稿及加工內容有時候無法達成客人的要求。<br>因此若有特殊要求的話，麻煩請先與我們進行連絡。
+                        <span class="a_icon">
+                            <img src="./icon/A.png" alt="A" width="27px"> 
+                        </span>
+                    </label>
+                </div> 
+
+                <div class="qa_block_list">
+                    <input type="checkbox" id="block_q13">
+                    <label for="block_q13" class="open">請問LOGO設計稿用甚麼檔案類型提供呢?
+                        <span class="q_icon">
+                            <img src="./icon/Q.png" alt="Q" width="27px">
+                        </span>
+                    </label>
+                    <label for="block_q13" class="back">ai、psd、pdf、word、excel、jpg等等都可以，但為了方便我們進行微調，還是建議先以AI、PSD檔為主。
+                        <span class="a_icon">
+                            <img src="./icon/A.png" alt="A" width="27px"> 
+                        </span>
+                    </label>
+                </div> 
+
+                <div class="qa_block_list">
+                    <input type="checkbox" id="block_q14">
+                    <label for="block_q14" class="open">看完套圖後，發現不適合是否可以更換設計稿呢?
+                        <span class="q_icon">
+                            <img src="./icon/Q.png" alt="Q" width="27px">
+                        </span>
+                    </label>
+                    <label for="block_q14" class="back">可以，且我們不會收取任何費用。但變更設計圖稿會延誤到出貨時間，請見諒。
+                        <span class="a_icon">
+                            <img src="./icon/A.png" alt="A" width="27px"> 
+                        </span>
+                    </label>
+                </div> 
+
+                <div class="qa_block_list">
+                    <input type="checkbox" id="block_q15">
+                    <label for="block_q15" class="open">甚麼樣的圖片或照片都可以做嗎?
+                        <span class="q_icon">
+                            <img src="./icon/Q.png" alt="Q" width="27px">
+                        </span>
+                    </label>
+                    <label for="block_q15" class="back">基本上不違反版權問題(明星照片、卡通人物等)的話，都是可以做的。
+                        <span class="a_icon">
+                            <img src="./icon/A.png" alt="A" width="27px"> 
+                        </span>
+                    </label>
+                </div>
+                <h3>其他問題</h3>
+                <div class="anyquestion">
+                    <form class="qa_form">
+                        <h2>聯絡我們</h2>
+                        <div class="qa_block">
+                            <label for="qa_form1">聯絡姓名</label>
+                            <input type="text" id="qa_form1" placeholder="聯絡姓名">
+                        </div>
+                        <div class="qa_block">
+                            <label for="qa_form2">Email信箱</label>
+                            <input type="email" placeholder="聯絡Email">
+                        </div>
+                        <div class="qa_block">
+                            <label for="qa_form3">連絡電話</label>
+                            <input type="text" id="qa_form3" placeholder="手機 or 市話">
+                        </div>
+                        <div class="question">
+                            <p>相關問題</p>
+                            <textarea cols="50" rows="10"></textarea>
+                        </div>
+                        <a id="jump_window">送出問題</a>
+                        <p>送出問題後，我們將盡快給您回覆。</p>
+                        <div id="qa_alert">
+                            <section id="qa_jump">
+                              <h1>您的問題已送出，點擊後返回網頁。</h2>
+                              <button id="qa_close">返回</button>
+                            </section>    
+                        </div>
+                    </form>
+                </div> 
+            </div>
+        </div>  
+    </div>
+    <footer>
+        <div class="footer_list">
+            <div class="footer_logo">
+                <img src="./images/logo.png" alt="logo" width="200px">
+            </div>
+            <div class="footer_nav">
+                <div class="footer_intro"> 
+                    <a href="./brand_intro.html">品牌介紹</a>
+                    <a href="./brand_intro.html#story">品牌故事</a>
+                    <a href="./brand_intro.html#think">品牌理念</a>
+                    <a href="./brand_intro.html#advantage">品牌優勢</a>
+                    <a href="./brand_intro.html#insist">品牌堅持</a>            
+                </div>
+                <div class="footer_product">
+                    <a href="./shopping _page.html">商品情報</a>
+                    <a href="./product_page.html">鴨舌帽</a>
+                    <a href="./product_page.html">漁夫帽</a>
+                    <a href="./product_page.html">毛帽</a>
+                    <a href="./product_page.html">棒球帽</a>
+                </div>
+                <div class="footer_process"> 
+                    <a href="./process.html">客製化流程</a>
+                </div>
+                <div class="footer_knowledge">
+                <a href="./knowledge.html">豆知識</a>
+                <a href="./knowledge.html#about-size">帽子尺寸</a>
+                <a href="./knowledge.html#wash1">帽子清潔</a>
+                <a href="./knowledge.html#about-wear">帽子戴法</a>
+                </div>
+                <div class="footer_qa">
+                    <a href="./QA.html">常見問題</a>
+                </div>
+            </div>
+            <div class="link">
+                <p>社群連結</p>
+                <div class="link_list">
+                    <a href="#" class="link_fb">
+                        <img src="./icon/facebook-logo-white.png" alt="facebook" width="60px">
+                    </a>
+                    <a href="#" class="link_twitter">
+                        <img src="./icon/twitter-white (1).png" alt="twitter" width="60px">
+                    </a>
+                    <a href="#" class="link_ig">
+                        <img src="./icon/instagram-white.png" alt="ig" width="60px">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="tibame">
+            <p>&copy; MOU' All Rights Reserved</p><br>
+            <p>本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，</p>
+            <p>本平台僅供學習、展示之用。參考資源:XXXXXXXXXXXXX。</p>
+            <p>若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養成班]，後續會由專人協助處理</p>
+        </div>
+        <a class="pageup" id="pagetop">
+            <span>PAGE<br>TOP</span>
+        </a>
+    </footer>
+
+    <script src="./js/gotop.js"></script>
+    <script src="./js/jump_window.js"></script>
+</body>
+</html>

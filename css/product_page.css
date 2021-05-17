@@ -1,0 +1,465 @@
+:root{
+    background-color: #f8f8f8;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 60px;
+}
+
+
+/* 側邊攔開始 */
+
+
+aside.aside,
+aside.aside h2,
+aside.aside section{
+    width: 200px;
+    text-align: left;
+}
+
+aside.aside section > input{
+    display: none;
+}
+
+aside.aside section > label{
+    display: inline-block;
+    width: 200px;
+    font-size: 20px;
+    margin-top: 20px;
+    background-image: url(../icon/down-arrow.png);
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position:right 50px top 8px ;
+    cursor: pointer;
+}
+
+aside.aside section > ul{
+    display: none;
+}
+
+aside.aside section > input:checked ~ label{
+    background-image: url(../icon/up-chevron.png);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: right 50px top 8px ;
+}
+
+aside.aside section > input:checked ~ ul{
+    display: block;
+}
+
+aside.aside section > ul{
+    padding: 0;
+}
+
+aside.aside section > ul > li{
+    margin-top: 10px;
+    list-style: none;
+    padding: 5px 15px;
+    cursor: pointer;
+} 
+
+aside.aside section > ul > li >a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+} 
+
+aside.aside section > ul >li.item1{
+    background-image: url(../images/CAP/b2fda4edc80e63dca8a536a0d1d8bfbf.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: right 40px top 3px ;
+}
+
+aside.aside section > ul >li.item2{
+    background-image: url(../images/CAP/img_color02-8.png);
+    background-repeat: no-repeat;
+    background-size: 55px;
+    background-position: right 35px top -10px ;
+}
+
+aside.aside section > ul >li.item3{
+    background-image: url(../images/buscket_hat/0853011-001-08.png);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: right 35px top 0px ;
+}
+
+aside.aside section > ul >li.item4{
+    background-image: url(../images/buscket_hat/0853011-001-09.png);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: right 35px top 0px ;
+}
+
+aside.aside section > ul >li.item5{
+    background-image: url(../images/baseball_hat/2-2.png);
+    background-repeat: no-repeat;
+    background-size: 45px;
+    background-position: right 40px top 0px ;
+}
+
+aside.aside section > ul >li.item6{
+    background-image: url(../images/baseball_hat/TRC-55_05_s.png);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: right 35px top -2px ;
+}
+
+aside.aside section > ul >li.item7{
+    background-image: url(../images/nethat/da3d8de8325fa9b34f708e89d584a1f9.png);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: right 35px top -2px ;
+}
+
+/* 側邊攔結束 */
+
+/* 商品內頁 */
+div.product_intro{
+    flex:1;
+    margin: 0 auto;
+}
+
+div.product_detail{
+    display: flex;
+}
+
+/* 商品照片更換 */
+div.product_img{
+    width: 500px;
+    margin:0 30px;
+}
+
+div.product_img >input{
+    display: none;
+}
+
+div.product_img > section{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/nethat/001979675f6da9ea18354b4c36fcb702.png);
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: center center;
+}
+
+div.product_img input#color2:checked ~ section.img_change{
+    background-image: url(../images/nethat/da3d8de8325fa9b34f708e89d584a1f9.png);
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: center center;
+}
+
+div.product_img input#color3:checked ~ section.img_change{
+    background-image: url(../images/nethat/8c31128a7b0d92026a066fa5ada0055d.png);
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: center center;
+}
+
+div.product_img input#color4:checked ~ section.img_change{
+    background-image: url(../images/nethat/2028f7507e3d4ae521f6500ac82ad7da.png);
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: center center;
+}
+
+div.product_img input#color5:checked ~ section.img_change{
+    background-image: url(../images/nethat/91a724520815fcf572da571af6b9a8d2.png);
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: center center;
+}
+
+/* 商品更換結束 */
+
+div.product_article{
+    flex:1;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+div.product_article section.color{
+    margin: 15px 0;
+}
+
+div.product_article section.color > label{
+    margin-top: 10px;
+    margin-right: 4px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+div.product_article section.color > label:hover{
+    transform: scale(1.3);
+}
+
+div.product_article section.color > label:nth-of-type(1){
+    background-color: white;
+    border: 1px solid black;
+}
+
+div.product_article section.color > label:nth-of-type(2){
+    background-color: rgb(245, 245, 53);
+    border: 1px solid black;
+}
+
+div.product_article section.color > label:nth-of-type(3){
+    background-color: darkred;
+    border: 1px solid black;
+}
+
+div.product_article section.color > label:nth-of-type(4){
+    background-color: black;
+    border: 1px solid black;
+}
+
+div.product_article section.color > label:nth-of-type(5){
+    background-color: grey;
+    border: 1px solid black;
+}
+
+div.product_article section.hat_size{
+    margin: 10px 0;
+}
+
+div.product_article section.hat_size > select#size{
+    width: 130px;
+    cursor: pointer;
+    margin-top: 5px;
+    padding: 5px 0px;
+}
+
+
+div.price{
+    margin-top: 20px;
+    padding-right: 30px;
+    
+}
+
+div.delivery{
+    margin-top: 20px;
+    padding-right: 30px;
+}
+
+div.product_article a.start{
+    display: block;
+    width: 100%;
+    background-color: black;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #f8f8f8;
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+div.product_article a.start:hover{
+    background-color: #ffd900;
+    color: black;
+}
+
+/* 下邊攔開始 */
+
+div.rules{
+    display: flex;
+    background-color: #ededed;
+    margin-top: 40px;
+    padding: 30px;
+}
+
+div.rules h3{
+    margin-top: 5px;
+}
+
+div.rules section.logo_size{
+    flex: 1;
+    padding: 10px;
+    padding-left: 150px;
+    background-image: url(../icon/photo-gallery.png);
+    background-repeat: no-repeat;
+    background-size: 60px;
+    background-position: left 70px top 10px;
+}
+
+div.rules section.logo_place{
+    flex: 1;
+    padding: 10px;
+    padding-left: 150px;
+    background-image: url(../icon/livejournal.png);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: left 70px top 13px;
+}
+
+div.rules section.logo_select{
+    flex: 1;
+    padding: 10px;
+    padding-left: 150px;
+    background-image: url(../icon/knitting.png);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: left 70px top 13px;
+}
+
+/* TAB頁面開始 */
+
+div.tab_list{
+    margin: 0 auto;
+    margin-top: 40px;
+   
+}
+
+div.tab_list > input{
+    display: none;
+}
+
+div.tab_list div.tab_intro{
+    vertical-align: bottom;
+    font-size: 0;
+}
+
+div.tab_list div.tab_intro > label{
+    padding: 30px 10px 10px 10px;
+    background-color: #ededed;
+    display: inline-block;
+    cursor: pointer;
+    width: 150px;
+    text-align: center;
+    border: 1px solid #737578;
+    font-size: 16px;
+    vertical-align: bottom;
+}
+
+div.tab_list div.tab_intro > label:nth-of-type(1){
+    background-image: url(../icon/cap.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center top 5px;
+}
+
+div.tab_list div.tab_intro > label:nth-of-type(2){
+    background-image: url(../icon/gps-location-symbol.png);
+    background-size: 28px;
+    background-repeat: no-repeat;
+    background-position: center top 5px;
+}
+
+div.tab_list div.tab_intro > label:nth-of-type(3){
+    background-image: url(../icon/job-seeking.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center top 5px;
+}
+
+span#under{
+    display: inline-block;
+    width: 20px;
+    border-bottom: 1px solid #737578;
+    vertical-align: bottom;
+}
+
+div.tab_list >input#tab_article:checked ~ div.tab_about_product{
+    display: block;
+}
+div.tab_list >input#tab_article:checked ~ div.tab_intro label:nth-of-type(1),
+div.tab_list >input#tab_place:checked ~ div.tab_intro label:nth-of-type(2),
+div.tab_list >input#tab_select:checked ~ div.tab_intro label:nth-of-type(3){
+    background-color: #f8f8f8;
+    border-top:5px solid #ffd900 ;
+    border-bottom: none;
+    z-index: 5;
+}
+
+div.tab_about_product{
+    display: none;
+}
+
+div.tab_list div.tab_about_product > p,
+div.tab_list div.tab_about_product > ul{
+    margin-top: 30px;
+}
+
+div.tab_list div.tab_about_product > ul >li{
+    margin-top: 7px;
+}
+
+div.tab_list >input#tab_place:checked ~ div.tab_about_place{
+    display: block;
+}
+
+div.tab_list div.tab_about_place{
+    margin-top: 30px;
+    display: none;
+}
+
+div.tab_list div.tab_about_place table{
+    display: inline-block;
+    border-collapse: collapse;
+    vertical-align: top;
+    margin-top: 70px;
+    margin-right: 70px;
+}
+
+div.tab_list div.tab_about_place table th,td{
+    border: 1px solid black;
+    padding: 10px 100px;
+    text-align: center;
+}
+
+
+div.tab_list >input#tab_select:checked ~ div.tab_about_select{
+    display: block;
+}
+
+div.tab_about_select {
+    margin-top: 40px;
+    display: none;
+}
+
+div.tab_about_select div.select1,
+div.tab_about_select div.select2,
+div.tab_about_select div.select3,
+div.tab_about_select div.select4{
+    display: flex;
+    margin-top: 70px;
+}
+
+div.tab_about_select div.select1 section,
+div.tab_about_select div.select2 section,
+div.tab_about_select div.select3 section,
+div.tab_about_select div.select4 section{
+    margin-left: 40px;
+    width: 600px;
+}
+
+div.tab_about_select h2{
+    padding: 10px 0;
+    border-bottom: 1px solid #737578;
+}
+
+div.tab_about_select p {
+    margin: 5px 0;
+}
+
+div.tab_about_select span.range{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    margin: 10px 0;
+    padding:5px 10px;
+    margin-right: 20px;
+}

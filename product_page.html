@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>product_page</title>
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/product_page.css" />
+  </head>
+  <body>
+    <header>
+      <a href="./index.html" class="logo">
+        <img src="./images/logo.png" alt="logo" width="80px" />
+      </a>
+      <nav class="header_nav">
+        <div class="nav_brand">
+            <a href="./brand_intro.html">品牌介紹</a>
+            <div class="brand_list">
+                <a href="./brand_intro.html#story">品牌故事</a>
+                <a href="./brand_intro.html#think">品牌理念</a>
+                <a href="./brand_intro.html#advantage">品牌優勢</a>
+                <a href="./brand_intro.html#insist">品牌堅持</a>
+            </div>
+        </div>
+        <div class="nav_shopping">
+            <a href="./shopping _page.html" id="on_page">商品一覽</a>
+            <div class="shopping_list">
+                <a href="./product_page.html">鴨舌帽</a>
+                <a href="./product_page.html">漁夫帽</a>
+                <a href="./product_page.html">毛帽</a>
+                <a href="./product_page.html">棒球帽</a>
+            </div>
+        </div>
+        <a href="./process.html">客製化流程</a>
+        <div class="nav_knowledge">
+            <a href="./knowledge.html">豆知識</a>
+            <div class="knowledge_list">
+                <a href="./knowledge.html#about-size">帽子尺寸</a>
+                <a href="./knowledge.html#wash1">帽子清潔</a>
+                <a href="./knowledge.html#about-wear">帽子戴法</a>
+            </div>
+        </div>
+        <a href="./QA.html">常見問題</a>
+    </nav>
+      <section class="member">
+        <div class="search">
+          <input type="text" placeholder="搜尋商品">
+          <button type="submit"></button>
+        </div>
+        <a href="./login.html">
+          <img src="./icon/enter.png" alt="login" width="21x" />
+        </a>
+        <a href="./signup.html">
+          <img src="./icon/add-user.png" alt="signup" width="21px" />
+        </a>
+        <div class="shopping_cart">
+          <input type="checkbox" id="cart" />
+          <label for="cart" class="open">
+            <img src="./icon/shopping-cart.png" alt="shopping" width="21x" />
+          </label>
+          <div class="shopping_list">
+            <label for="cart" class="close"></label>
+            <section>
+              <p>購物車清單</p>
+              <p>共 0 元</p>
+              <input type="button" value="確定結帳" />
+            </section>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+        <aside class="aside">
+          <h2>商品列表</h2>
+          <section>
+            <input type="checkbox" id="control_1" />
+            <label for="control_1">鴨舌帽 </label>
+            <ul>
+              <li class="item1">
+                <a href="#">素色鴨舌帽</a>
+              </li>
+              <li class="item2">
+                <a href="#">運動鴨舌帽</a>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <input type="checkbox" id="control_2" />
+            <label for="control_2">漁夫帽</label>
+            <ul>
+              <li class="item3">
+                <a href="#">素色漁夫帽</a>
+              </li>
+              <li class="item4">
+                <a href="#">丹寧漁夫帽</a>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <input type="checkbox" id="control_3" />
+            <label for="control_3">棒球帽</label>
+            <ul>
+              <li class="item5">
+                <a href="#">素色棒球帽</a>
+              </li>
+              <li class="item6">
+                <a href="#">網狀棒球帽</a>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <input type="checkbox" id="control_4" />
+            <label for="control_4">毛帽</label>
+            <ul>
+              <li class="item7">
+                <a href="#">素色毛帽</a>
+              </li>
+            </ul>
+          </section>
+        </aside>
+        <div class="product_intro">
+            <div class="product_detail">
+                <div class="product_img">
+                    <input type="radio" name="hat_color" id="color1" checked>
+                    <input type="radio" name="hat_color" id="color2">
+                    <input type="radio" name="hat_color" id="color3">
+                    <input type="radio" name="hat_color" id="color4">
+                    <input type="radio" name="hat_color" id="color5">
+                    <section class="img_change" ></section>
+                </div>
+                <div class="product_article">
+                    <h1>素色毛帽</h1>
+                    <section class="color">
+                        <p>顏色選擇</p>
+                        <label for="color1"></label>
+                        <label for="color2"></label>
+                        <label for="color3"></label>
+                        <label for="color4"></label>
+                        <label for="color5"></label>
+                    </section>
+                    <section class="hat_size">
+                        <p>帽子尺寸</p>
+                        <select name="size" id="size">
+                            <option value="1" selected>F Size</option>
+                        </select>
+                    </section>
+                    <div class="price">
+                        <p>價格 :</p>
+                        <h2>NT$490元</h2>
+                    </div>
+                    <div class="delivery">
+                        <p>商品配送日(預估)</p>
+                        <h2>5月27日</h2>
+                    </div>
+                    <a href="./design.html" class="start">開始客製化</a>
+                </div>
+            </div>
+            <div class="rules">
+                <section class="logo_size">
+                    <p>圖稿大小</p>
+                    <h3>11cm x 4.5cm</h3>
+                </section>
+                <section class="logo_place">
+                    <p>加工位置</p>
+                    <h3>帽子正面</h3>
+                </section>
+                <section class="logo_select">
+                    <p>加工方法</p>
+                    <h3>刺繡</h3>
+                </section>
+            </div>
+            <div class="tab_list">
+                <input type="radio" name="tab" id="tab_article" checked>
+                <input type="radio" name="tab" id="tab_place">
+                <input type="radio" name="tab" id="tab_select">
+
+                <div class="tab_intro"> 
+                    <label for="tab_article">商品說明</label>
+                    <span id="under"></span>
+                    <label for="tab_place">加工位置</label>
+                    <span id="under"></span>
+                    <label for="tab_select">加工說明</label>
+                </div>
+
+                <div class="tab_about_product">
+                    <p>簡單好看的素色毛帽，帽子反摺的長度可以依個人喜好自由調整。</p>
+                    <ul>
+                        <li>男女皆可</li>
+                        <li>壓克力100%</li>
+                        <li>長度22cm / 寬度19cm (反摺狀態)</li>
+                        <li>可手洗</li>
+                        <li>商品為台灣製造</li>
+                    </ul>
+                    <p>只需一件，即可下訂</p>
+                </div>
+                <div class="tab_about_place">
+                    <table>
+                        <tr>
+                            <th>圖稿位置</th>
+                            <th>最大加工範圍</th>
+                        </tr>
+                        <tr>
+                            <td>正面</td>
+                            <td>11cm X 4.5cm</td>
+                        </tr>
+                    </table>
+                    <img src="./images/nethat/logo_place-8.png" alt="" width="200px">
+                </div>
+                <div class="tab_about_select">
+                    <div class="select1">
+                        <img src="./images/select/pic_process01-2.png" alt="" width="250px">
+                        <section>
+                            <h2>刺繡</h2>
+                            <p>最受歡迎的加工手法</p>
+                            <p><span class="range">加工範圍</span><strong>高5.5cm / 寬11cm</strong></p>
+                            <ul>
+                                <li>使用針線，直接將文字或曲線呈現出來</li>
+                                <li>斜紋布的帽子很推薦使用此手法</li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="select2">
+                        <img src="./images/select/pic_process02.png" width="250px">
+                        <section>
+                            <h2>3D刺繡</h2>
+                            <p>加入了聚氨酯材質，呈現出立體感</p>
+                            <p><span class="range">加工範圍</span><strong>高5.5cm / 寬11cm</strong></p>
+                            <ul>
+                                <li>在刺繡的紗線裡加入聚氨酯橡膠，進而讓刺繡看起來更加立體的手法。</li>
+                                <li>由於比一般刺繡看起來更立體，成品也會顯得更豪華</li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="select3">
+                        <img src="./images/select/pic_process03.png" alt="" width="250px">
+                        <section>
+                            <h2>刺繡補丁</h2>
+                            <p>運用有光澤的布面料及刺繡組合而成的加工手法</p>
+                            <p><span class="range">大小</span><strong>最高5.5cm</strong></p>
+                            <ul>
+                                <li>在布料上進行刺繡，進而呈現補丁的效果</li>
+                                <li>透過刺繡及布面料的結合，讓補丁LOGO能呈現出厚度。</li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="select4">
+                        <img src="./images/select/pic_process04.png" alt="" width="250px">
+                        <section>
+                            <h2>全彩補丁</h2>
+                            <p>運用全彩印刷，將細小的條紋等都呈現出來</p>
+                            <p><span class="range">大小</span><strong>最高5.5cm</strong></p>
+                            <ul>
+                                <li>將染色後的布料當作補丁材料，直接刺在帽子上</li>
+                                <li>可以表現出刺繡難以呈現的細紋及漸層效果</li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+      <div class="footer_list">
+          <div class="footer_logo">
+              <img src="./images/logo.png" alt="logo" width="200px">
+          </div>
+          <div class="footer_nav">
+              <div class="footer_intro"> 
+                  <a href="./brand_intro.html">品牌介紹</a>
+                  <a href="./brand_intro.html#story">品牌故事</a>
+                  <a href="./brand_intro.html#think">品牌理念</a>
+                  <a href="./brand_intro.html#advantage">品牌優勢</a>
+                  <a href="./brand_intro.html#insist">品牌堅持</a>            
+              </div>
+              <div class="footer_product">
+                  <a href="./shopping _page.html">商品情報</a>
+                  <a href="./product_page.html">鴨舌帽</a>
+                  <a href="./product_page.html">漁夫帽</a>
+                  <a href="./product_page.html">毛帽</a>
+                  <a href="./product_page.html">棒球帽</a>
+              </div>
+              <div class="footer_process"> 
+                  <a href="./process.html">客製化流程</a>
+              </div>
+              <div class="footer_knowledge">
+              <a href="./knowledge.html">豆知識</a>
+              <a href="./knowledge.html#about-size">帽子尺寸</a>
+              <a href="./knowledge.html#wash1">帽子清潔</a>
+              <a href="./knowledge.html#about-wear">帽子戴法</a>
+              </div>
+              <div class="footer_qa">
+                  <a href="./QA.html">常見問題</a>
+              </div>
+          </div>
+          <div class="link">
+              <p>社群連結</p>
+              <div class="link_list">
+                  <a href="#" class="link_fb">
+                      <img src="./icon/facebook-logo-white.png" alt="facebook" width="60px">
+                  </a>
+                  <a href="#" class="link_twitter">
+                      <img src="./icon/twitter-white (1).png" alt="twitter" width="60px">
+                  </a>
+                  <a href="#" class="link_ig">
+                      <img src="./icon/instagram-white.png" alt="ig" width="60px">
+                  </a>
+              </div>
+          </div>
+      </div>
+      <div class="tibame">
+          <p>&copy; MOU' All Rights Reserved</p><br>
+          <p>本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，</p>
+          <p>本平台僅供學習、展示之用。參考資源:XXXXXXXXXXXXX。</p>
+          <p>若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養成班]，後續會由專人協助處理</p>
+      </div>
+
+      <a class="pageup" id="pagetop">
+          <span>PAGE<br>TOP</span>
+      </a>
+  </footer>
+
+  <script src="./js/gotop.js"></script>
+  </body>
+</html>

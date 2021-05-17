@@ -1,0 +1,126 @@
+:root{
+    background-color: #f8f8f8;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+div.page_guide{
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    margin-top: 10px;  
+}
+
+div.page_guide::after{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/thom-holmes-nx0RXgbOH1o-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+div.page_guide > h2{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: inline-block;
+    transform: translate(-50% , -50%);
+    /* margin-top: 250px; */
+    font-size: 36px;
+    color: black;
+    z-index: 5;
+}
+
+@keyframes move_up{
+    0%{
+        transform: translateY(50%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+div#story,
+div#think,
+div#advantage,
+div#insist{
+    display: flex;
+    margin-top: 80px;
+}
+
+div#think,
+div#advantage,
+div#insist{
+    transform: translateY(50%);
+}
+
+.move_up{
+    animation-name: move_up;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+
+div#story div.intro_picture,
+div#advantage div.advantage_picture{
+    margin-left: 100px;
+}
+
+
+div#story article.story_article,
+div#think article.think_article,
+div#advantage article.advantage_article,
+div#insist article.insist_article{
+    margin: 0 auto;
+    width: 500px;
+    height: 400px;
+}
+
+div#story article.story_article,
+div#insist article.insist_article{
+    margin-top: 30px;
+}
+
+div#story article.story_article h2,
+div#think article.think_article h2,
+div#advantage article.advantage_article h2,
+div#insist article.insist_article h2{
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 36px;
+}
+
+div#think div.think_picture,
+div#insist div.insist_picture{
+    order: 2;
+    margin-right: 100px;
+}
+
+div#story article.story_article > p,
+div#think article.think_article > p,
+div#advantage article.advantage_article > p,
+div#insist article.insist_article >p{
+    margin-top: 30px;
+    padding: 5px 10px;
+    line-height: 2rem;
+    font-size: 20px;
+}
+
+div#advantage div.advantage_picture > img{
+    margin-top: 40px;
+}

@@ -1,0 +1,206 @@
+:root{
+    background-color: #f8f8f8;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+div.page_guide{
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    background-color: #ededed;
+    text-align: center;  
+}
+
+div.inside{
+    margin: 0 auto;
+    display: flex;
+    margin-top: 30px;
+    align-items: flex-start;
+}
+/* 側邊攔開始 */
+
+aside.aside{
+    position: sticky;
+    top: 20px;
+    bottom: 100px;
+}
+
+aside.aside,
+aside.aside h2,
+aside.aside section{
+    width: 200px;
+    text-align: left;
+}
+
+aside.aside section > input{
+    display: none;
+}
+
+aside.aside section > label{
+    display: inline-block;
+    width: 200px;
+    font-size: 20px;
+    margin-top: 20px;
+    background-image: url(../icon/down-arrow.png);
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position:right 50px top 8px ;
+}
+
+aside.aside section > ul{
+    display: none;
+}
+
+aside.aside section > input:checked ~ label{
+    background-image: url(../icon/up-chevron.png);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: right 50px top 8px ;
+    cursor: pointer;
+}
+
+aside.aside section > input:checked ~ ul{
+    display: block;
+}
+
+aside.aside section > ul{
+    padding: 0;
+}
+
+aside.aside section > ul > li{
+    margin-top: 10px;
+    list-style: none;
+    padding: 5px 15px;
+    cursor: pointer;
+} 
+
+aside.aside section > ul > li >a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+} 
+
+aside.aside section > ul >li.item1{
+    background-image: url(../images/CAP/b2fda4edc80e63dca8a536a0d1d8bfbf.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: right 40px top 3px ;
+}
+
+aside.aside section > ul >li.item2{
+    background-image: url(../images/CAP/img_color02-8.png);
+    background-repeat: no-repeat;
+    background-size: 55px;
+    background-position: right 35px top -10px ;
+}
+
+aside.aside section > ul >li.item3{
+    background-image: url(../images/buscket_hat/0853011-001-08.png);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: right 35px top 0px ;
+}
+
+aside.aside section > ul >li.item4{
+    background-image: url(../images/buscket_hat/0853011-001-09.png);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: right 35px top 0px ;
+}
+
+aside.aside section > ul >li.item5{
+    background-image: url(../images/baseball_hat/2-2.png);
+    background-repeat: no-repeat;
+    background-size: 45px;
+    background-position: right 40px top 0px ;
+}
+
+aside.aside section > ul >li.item6{
+    background-image: url(../images/baseball_hat/TRC-55_05_s.png);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: right 35px top -2px ;
+}
+
+aside.aside section > ul >li.item7{
+    background-image: url(../images/nethat/da3d8de8325fa9b34f708e89d584a1f9.png);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: right 35px top -2px ;
+}
+
+
+/* 側邊攔結束 */
+
+div.process{
+    width: 1050px;
+    margin:0 auto;
+    padding: 0 90px;
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    gap: 60px;
+}
+
+div.process div.send_order,
+div.process div.coversation,
+div.process div.approve,
+div.process div.pay,
+div.process div.make,
+div.process div.pickup{
+    margin: 0 auto;
+    margin-top: 30px;
+    font-size: 22px;
+    text-align: center;
+    color:black;
+}
+
+section.back_color{
+    width: 250px;
+    height: 250px;
+    background-color: #FFD900;
+    border-radius: 50%;
+}
+
+h3.step{
+    width: 250px;
+    text-align: center;
+    padding: 30px 10px 20px 10px;
+}
+
+div.handmade_note{
+    border: 2px solid #737578;
+    border-radius: 5px;
+    background-color:#f6f3f1 ;
+    width: 950px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+div.handmade_note h2{
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px 10px;
+}
+
+div.handmade_note article p{
+    padding: 5px 10px;
+}
+div.handmade_note article strong{
+    display: inline-block;
+    text-align: right;
+    width: 120px;
+    padding: 10px 10px;
+}
+
