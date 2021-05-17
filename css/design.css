@@ -284,6 +284,7 @@ span#check_logo{
 div.design_detail div.logo_detail > img{
     display: inline-block;
     margin-right: 20px;
+    align-self: center;
 }
 
 div.design_detail div.logo_detail > section p{
