@@ -68,7 +68,7 @@ nav.header_nav > div > a{
     align-self: center;
     text-decoration: none;
     color: black;
-    padding: 10px;
+    padding: 10px 20px 10px 10px;
     display: inline-block;
     transition: 0.2s;
 }
@@ -343,7 +343,7 @@ footer a#pagetop{
     display: none;
     position: fixed;
     right: 100px;
-    bottom: 450px;
+    bottom: 400px;
     width: 80px;
     height: 80px;
     background-color:#f8f8f8;
@@ -358,6 +358,7 @@ footer a#pagetop{
     text-align: center;
     cursor: pointer;
     transition: 0.5s;
+    z-index: 100;
 }
 
 footer a#pagetop > span{
