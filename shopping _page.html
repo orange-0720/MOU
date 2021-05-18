@@ -248,9 +248,34 @@
             <p>若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養成班]，後續會由專人協助處理</p>
         </div>
 
-        <a href="#" class="pageup">
+        <a class="pageup" id="pagetop">
             <span>PAGE<br>TOP</span>
         </a>
     </footer>
+
+    <script>
+        "use strict"
+    
+        var gotop = document.getElementById("pagetop");
+        var rootelement = document.documentElement;
+    
+        function scrolltotop(){
+          rootelement.scrollTo({
+            top: 0,
+            behavior:"smooth"
+          });
+        };
+    
+        window.onscroll = function showUp(){
+          if(document.body.scrollTop > 500 || document.documentElement.scrollTop > 500){
+            gotop.style.display = "inline-block";
+            gotop.className = "fadein";
+          }else{
+            gotop.style.display = "none"
+          };
+        }
+    
+        gotop.addEventListener("click",scrolltotop);
+    </script>
 </body>
 </html>

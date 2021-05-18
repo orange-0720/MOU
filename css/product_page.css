@@ -201,6 +201,7 @@ div.product_article section.color > label{
     height: 20px;
     display: inline-block;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 div.product_article section.color > label:hover{
