@@ -286,13 +286,21 @@ div.footer_list div.footer_nav div.footer_qa > a{
     text-align: center;
 }
 
+div.footer_list div.footer_nav div.footer_intro > a:hover ,
+div.footer_list div.footer_nav div.footer_product >a:hover,
+div.footer_list div.footer_nav div.footer_process > a:hover,
+div.footer_list div.footer_nav div.footer_knowledge > a:hover,
+div.footer_list div.footer_nav div.footer_qa > a:hover{
+    color: #ffd900;
+}
+
+
 div.footer_list div.footer_nav div.footer_intro > a:first-child ,
 div.footer_list div.footer_nav div.footer_product >a:first-child,
 div.footer_list div.footer_nav div.footer_process > a:first-child,
 div.footer_list div.footer_nav div.footer_knowledge > a:first-child,
 div.footer_list div.footer_nav div.footer_qa > a:first-child{
     font-size: 20px;
-
 }
 div.link{
     width: 300px;
