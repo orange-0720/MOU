@@ -11,9 +11,14 @@
     <link rel="stylesheet" href="./css/header.css">
 </head>
 <body>
+    <div id="hamburger">
+        <div id="hamburger_top_line"></div>
+        <div id="hamburger_middle_line"></div>
+        <div id="hamburger_under_line"></div>
+    </div>
     <header>
         <a href="./index.html" class="logo">
-            <img src="./images/logo.png" alt="logo" width="80px" >
+            <img src="./images/logo.svg" alt="logo" width="100px" >
         </a>
         <nav class="header_nav">
             <div class="nav_brand">
@@ -47,19 +52,19 @@
         </nav>
         <section class="member">
             <div class="search">
-                <input type="text" placeholder="搜尋商品">
                 <button type="submit"></button>
+                <input type="text" placeholder="搜尋商品">
             </div>
             <a href="./login.html">
-                <img src="./icon/enter.png" alt="login" width="21x">
+                <img src="./icon/enter.png" alt="login" width="25x">
             </a>
             <a href="./signup.html">
-                <img src="./icon/add-user.png" alt="signup" width="21px">
+                <img src="./icon/add-user.png" alt="signup" width="25px">
             </a>
             <div class="shopping_cart">
                 <input type="checkbox" id="cart">
                 <label for="cart" class="open">
-                    <img src="./icon/shopping-cart.png" alt="shopping" width="21x">
+                    <img src="./icon/shopping-cart.png" alt="shopping" width="25x">
                 </label>
                 <div class="shopping_list">
                     <label for="cart" class="close"></label>
@@ -111,7 +116,7 @@
 
         <div data-aos="fade-right" data-aos-offset="350" data-aos-once="true" class="about">
             <div class="about_picture">
-                <img src="./images/dwayne-legrand-6G918Bpf0FA-unsplash.jpg" alt="about_picture" width="600px" height="auto">
+                <img src="./images/dwayne-legrand-6G918Bpf0FA-unsplash.jpg" alt="about_picture" width="550px" height="auto">
             </div>
             <div class="about_jump">
                 <h1>品牌介紹</h1>
@@ -122,7 +127,7 @@
 
         <div data-aos="fade-left" data-aos-offset="350" data-aos-once="true" class="about_process">
             <div class="process_picture">
-                <img src="./images/mika-baumeister-Y_LgXwQEx2c-unsplash.jpg" alt="process_picture" width="600px" height="auto">
+                <img src="./images/mika-baumeister-Y_LgXwQEx2c-unsplash.jpg" alt="process_picture" width="550px" height="auto">
             </div>
             <div class="about_jump">
                 <h1>客製化流程</h1>
@@ -177,11 +182,30 @@
                 </div>
             </ul>
         </div>
+        <!-- <div id="eee">
+            <div id="ddd">
+                <a href="./knowledge.html#about-size" id="aaa">
+                    <h1>帽子大小測量</h1>
+                </a>
+                <a href="./knowledge.html#wash1" id="bbb">
+                    <h1>帽子如何清潔</h1>
+                </a>
+                <a href="./knowledge.html#about-wear" id="ccc">
+                    <h1>帽子戴法介紹</h1>
+                </a>
+            </div>
+            <span id="prev">
+                <img src="./icon/left.png" alt="" width="50px">
+            </span>
+            <span id="next">
+                <img src="./icon/index-right-8.png" alt="" width="50px">
+            </span>
+        </div>  -->
     </main>
     <footer>
         <div class="footer_list">
             <div class="footer_logo">
-                <img src="./images/logo.png" alt="logo" width="200px">
+                <img src="./images/logo.svg" alt="logo" width="200px">
             </div>
             <div class="footer_nav">
                 <div class="footer_intro"> 
@@ -239,6 +263,7 @@
 
     <script src="./js/gotop.js"></script>
     <script src="./aos/aos.js"></script>
+    <!-- <script src="./js/test.js"></script> -->
     <script>
         AOS.init();
     </script>
