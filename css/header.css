@@ -554,15 +554,33 @@ footer{
     margin: 0 auto;
     padding: 30px 100px;
     margin-top: 100px;
-    /* position: relative; */
-    min-width: 1200px;
+    /* min-width: 1200px; */
 }
 
+@media screen and (max-width: 599px){
+    footer{
+        background-color: black;
+        color: white;
+        margin: 0 auto;
+        padding: 30px;
+        margin-top: 100px;
+        width: 100%;
+    }
+}
 
 div.footer_list{
     display: flex;
     width: 100%;
-    min-width: 800px;
+    /* min-width: 800px; */
+}
+@media screen and (max-width: 599px){
+    div.footer_list{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        /* min-width: 800px; */
+        align-items: center;
+    }
 }
 
 div.footer_list div.footer_nav{
@@ -570,6 +588,16 @@ div.footer_list div.footer_nav{
     flex: 1;
     justify-content: space-evenly;
 }
+@media screen and (max-width: 599px){
+    div.footer_list div.footer_nav{
+        display: flex;
+        flex:0;
+        flex-direction: column;
+        justify-content: space-evenly;
+        order: 3;
+    }
+}
+
 
 div.footer_list div.footer_nav div.footer_intro > a ,
 div.footer_list div.footer_nav div.footer_product >a,
