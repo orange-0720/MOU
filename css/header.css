@@ -359,12 +359,13 @@ div.search input{
 @media screen and (max-width: 599px){
     div.search{
         display: block;
-        text-align: right;
+        text-align: center;
         font-size: 0;
         margin: 10px 0px 5px 0px;
         order: 3;
         align-self: center;
         flex: 1;
+        width: 100%;
     }
     div.search button{
         height: 25px;
@@ -388,7 +389,7 @@ div.search input{
     div.search input{
         height: 25px;
         transition: 0.4s;
-        width: 400px;
+        width: 70%;
         outline: none;
         border: 1px solid black;
         vertical-align: top;
