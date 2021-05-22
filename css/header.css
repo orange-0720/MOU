@@ -47,6 +47,7 @@ div.hamburger{
     .up_donw{
         top: 7px;
         transform: rotate(45deg);
+        background-color: #f8f8f8 !important;
     }
     .middle{
         transform: translateX(100%);
@@ -54,6 +55,7 @@ div.hamburger{
     .donw_up{
         top: -7px;
         transform: rotate(-45deg);
+        background-color: #f8f8f8 !important;
     }
 
 
@@ -137,20 +139,22 @@ nav.header_nav > div  a:hover{
 @media screen and (max-width: 599px){
     nav.header_nav{
         position: fixed;
-        width: 200px;
+        width: 180px;
         display: flex;
         flex-direction: column;
         left: -100%;
         top: 0;
         height: 100%;
         z-index: 700;
-        background-color: #f8f8f8;
+        background-color: black;
         padding-top: 50px;
+        transition: 0.5s;
     }
     .nav_open{
         position: fixed;
         top: 0;
         left: 0 !important; 
+        transition: 0.5s;
     }
 
 
@@ -164,7 +168,8 @@ nav.header_nav > div  a:hover{
         /* width: 300px; */
         width: 100%;
         text-align: left;
-        font-size: 16px
+        font-size: 16px;
+        color: #f8f8f8;
     }
 
     nav.header_nav > a:hover,
@@ -212,6 +217,7 @@ nav.header_nav > div > a{
         width: 300px;
         text-align: left;
         font-size: 16px;
+        color: #f8f8f8;
     }
 }
 
@@ -279,7 +285,7 @@ nav.header_nav div.nav_knowledge div.knowledge_list > a{
     nav.header_nav div.nav_brand div.brand_list > a,
     nav.header_nav div.nav_shopping:hover div.shopping_list > a,
     nav.header_nav div.nav_knowledge div.knowledge_list > a{
-        display: block;
+        display: none;
         width: 200px;
         padding: 10px 10px;
         text-decoration: none;
@@ -419,6 +425,7 @@ div.shopping_cart{
         align-self: center;
         margin-left: 20px;
         transition: 0.3s;
+        margin-right: 20px;
     }
 }
 
@@ -639,6 +646,10 @@ div.footer_list div.footer_nav{
     }
 }
 
+div.footer_intro > p{
+    display: none;
+}
+
 div.footer_list div.footer_nav div.footer_intro > a ,
 div.footer_list div.footer_nav div.footer_product >a,
 div.footer_list div.footer_nav div.footer_process > a,
@@ -651,6 +662,7 @@ div.footer_list div.footer_nav div.footer_qa > a{
     text-align: center;
 }
 
+
 div.footer_list div.footer_nav div.footer_intro > a:hover ,
 div.footer_list div.footer_nav div.footer_product >a:hover,
 div.footer_list div.footer_nav div.footer_process > a:hover,
@@ -659,7 +671,6 @@ div.footer_list div.footer_nav div.footer_qa > a:hover{
     color: #ffd900;
 }
 
-
 div.footer_list div.footer_nav div.footer_intro > a:first-child ,
 div.footer_list div.footer_nav div.footer_product >a:first-child,
 div.footer_list div.footer_nav div.footer_process > a:first-child,
@@ -667,6 +678,62 @@ div.footer_list div.footer_nav div.footer_knowledge > a:first-child,
 div.footer_list div.footer_nav div.footer_qa > a:first-child{
     font-size: 20px;
 }
+@media screen and (max-width: 599px){
+    div.footer_intro,
+    div.footer_product,
+    div.footer_process,
+    div.footer_knowledge,
+    div.footer_qa{
+        margin: 10px 0px;
+    }
+
+
+    div.footer_intro,
+    div.footer_product,
+    div.footer_knowledge{
+        max-height: 30px;
+        transition: 0.5s;
+    }
+    .slide_down{
+        max-height: 1000px !important;
+        /* transition: 0.5s; */
+    }
+
+    div.footer_intro > p,
+    div.footer_product > p,
+    div.footer_knowledge > p{
+        display: block;
+        font-size: 20px;
+        padding: 5px 40px;
+        text-align: center;
+        background-image: url(../icon/plus\(white\).png);
+        background-repeat: no-repeat;
+        background-size: 15px;
+        background-position: top 55%  right 0px;
+    }
+    div.footer_list div.footer_nav div.footer_intro > a:first-child ,
+    div.footer_list div.footer_nav div.footer_product >a:first-child,
+    div.footer_list div.footer_nav div.footer_knowledge > a:first-child{
+    font-size: 16px;
+}
+    div.footer_list div.footer_nav div.footer_intro > a,
+    div.footer_list div.footer_nav div.footer_product >a,
+    div.footer_list div.footer_nav div.footer_knowledge > a{
+        display: none;
+        background-image: url(../icon/index-right-white.png);
+        background-repeat: no-repeat;
+        background-size: 10px;
+        background-position: top 55% right 0px ;
+    }
+    .footer_nav_open{
+        display: block !important;
+        transition: 0.5s;
+    }
+
+
+}
+
+
 div.link{
     width: 300px;
     text-align: center;
@@ -771,16 +838,16 @@ footer a#pagetop:hover{
     footer a#pagetop{
         display: none;
         position: absolute;
-        right: 20px;
-        top: -40px;
-        width: 80px;
-        height: 80px;
+        right: 30px;
+        top: 0px;
+        width: 50px;
+        height: 50px;
         background-color:#f8f8f8;
         color: black;
         background-image: url(../icon/up-chevron.png);
         background-repeat: no-repeat;
-        background-size: 40%;
-        background-position: 50% 0%  ;
+        background-size: 20px;
+        background-position: center  ;
         border-radius: 50%;
         border: 3px solid black;
         font-size: 16px;
@@ -788,14 +855,6 @@ footer a#pagetop:hover{
         cursor: pointer;
         transition: 0.5s;
         z-index: 100;
-    }
-    
-    footer a#pagetop > span{
-        display: inline-block;
-        margin-top: 25px;
-        text-decoration: none;
-        color: black;
-        cursor: pointer;
     }
     
     footer a#pagetop:hover{
