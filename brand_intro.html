@@ -9,67 +9,72 @@
     <link rel="stylesheet" href="./css/header.css" />
   </head>
   <body>
-    <header>
+    <div id="hamburger" class="hamburger">
+      <div id="hamburger_top_line" class="hamburger_top_line"></div>
+      <div id="hamburger_middle_line" class="hamburger_middle_line"></div>
+      <div id="hamburger_under_line" class="hamburger_under_line"></div>
+  </div>
+  <header id="header">
       <a href="./index.html" class="logo">
-        <img src="./images/logo.png" alt="logo" width="80px" />
+          <img src="./images/logo.svg" alt="logo" width="100px" >
       </a>
-      <nav class="header_nav">
-        <div class="nav_brand">
-          <a href="./brand_intro.html" id="on_page">品牌介紹</a>
-          <div class="brand_list">
-            <a href="./brand_intro.html#story">品牌故事</a>
-            <a href="./brand_intro.html#think">品牌理念</a>
-            <a href="./brand_intro.html#advantage">品牌優勢</a>
-            <a href="./brand_intro.html#insist">品牌堅持</a>
+      <nav id="header_nav" class="header_nav">
+          <div class="nav_brand">
+              <a href="./brand_intro.html">品牌介紹</a>
+              <div class="brand_list">
+                  <a href="./brand_intro.html#story">品牌故事</a>
+                  <a href="./brand_intro.html#think">品牌理念</a>
+                  <a href="./brand_intro.html#advantage">品牌優勢</a>
+                  <a href="./brand_intro.html#insist">品牌堅持</a>
+              </div>
           </div>
-        </div>
-        <div class="nav_shopping">
-          <a href="./shopping _page.html">商品一覽</a>
-          <div class="shopping_list">
-            <a href="./product_page.html">鴨舌帽</a>
-            <a href="./product_page.html">漁夫帽</a>
-            <a href="./product_page.html">毛帽</a>
-            <a href="./product_page.html">棒球帽</a>
+          <div class="nav_shopping">
+              <a href="./shopping _page.html">商品一覽</a>
+              <div class="shopping_list">
+                  <a href="./product_page.html">鴨舌帽</a>
+                  <a href="./product_page.html">漁夫帽</a>
+                  <a href="./product_page.html">毛帽</a>
+                  <a href="./product_page.html">棒球帽</a>
+              </div>
           </div>
-        </div>
-        <a href="./process.html">客製化流程</a>
-        <div class="nav_knowledge">
-          <a href="./knowledge.html">豆知識</a>
-          <div class="knowledge_list">
-            <a href="./knowledge.html#about-size">帽子尺寸</a>
-            <a href="./knowledge.html#wash1">帽子清潔</a>
-            <a href="./knowledge.html#about-wear">帽子戴法</a>
+          <a href="./process.html">客製化流程</a>
+          <div class="nav_knowledge">
+              <a href="./knowledge.html">豆知識</a>
+              <div class="knowledge_list">
+                  <a href="./knowledge.html#about-size">帽子尺寸</a>
+                  <a href="./knowledge.html#wash1">帽子清潔</a>
+                  <a href="./knowledge.html#about-wear">帽子戴法</a>
+              </div>
           </div>
-        </div>
-        <a href="./QA.html">常見問題</a>
+          <a href="./QA.html">常見問題</a>
       </nav>
-      <section class="member">
-        <div class="search">
+      <div class="search">
           <input type="text" placeholder="搜尋商品">
           <button type="submit"></button>
-        </div>
-        <a href="./login.html">
-          <img src="./icon/enter.png" alt="login" width="21x" />
-        </a>
-        <a href="./signup.html">
-          <img src="./icon/add-user.png" alt="signup" width="21px" />
-        </a>
-        <div class="shopping_cart">
-          <input type="checkbox" id="cart" />
-          <label for="cart" class="open">
-            <img src="./icon/shopping-cart.png" alt="shopping" width="21x" />
-          </label>
-          <div class="shopping_list">
-            <label for="cart" class="close"></label>
-            <section>
-              <p>購物車清單</p>
-              <p>共 0 元</p>
-              <input type="button" value="確定結帳" />
-            </section>
+      </div>
+      <section class="member">
+          <a href="./login.html">
+              <img src="./icon/enter.png" alt="login" width="22x">
+          </a>
+          <a href="./signup.html">
+              <img src="./icon/add-user.png" alt="signup" width="22px">
+          </a>
+          <div class="shopping_cart">
+              <input type="checkbox" id="cart">
+              <label for="cart" class="open">
+                  <img src="./icon/shopping-cart.png" alt="shopping" width="22x">
+              </label>
+              <div class="shopping_list">
+                  <label for="cart" class="close"></label>
+                  <section>
+                      <p>購物車清單</p>
+                      <p>共 0 元</p>
+                      <input type="button" value="確定結帳">
+                  </section>
+              </div>
           </div>
-        </div>
-      </section>
-    </header>
+      </section>  
+  </header>
     <div class="page_guide">
       <h2>品牌介紹</h2>
     </div>
@@ -148,73 +153,65 @@
     </main>
     <footer>
       <div class="footer_list">
-        <div class="footer_logo">
-          <img src="./images/logo.png" alt="logo" width="200px" />
-        </div>
-        <div class="footer_nav">
-          <div class="footer_intro">
-            <a href="./brand_intro.html">品牌介紹</a>
-            <a href="./brand_intro.html#story">品牌故事</a>
-            <a href="./brand_intro.html#think">品牌理念</a>
-            <a href="./brand_intro.html#advantage">品牌優勢</a>
-            <a href="./brand_intro.html#insist">品牌堅持</a>
+          <div class="footer_logo">
+              <img src="./images/logo.svg" alt="logo" width="200px">
           </div>
-          <div class="footer_product">
-            <a href="./shopping _page.html">商品情報</a>
-            <a href="./product_page.html">鴨舌帽</a>
-            <a href="./product_page.html">漁夫帽</a>
-            <a href="./product_page.html">毛帽</a>
-            <a href="./product_page.html">棒球帽</a>
+          <div class="footer_nav">
+              <div class="footer_intro">
+                  <p class="footer_nav_list">品牌介紹</p> 
+                  <a href="./brand_intro.html" class="footer_brand_all">品牌介紹</a>
+                  <a href="./brand_intro.html#story"class="footer_brand_all">品牌故事</a>
+                  <a href="./brand_intro.html#think"class="footer_brand_all">品牌理念</a>
+                  <a href="./brand_intro.html#advantage"class="footer_brand_all">品牌優勢</a>
+                  <a href="./brand_intro.html#insist"class="footer_brand_all">品牌堅持</a>            
+              </div>
+              <div class="footer_product">
+                  <p class="footer_nav_list">商品情報 </p> 
+                  <a href="./shopping _page.html" class="footer_product_all">商品情報</a>
+                  <a href="./product_page.html" class="footer_product_all">鴨舌帽</a>
+                  <a href="./product_page.html" class="footer_product_all">漁夫帽</a>
+                  <a href="./product_page.html" class="footer_product_all">毛帽</a>
+                  <a href="./product_page.html" class="footer_product_all">棒球帽</a>
+              </div>
+              <div class="footer_process"> 
+                  <a href="./process.html">客製化流程</a>
+              </div>
+              <div class="footer_knowledge">
+                  <p class="footer_nav_list">豆知識</p> 
+                  <a href="./knowledge.html" class="footer_know_all">豆知識</a>
+                  <a href="./knowledge.html#about-size" class="footer_know_all">帽子尺寸</a>
+                  <a href="./knowledge.html#wash1" class="footer_know_all">帽子清潔</a>
+                  <a href="./knowledge.html#about-wear" class="footer_know_all">帽子戴法</a>
+              </div>
+              <div class="footer_qa">
+                  <a href="./QA.html">常見問題</a>
+              </div>
           </div>
-          <div class="footer_process">
-            <a href="./process.html">客製化流程</a>
+          <div class="link">
+              <p>社群連結</p>
+              <div class="link_list">
+                  <a href="#" class="link_fb">
+                      <img src="./icon/facebook-logo-white.png" alt="facebook" width="60px">
+                  </a>
+                  <a href="#" class="link_twitter">
+                      <img src="./icon/twitter-white (1).png" alt="twitter" width="60px">
+                  </a>
+                  <a href="#" class="link_ig">
+                      <img src="./icon/instagram-white.png" alt="ig" width="60px">
+                  </a>
+              </div>
           </div>
-          <div class="footer_knowledge">
-            <a href="./knowledge.html">豆知識</a>
-            <a href="./knowledge.html#about-size">帽子尺寸</a>
-            <a href="./knowledge.html#wash1">帽子清潔</a>
-            <a href="./knowledge.html#about-wear">帽子戴法</a>
-          </div>
-          <div class="footer_qa">
-            <a href="./QA.html">常見問題</a>
-          </div>
-        </div>
-        <div class="link">
-          <p>社群連結</p>
-          <div class="link_list">
-            <a href="#" class="link_fb">
-              <img
-                src="./icon/facebook-logo-white.png"
-                alt="facebook"
-                width="60px"
-              />
-            </a>
-            <a href="#" class="link_twitter">
-              <img
-                src="./icon/twitter-white (1).png"
-                alt="twitter"
-                width="60px"
-              />
-            </a>
-            <a href="#" class="link_ig">
-              <img src="./icon/instagram-white.png" alt="ig" width="60px" />
-            </a>
-          </div>
-        </div>
       </div>
       <div class="tibame">
-        <p>本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，</p>
-        <p>本平台僅供學習、展示之用。參考資源:XXXXXXXXXXXXX。</p>
-        <p>
-          若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養成班]，後續會由專人協助處理
-        </p>
+          <p>本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，</p>
+          <p>本平台僅供學習、展示之用。參考資源:XXXXXXXXXXXXX。</p>
+          <p>若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養成班]，後續會由專人協助處理</p>
       </div>
-      <a class="pageup" id="pagetop">
-        <span>PAGE<br />TOP</span>
-      </a>
+
+      <a class="pageup" id="pagetop"></a>
     </footer>
 
-   
     <script src="js/move_up.js"></script>
+    <script src="./js/header.js"></script>
   </body>
 </html>
