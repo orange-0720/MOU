@@ -451,7 +451,7 @@ label.open span.q_icon {
         background-size: 16px;
         background-position:right 5% top 50%;
         position: relative;
-        padding: 15px 20px 15px 50px;
+        padding: 15px 10% 15px 50px;
         cursor: pointer;
     }
     
@@ -601,7 +601,7 @@ label.back span.a_icon{
 @media screen and (max-width: 599px){
     label.back{
         display: none;
-        padding: 15px 20px 15px 50px;
+        padding: 15px 10% 15px 50px;
         width: 100%;
         position: relative;
         border: 0px;
