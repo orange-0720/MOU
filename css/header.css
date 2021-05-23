@@ -473,7 +473,7 @@ div.shopping_cart div.shopping_list{
         right: -100%;
         top: 0;
         width: 50%;
-        /* height: 100vh; */
+        height: 100vh;
         transform: translate(0px,0px);
         white-space: nowrap;
         background-color: #f8f8f8;
@@ -585,6 +585,7 @@ div.shopping_cart div.shopping_list section > input{
     
     div.shopping_cart div.shopping_list section > input{
         height: 50px;
+        flex: 1;
         background-color: #ffd900;
         outline: none;
         color: black;
