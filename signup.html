@@ -9,11 +9,16 @@
     <link rel="stylesheet" href="./css/header.css">
 </head>
 <body>
-    <header>
+    <div id="hamburger" class="hamburger">
+        <div id="hamburger_top_line" class="hamburger_top_line"></div>
+        <div id="hamburger_middle_line" class="hamburger_middle_line"></div>
+        <div id="hamburger_under_line" class="hamburger_under_line"></div>
+    </div>
+    <header id="header">
         <a href="./index.html" class="logo">
-            <img src="./images/logo.png" alt="logo" width="80px" >
+            <img src="./images/logo.svg" alt="logo" width="100px" >
         </a>
-        <nav class="header_nav">
+        <nav id="header_nav" class="header_nav">
             <div class="nav_brand">
                 <a href="./brand_intro.html">品牌介紹</a>
                 <div class="brand_list">
@@ -43,21 +48,21 @@
             </div>
             <a href="./QA.html">常見問題</a>
         </nav>
+        <div class="search">
+            <input type="text" placeholder="搜尋商品">
+            <button type="submit"></button>
+        </div>
         <section class="member">
-            <div class="search">
-                <input type="text" placeholder="搜尋商品">
-                <button type="submit"></button>
-            </div>
             <a href="./login.html">
-                <img src="./icon/enter.png" alt="login" width="21x">
+                <img src="./icon/enter.png" alt="login" width="22x">
             </a>
-            <a href="./signup.html" id="on_page">
-                <img src="./icon/add-user.png" alt="signup" width="21px">
+            <a href="./signup.html">
+                <img src="./icon/add-user.png" alt="signup" width="22px">
             </a>
             <div class="shopping_cart">
                 <input type="checkbox" id="cart">
                 <label for="cart" class="open">
-                    <img src="./icon/shopping-cart.png" alt="shopping" width="21x">
+                    <img src="./icon/shopping-cart.png" alt="shopping" width="22x">
                 </label>
                 <div class="shopping_list">
                     <label for="cart" class="close"></label>
@@ -67,7 +72,6 @@
                         <input type="button" value="確定結帳">
                     </section>
                 </div>
-
             </div>
         </section>  
     </header>
@@ -121,5 +125,6 @@
     </main>
 
     <script src="./js/jump_window.js"></script>
+    <script src="./js/header.js"></script>
 </body>
 </html>
