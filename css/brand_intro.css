@@ -70,6 +70,7 @@ div.page_guide > h2{
         padding: 100px 0px;
         text-align: center;
         margin-top: 10px;  
+        display: none;
     }
     
     div.page_guide::after{

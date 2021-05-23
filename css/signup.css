@@ -376,6 +376,7 @@ div.signup_list  section.signup_detail label.password_check > input:focus{
     div.signup_list section.signup_detail label.form_password > input,
     div.signup_list section.signup_detail label.password_check > input{
     width: 300px;
+    max-width: 100%;
     margin-top: 5px;
     border: 1px solid #737578;
     border-radius: 10px;
