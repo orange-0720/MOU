@@ -449,9 +449,9 @@ label.open span.q_icon {
         background-image: url(../icon/down-arrow.png);
         background-repeat: no-repeat;
         background-size: 16px;
-        background-position:right 6px top 50%;
+        background-position:right 5% top 50%;
         position: relative;
-        padding: 15px 10px 15px 50px;
+        padding: 15px 20px 15px 50px;
         cursor: pointer;
     }
     
@@ -580,7 +580,7 @@ input#block_q15:checked ~ label.open{
     background-image: url(../icon/up-chevron.png);
     background-repeat: no-repeat;
     background-size: 16px;
-    background-position:right 6px top 50%;
+    background-position:right 5% top 50%;
     }
 }
 
@@ -601,7 +601,7 @@ label.back span.a_icon{
 @media screen and (max-width: 599px){
     label.back{
         display: none;
-        padding: 15px 10px 15px 50px;
+        padding: 15px 20px 15px 50px;
         width: 100%;
         position: relative;
         border: 0px;
