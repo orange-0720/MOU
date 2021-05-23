@@ -28,6 +28,7 @@ main{
         padding:0px;
         margin:20px auto;
         background-image: none;
+        opacity: 1;
     }
 }
 
@@ -298,8 +299,8 @@ div.login_list form input.login_bt:hover{
 @media screen and (max-width: 599px){
     div.login_list form input.login_bt{
         display: inline-block;
-        width: 300px;
-        max-width: 100%;
+        width: 100%;
+        /* max-width: 100%; */
         padding: 10px;
         margin: 0 auto;
         margin-top: 30px;
