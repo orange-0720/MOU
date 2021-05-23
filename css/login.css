@@ -21,16 +21,42 @@ main{
     background-position: center;
 }
 
+@media screen and (max-width: 599px){
+    main{
+        width: 100%;
+        position: relative;
+        padding:0px;
+        margin:20px auto;
+        background-image: none;
+    }
+}
+
 main div.login_list{
     width: 500px;
     margin-left: 10%;
     margin-top: 3%;
     background-color: #f8f8f8;
 }
+@media screen and (max-width: 599px){
+    main div.login_list{
+        width: 90%;
+        margin:0 auto;
+        margin-top: 20px;
+        background-color: #f8f8f8;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+}
 
 div.login_list > h1{
     padding: 20px 10px;
     text-align: center;
+}
+@media screen and (max-width: 599px){
+    div.login_list > h1{
+        padding: 20px 10px;
+        text-align: center;
+    } 
 }
 
 div.login_list ul{
@@ -49,6 +75,25 @@ div.login_list ul > li{
     transition: 0.4s;
 }
 
+@media screen and (max-width: 599px){
+    div.login_list ul{
+        list-style: none;
+        margin: 0 auto;
+        padding: 0;
+    }
+    div.login_list ul > li{
+        width: 300px;
+        max-width: 80%;
+        margin: 0 auto;
+        margin-top: 30px;
+        padding: 5px;
+        text-align: center;
+        border: 1px solid #737578;
+        border-radius: 10px;
+        transition: 0.4s;
+    }
+}
+
 div.login_list ul > li:first-child{
     margin-top: 15px;
 }
@@ -56,6 +101,18 @@ div.login_list ul > li:first-child{
 div.login_list ul > li:hover{
     background-color: #ffd900;
     transform: scale(1.05);
+}
+
+@media screen and (max-width: 599px){
+    div.login_list ul > li:first-child{
+        margin-top: 5px;
+    }
+    
+    div.login_list ul > li:hover{
+        background-color: #ffd900;
+        transform: scale(1.05);
+    }
+    
 }
 
 div.login_list ul li a.facebook{
@@ -71,6 +128,21 @@ div.login_list ul li a.facebook{
     background-position-x: 35px;
     color: black;
 }
+@media screen and (max-width: 599px){
+    div.login_list ul li a.facebook{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        padding: 5px 5px;
+        vertical-align: middle;
+        text-decoration: none;
+        background-image: url(../icon/facebook-logo.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-x: 35px;
+        color: black;
+    }
+}
 
 div.login_list ul li a.inst{
     display: inline-block;
@@ -83,6 +155,20 @@ div.login_list ul li a.inst{
     background-size: contain;
     background-position-x: 35px;
     color: black;
+}
+@media screen and (max-width: 599px){
+    div.login_list ul li a.inst{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        padding: 5px 5px;
+        text-decoration: none;
+        background-image: url(../icon/instagram.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-x: 35px;
+        color: black;
+    }
 }
 
 div.login_list ul li a.twitter{
@@ -97,6 +183,20 @@ div.login_list ul li a.twitter{
     background-position-x: 35px;
     color: black;
 }
+@media screen and (max-width: 599px){
+    div.login_list ul li a.twitter{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        padding: 5px 5px;
+        text-decoration: none;
+        background-image: url(../icon/twitter\ \(1\).png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-x: 35px;
+        color: black;
+    } 
+}
 
 div.login_list form{
     display: block;
@@ -104,11 +204,28 @@ div.login_list form{
     width: 300px;
     margin: 0 auto;
 }
+@media screen and (max-width: 599px){
+    div.login_list form{
+        display: block;
+        margin-top: 30px;
+        width: 300px;
+        max-width: 80%;
+        margin: 0 auto;
+    }    
+}
+
 
 div.login_list form label.form_mail{
     display: block;
     margin-top: 30px;
 }
+@media screen and (max-width: 599px){
+    div.login_list form label.form_mail{
+        display: block;
+        margin-top: 30px;
+    }
+}
+
 
 div.login_list form label.form_mail > input,
 div.login_list form label.form_password > input{
@@ -126,9 +243,34 @@ div.login_list form label.form_password > input:focus{
     box-shadow: 2px 2px 5px 1px #737578;
     outline: none;
 }
+@media screen and (max-width: 599px){
+    div.login_list form label.form_mail > input,
+    div.login_list form label.form_password > input{
+    width: 300px;
+    max-width: 100%;
+    margin-top: 5px;
+    border: 1px solid #737578;
+    border-radius: 10px;
+    height: 40px;
+    transition: 0.3s;
+    }
+    div.login_list form label.form_mail > input:focus,
+    div.login_list form label.form_password > input:focus{
+    border: 1px solid #737578;
+    box-shadow: 2px 2px 5px 1px #737578;
+    outline: none;
+    }
+}
+
 div.login_list form label.form_password{
     display: block;
     margin-top: 20px;
+}
+@media screen and (max-width: 599px){
+    div.login_list form label.form_password{
+        display: block;
+        margin-top: 30px;
+    }
 }
 
 div.login_list form input.login_bt{
@@ -152,6 +294,31 @@ div.login_list form input.login_bt:hover{
     background-color: #ffd900;
     color: black;
     transform: translateY(-10px);
+}
+@media screen and (max-width: 599px){
+    div.login_list form input.login_bt{
+        display: inline-block;
+        width: 300px;
+        max-width: 100%;
+        padding: 10px;
+        margin: 0 auto;
+        margin-top: 30px;
+        border: 0px;
+        border-radius: 10px;
+        background-color: black;
+        color: #f8f8f8;
+        font-weight: bold;
+        font-size: 20px;
+        cursor: pointer;
+        outline: none;
+        transition: 0.3s;
+    }
+    
+    div.login_list form input.login_bt:hover{
+        background-color: #ffd900;
+        color: black;
+        transform: translateY(-10px);
+    }    
 }
 
 div.forget{
@@ -180,6 +347,36 @@ div.forget > a:hover{
 div.forget span{
     display: inline-block;
     margin: 0px 6px;
+}
+@media screen and (max-width: 599px){
+    div.forget{
+        margin: 0 auto;
+        width: 300px;
+        max-width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        padding-top: 10px;
+        padding-bottom: 30px;
+        border-top: 1px solid #737578;
+        color: #737578;
+    }
+    
+    div.forget > a{
+        color:#737578;
+        display: inline-block;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    
+    div.forget > a:hover{
+        transform: scale(1.1);
+    }
+    
+    div.forget span{
+        display: inline-block;
+        margin: 0px 6px;
+    }
 }
 
 /* 彈窗 */
@@ -251,6 +448,59 @@ div#qa_alert{
     color: black;
     font-weight: bold;
 }
+@media screen and (max-width: 599px){
+    div#qa_alert{
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        height:100vh;
+        background-color:rgba(0,0,0,0.5);
+        display:none;
+    }
+      
+    #qa_jump{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        padding:50px 0;
+        background-color:white;
+        text-align:center;
+        border-radius:30px;
+        z-index: 999;
+        background-image: url(../icon/success.png);
+        background-repeat: no-repeat;
+        background-size: 50px;
+        background-position: center top 30px ;
+    }
+    
+    #qa_jump > h1{
+        margin: 50px 0;
+        font-size: 32px;
+    }
+    
+    #qa_close{
+        appearance: none;
+        padding: 15px;
+        width: 150px;
+        max-width: 100%;
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+        text-decoration: none;
+    
+    }
+    
+    #qa_close:hover{
+        background-color: #ffd900;
+        color: black;
+        font-weight: bold;
+    }
+}
+
 
 .fadein{
     opacity:0;
@@ -261,3 +511,4 @@ div#qa_alert{
     opacity:1;
     animation:fadeout 1s ease 1 forwards;
 }
+
