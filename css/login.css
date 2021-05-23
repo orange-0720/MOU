@@ -139,7 +139,7 @@ div.login_list ul li a.facebook{
         background-image: url(../icon/facebook-logo.png);
         background-repeat: no-repeat;
         background-size: contain;
-        background-position-x: 35px;
+        background-position-x: 10%;
         color: black;
     }
 }
@@ -166,7 +166,7 @@ div.login_list ul li a.inst{
         background-image: url(../icon/instagram.png);
         background-repeat: no-repeat;
         background-size: contain;
-        background-position-x: 35px;
+        background-position-x: 10%;
         color: black;
     }
 }
@@ -193,7 +193,7 @@ div.login_list ul li a.twitter{
         background-image: url(../icon/twitter\ \(1\).png);
         background-repeat: no-repeat;
         background-size: contain;
-        background-position-x: 35px;
+        background-position-x: 10%;
         color: black;
     } 
 }
