@@ -10,15 +10,32 @@ main{
     width: 1200px;
     margin: 0 auto;
 }
+@media screen and (max-width: 599px){
+    main{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
 
 div.page_guide{
     margin: 0 auto;
     margin-top: 10px;
-    padding: 10px;
+    padding: 20px;
     width: 100%;
     background-color: #ededed;
     text-align: center;  
 }
+@media screen and (max-width: 599px){
+    div.page_guide{
+        margin: 0 auto;
+        margin-top: 10px;
+        padding: 10px;
+        width: 100%;
+        background-color: #ededed;
+        text-align: center;  
+    }
+}
+
 
 div.inside{
     margin: 0 auto;
@@ -26,6 +43,17 @@ div.inside{
     margin-top: 30px;
     align-items: flex-start;
 }
+@media screen and (max-width: 599px){
+    div.inside{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        align-items: flex-start;
+    }
+}
+
 /* 側邊攔開始 */
 
 aside.aside{
@@ -139,17 +167,151 @@ aside.aside section > ul >li.item7{
     background-size: 50px;
     background-position: right 35px top -2px ;
 }
-
+@media screen and (max-width: 599px){
+    aside.aside{
+        margin-top: 30px;
+        position: static;
+        order: 2;
+        width: 100%;
+    }
+    
+    aside.aside{
+        width: 100%;
+    }
+    aside.aside h2{
+        width: 100%;
+        color: #f8f8f8;
+        padding: 10px;
+        text-align: center;
+        background-color: black;
+        margin-bottom: 10px;
+    }
+    aside.aside section{
+        width: 40%;
+        text-align: left;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    
+    aside.aside section > input{
+        display: none;
+    }
+    
+    aside.aside section > label{
+        display: inline-block;
+        width: 100%;
+        font-size: 20px;
+        margin-top: 20px;
+        background-image: url(../icon/down-arrow.png);
+        background-repeat: no-repeat;
+        background-size: 16px;
+        background-position:right 0 top 50% ;
+        cursor: pointer;
+    }
+    
+    aside.aside section > ul{
+        display: none;
+        padding: 0;
+    }
+    
+    aside.aside section > input:checked ~ label{
+        background-image: url(../icon/up-chevron.png);
+        background-size: 16px;
+        background-repeat: no-repeat;
+        background-position: right 0 top 50% ;
+    }
+    
+    aside.aside section > input:checked ~ ul{
+        display: block;
+    }
+    
+    aside.aside section > ul > li{
+        margin-top: 10px;
+        list-style: none;
+        padding: 5px 10px;
+        cursor: pointer;
+    } 
+    
+    aside.aside section > ul > li >a{
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    } 
+    
+    aside.aside section > ul >li.item1{
+        background-image: url(../images/CAP/b2fda4edc80e63dca8a536a0d1d8bfbf.png);
+        background-repeat: no-repeat;
+        background-size: 40px;
+        background-position: right 1% top 50% ;
+    }
+    
+    aside.aside section > ul >li.item2{
+        background-image: url(../images/CAP/img_color02-8.png);
+        background-repeat: no-repeat;
+        background-size: 55px;
+        background-position: right -2% top 50% ;
+    }
+    
+    aside.aside section > ul >li.item3{
+        background-image: url(../images/buscket_hat/0853011-001-08.png);
+        background-repeat: no-repeat;
+        background-size: 50px;
+        background-position: right -2% top 50% ;
+    }
+    
+    aside.aside section > ul >li.item4{
+        background-image: url(../images/buscket_hat/0853011-001-09.png);
+        background-repeat: no-repeat;
+        background-size: 50px;
+        background-position: right -2% top 50% ;
+    }
+    
+    aside.aside section > ul >li.item5{
+        background-image: url(../images/baseball_hat/2-2.png);
+        background-repeat: no-repeat;
+        background-size: 45px;
+        background-position: right 0% top 50% ;
+    }
+    
+    aside.aside section > ul >li.item6{
+        background-image: url(../images/baseball_hat/TRC-55_05_s.png);
+        background-repeat: no-repeat;
+        background-size: 50px;
+        background-position: right -2% top 50% ;
+    }
+    
+    aside.aside section > ul >li.item7{
+        background-image: url(../images/nethat/da3d8de8325fa9b34f708e89d584a1f9.png);
+        background-repeat: no-repeat;
+        background-size: 50px;
+        background-position: right -2% top 50% ;
+    }
+}
 
 /* 側邊攔結束 */
 
 div.process{
-    width: 1050px;
+    width: 1000px;
     margin:0 auto;
-    padding: 0 90px;
+    padding: 0 auto;
     display: grid;
-    grid-template-columns: 250px 250px 250px;
-    gap: 60px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 50px;
+}
+@media screen and (max-width: 599px){
+    div.process_midlle{
+        width: 100%;
+        margin: 0 auto;
+    }
+    div.process{
+        width: 100%;
+        margin:0 auto;
+        padding: 0 auto;
+        display: block
+        /* grid-template-columns: 1fr 1fr; */
+    }
 }
 
 div.process div.send_order,
@@ -160,9 +322,23 @@ div.process div.make,
 div.process div.pickup{
     margin: 0 auto;
     margin-top: 30px;
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
     color:black;
+}
+@media screen and (max-width: 599px){
+    div.process div.send_order,
+    div.process div.coversation,
+    div.process div.approve,
+    div.process div.pay,
+    div.process div.make,
+    div.process div.pickup{
+        margin: 0 auto;
+        margin-top: 30px;
+        font-size: 20px;
+        text-align: center;
+        color:black;
+    } 
 }
 
 section.back_color{
@@ -171,12 +347,34 @@ section.back_color{
     background-color: #FFD900;
     border-radius: 50%;
 }
+@media screen and (max-width: 599px){
+    section.back_color{
+        width: 250px;
+        height: 250px;
+        max-width: 100%;
+        margin: 10px auto;
+        background-color: #FFD900;
+        border-radius: 50%;
+    }
+}
+
 
 h3.step{
     width: 250px;
     text-align: center;
     padding: 30px 10px 20px 10px;
 }
+@media screen and (max-width: 599px){
+    h3.step{
+        width: 250px;
+        max-width: 100%;
+        text-align: center;
+        padding: 30px 10px;
+    }
+}
+
+
+/* 注意事項開始 */
 
 div.handmade_note{
     border: 2px solid #737578;
@@ -191,16 +389,45 @@ div.handmade_note{
 div.handmade_note h2{
     text-align: center;
     margin: 0 auto;
-    padding: 5px 10px;
+    padding: 10px;
 }
 
 div.handmade_note article p{
     padding: 5px 10px;
 }
-div.handmade_note article strong{
-    display: inline-block;
-    text-align: right;
+div.handmade_note article span{
+    display: block;
+    text-align: left;
     width: 120px;
-    padding: 10px 10px;
+    padding: 10px 10px 0px 10px;
 }
-
+@media screen and (max-width: 599px){
+    div.handmade_note{
+        border: 2px solid #737578;
+        border-radius: 5px;
+        background-color:#f6f3f1 ;
+        width: 100%;
+        margin: 0 auto;
+        margin: 50px auto;
+        font-size: 0;
+    }
+    
+    div.handmade_note h2{
+        text-align: center;
+        margin: 0 auto;
+        padding: 10px 10px;
+        font-size: 24px;
+    }
+    
+    div.handmade_note article p{
+        padding: 0px 10px 20px 10px;
+        font-size: 16px;
+    }
+    div.handmade_note article span{
+        display: block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 10px 5px 10px;
+        font-size: 20px;
+    }
+}
