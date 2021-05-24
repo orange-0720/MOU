@@ -27,15 +27,53 @@ div.page_guide::after{
     background-size: cover;
 }
 
-div.page_guide > h2{
+div.page_guide > h1{
     position: absolute;
     left: 50%;
     top: 70%;
     transform: translate(-50% , -50%);
-    font-size: 36px;
+    font-size: 32px;
     color: #f8f8f8;
     z-index: 5;
 }
+@media screen and (max-width: 599px){
+    div.page_guide{
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        padding: 125px 0px;
+        text-align: center;  
+        margin-top: 10px;
+    }
+    
+    div.page_guide::after{
+        content: "";
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../images/priscilla-du-preez-hYEW-2wsduE-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-position: center; */
+    }
+    
+    div.page_guide > h1{
+        position: absolute;
+        width: 100%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50% , -50%);
+        font-size: 32px;
+        color: #f8f8f8;
+        z-index: 5;
+        text-align: center;
+    }
+}
+
+/* 頁面跳轉icon 開始 */
 
 div.knowledge_guide{
     margin: 0 auto;
@@ -79,6 +117,54 @@ div.knowledge_guide > a:nth-child(3){
 div.knowledge_guide > a:hover{
     color: #ffd900;
 }
+@media screen and (max-width: 599px){
+    div.knowledge_guide{
+        margin: 0 auto;
+        /* margin-top: 0px; */
+        padding: 20px 0px;
+        width: 100%;
+        background-color: #ededed;
+        text-align: center;
+        vertical-align: bottom;  
+    }
+    
+    div.knowledge_guide > a{
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        margin: 0 auto;
+        width: 32%;
+        padding-top: 80px;
+    }
+    
+    div.knowledge_guide > a:nth-child(1){
+        background-image: url(../icon/measuring-tape.png);
+        background-repeat: no-repeat;
+        background-size: 60px;
+        background-position: center top 10px;
+    }
+    
+    div.knowledge_guide > a:nth-child(2){
+        background-image: url(../icon/cleaning-tools.png);
+        background-repeat: no-repeat;
+        background-size: 70px;
+        background-position: center top 5px;
+    }
+    
+    div.knowledge_guide > a:nth-child(3){
+        background-image: url(../icon/cap-knowledge.png);
+        background-repeat: no-repeat;
+        background-size: 60px;
+        background-position: center top 10px;
+    }
+    
+    div.knowledge_guide > a:hover{
+        color: #ffd900;
+    }
+}
+
+/* 頁面跳轉icon 結束 */
+
 
 main{
     width: 1200px;
@@ -86,6 +172,17 @@ main{
     display: flex;
     margin-top: 60px;
     align-items: flex-start;
+}
+
+@media screen and (max-width: 599px){
+    main{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        align-items: flex-start;
+    }
 }
 
 
@@ -203,8 +300,128 @@ aside.aside section > ul >li.item7{
     background-size: 50px;
     background-position: right 35px top -2px ;
 }
-
-
+@media screen and (max-width: 599px){
+    aside.aside{
+        margin: 20px 0px;
+        position: static;
+        /* order: 1; */
+        width: 100%;
+    }
+    
+    aside.aside{
+        width: 100%;
+    }
+    aside.aside h2{
+        width: 100%;
+        color: #f8f8f8;
+        padding: 10px;
+        text-align: center;
+        background-color: black;
+        margin-bottom: 10px;
+    }
+    aside.aside section{
+        width: 40%;
+        text-align: left;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    
+    aside.aside section > input{
+        display: none;
+    }
+    
+    aside.aside section > label{
+        display: inline-block;
+        width: 100%;
+        font-size: 20px;
+        margin-top: 20px;
+        background-image: url(../icon/down-arrow.png);
+        background-repeat: no-repeat;
+        background-size: 16px;
+        background-position:right 0 top 50% ;
+        cursor: pointer;
+    }
+    
+    aside.aside section > ul{
+        display: none;
+        padding: 0;
+    }
+    
+    aside.aside section > input:checked ~ label{
+        background-image: url(../icon/up-chevron.png);
+        background-size: 16px;
+        background-repeat: no-repeat;
+        background-position: right 0 top 50% ;
+    }
+    
+    aside.aside section > input:checked ~ ul{
+        display: block;
+    }
+    
+    aside.aside section > ul > li{
+        margin-top: 10px;
+        list-style: none;
+        padding: 5px 10px;
+        cursor: pointer;
+    } 
+    
+    aside.aside section > ul > li >a{
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    } 
+    
+    aside.aside section > ul >li.item1{
+        background-image: url(../images/CAP/b2fda4edc80e63dca8a536a0d1d8bfbf.png);
+        background-repeat: no-repeat;
+        background-size: 40px;
+        background-position: right 1% top 50% ;
+    }
+    
+    aside.aside section > ul >li.item2{
+        background-image: url(../images/CAP/img_color02-8.png);
+        background-repeat: no-repeat;
+        background-size: 55px;
+        background-position: right -2% top 50% ;
+    }
+    
+    aside.aside section > ul >li.item3{
+        background-image: url(../images/buscket_hat/0853011-001-08.png);
+        background-repeat: no-repeat;
+        background-size: 50px;
+        background-position: right -2% top 50% ;
+    }
+    
+    aside.aside section > ul >li.item4{
+        background-image: url(../images/buscket_hat/0853011-001-09.png);
+        background-repeat: no-repeat;
+        background-size: 50px;
+        background-position: right -2% top 50% ;
+    }
+    
+    aside.aside section > ul >li.item5{
+        background-image: url(../images/baseball_hat/2-2.png);
+        background-repeat: no-repeat;
+        background-size: 45px;
+        background-position: right 0% top 50% ;
+    }
+    
+    aside.aside section > ul >li.item6{
+        background-image: url(../images/baseball_hat/TRC-55_05_s.png);
+        background-repeat: no-repeat;
+        background-size: 50px;
+        background-position: right -2% top 50% ;
+    }
+    
+    aside.aside section > ul >li.item7{
+        background-image: url(../images/nethat/da3d8de8325fa9b34f708e89d584a1f9.png);
+        background-repeat: no-repeat;
+        background-size: 50px;
+        background-position: right -2% top 50% ;
+    }
+}
 
 /* 側邊攔結束 */
 
@@ -212,6 +429,16 @@ div.knowledge_intro{
     flex: 1;
     margin: 0 auto;
     padding: 0px 100px;
+}
+
+@media screen and (max-width: 599px){
+    div.knowledge_intro{
+        flex: 1;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 50px;
+        padding: 0px 5%;
+    }  
 }
 
 div.knowledge_intro article#about-size{
@@ -225,6 +452,20 @@ div.knowledge_intro article.keep_up > h2{
     margin-bottom: 20px;
     border-bottom: 3px solid #ededed;
     padding: 5px 0;
+}
+@media screen and (max-width: 599px){
+    div.knowledge_intro article#about-size{
+        line-height: 2rem;
+    }
+
+    div.knowledge_intro article#about-size > h2,
+    div.knowledge_intro article.about-measure > h2,
+    div.knowledge_intro article#wash1 > h2,
+    div.knowledge_intro article.keep_up > h2{
+    margin-bottom: 20px;
+    border-bottom: 3px solid #ededed;
+    padding: 5px 0;
+    }
 }
 
 div.knowledge_intro article.about-measure{
@@ -241,6 +482,27 @@ div.knowledge_intro article.about-measure >ol ,li{
     padding: 0;
     list-style: none;
 }
+
+@media screen and (max-width: 599px){
+    div.knowledge_intro article.about-measure{
+        line-height: 2rem;
+        margin-top: 30px;
+        padding-bottom: 180px;
+        background-image: url(../icon/head_1-8.png);
+        background-repeat: no-repeat;
+        background-size: 150px;
+        background-position: bottom 0px  right 50% ;
+
+    }
+    
+    div.knowledge_intro article.about-measure >ol ,li{
+        margin-top: 10px;
+        padding: 0;
+        list-style: none;
+    }
+}
+
+/* 關於清洗 開始 */
 
 div.knowledge_intro article#wash1,
 div.knowledge_intro article.wash2,
@@ -269,6 +531,46 @@ div.knowledge_intro article.wash3 >article{
 div.knowledge_intro article.wash3 > article p.wash_note{
     font-size: 20px;
 }
+@media screen and (max-width: 599px){
+    div.knowledge_intro article#wash1,
+    div.knowledge_intro article.wash2,
+    div.knowledge_intro article.wash3,
+    div.knowledge_intro article.keep_up,
+    article#about-wear{
+        margin-top: 30px;
+        line-height: 2rem;
+    }
+
+    div.knowledge_intro article#wash1 p.wash_label,
+    div.knowledge_intro article.wash2 p.wash_label,
+    div.knowledge_intro article.wash3 p.wash_label{
+        width: 100%;
+        margin-bottom: 10px;
+        padding-top: 10px;
+        text-align: center;
+    } 
+    
+    div.knowledge_intro article#wash1 > img,
+    div.knowledge_intro article.wash2 > img,
+    div.knowledge_intro article.wash3 > img{
+        max-width: 100%;
+    }
+
+
+    div.knowledge_intro article#wash1 >article,
+    div.knowledge_intro article.wash2 >article,
+    div.knowledge_intro article.wash3 >article{
+        margin-top: 10px;
+    }
+
+    div.knowledge_intro article.wash3 > article p.wash_note{
+        font-size: 20px;
+    }
+}
+
+/* 關於清洗 結束 */
+
+/* 帽子穿搭 */
 
 article#about-wear{
     width: 1200px;
@@ -397,7 +699,7 @@ article#about-wear div.knitted_hat:hover{
 article#about-wear div.knitted_hat div.knitted_block{
     position: relative;
     padding: 200px;
-    background-image: url(../images/iamninoslav-03V5lIoIH0Q-unsplash.jpg);
+    background-image: url(../images/iamninoslav-03V5lIoIH0Q-unsplash1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -482,4 +784,284 @@ article#about-wear div.cap_hat >section.cap_3{
 article#about-wear div.cap_hat >section.cap_2,
 article#about-wear div.cap_hat >section.cap_3{
     margin-right: 40px;
+}
+
+@media screen and (max-width: 599px){
+    article#about-wear{
+        width: 100%;
+        margin:0 auto;
+        margin-top: 50px;
+    }
+    
+    article#about-wear > h2{
+        margin-bottom: 50px;
+        padding: 0px;
+        text-align: center;
+    }
+
+    /* 報童帽開始 */
+
+    article#about-wear div.flat_hat{
+        display: block;
+        width: 100%;
+        background-color: black;
+        margin:0 auto;
+        transition: 0.5s;
+    
+    }
+    
+    article#about-wear div.flat_hat:hover{
+        width: 100%;
+        height: 100%;
+    }
+    
+    article#about-wear div.flat_hat div.flat_block{
+        position: relative;
+        width: 100%;
+        padding: 40% 50% 40% 50%;
+        background-image: url(../images/ana-itonishvili-pfEsPSRACHA-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: 90%;
+        background-position: center;
+        
+    }
+    
+    article#about-wear div.flat_hat div.flat_block > h3{
+        position: absolute;
+        top: 1%;
+        right: 0%;
+        padding: 0px;
+        transform: translateY(0);
+        width: 100%;
+        background-color: black;
+        color: #f8f8f8;
+        writing-mode: unset;
+        text-align: center;
+        font-size: 24px;
+    }
+    
+    article#about-wear div.flat_hat >section.flat_1,
+    article#about-wear div.flat_hat >section.flat_2{
+        display: block;
+        margin: 0 auto;
+        width: 60%;
+        background-color: #ededed;
+        text-align: center;
+        padding:  0px;
+        margin-bottom: 15px;
+    }
+
+    article#about-wear div.flat_hat >section.flat_1 > img,
+    article#about-wear div.flat_hat >section.flat_2 > img{
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    article#about-wear div.flat_hat >section.flat_1 > p,
+    article#about-wear div.flat_hat >section.flat_2 > p{
+        width: 100%;
+        padding-bottom: 5px;
+    }
+
+    /* 報童帽結束 */
+
+    /* 畫家帽開始 */
+
+    article#about-wear div.canvas_hat{
+        display: block;
+        width: 100%;
+        background-color: #f8f8f8;
+        margin:60px auto;
+        transition: 0.5s;
+    }
+    
+    article#about-wear div.canvas_hat:hover{
+        width: 100%;
+        margin-left:normal;
+    }
+    
+    article#about-wear div.canvas_hat div.canvas_block{
+        position: relative;
+        padding: 40% 50% 40% 50%;
+        background-image: url(../images/johan-mouchet-ZR5t-9vjeGQ-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: 90%;
+        background-position: center;
+    }
+    
+    article#about-wear div.canvas_hat div.canvas_block > h3{
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        transform: translateY(0);
+        padding: 5px;
+        width: auto;
+        background-color: #f8f8f8;
+        color: black;
+        writing-mode: unset;
+        text-align: center;
+        font-size: 24px;
+    
+    }
+    
+    article#about-wear div.canvas_hat >section.canvas_1,
+    article#about-wear div.canvas_hat >section.canvas_2{
+        display: block;
+        margin: 30px auto 15px auto;
+        width: 60%;
+        background-color: #ededed;
+        text-align: center;
+        padding:  0px;
+    }
+       
+    article#about-wear div.canvas_hat >section.canvas_1 > img,
+    article#about-wear div.canvas_hat >section.canvas_2 >img{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    article#about-wear div.canvas_hat >section.canvas_1 > p,
+    article#about-wear div.canvas_hat >section.canvas_2 >p{
+        width: 100%;
+        padding-bottom: 5px;
+    }
+
+    /* 畫家帽結束 */
+
+    /* 毛帽 開始 */
+
+    article#about-wear div.knitted_hat{
+        display: block;
+        width: 100%;
+        background-color: black;
+        margin:0 auto;
+        transition: 0.5s;
+    }
+    
+    article#about-wear div.knitted_hat:hover{
+        width: 100%;
+        margin:0 auto;
+    }
+    
+    article#about-wear div.knitted_hat div.knitted_block{
+        position: relative;
+        padding: 40% 50% 40% 50%;
+        background-image: url(../images/iamninoslav-03V5lIoIH0Q-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: 90%;
+        background-position: center;
+        
+    }
+    
+    article#about-wear div.knitted_hat div.knitted_block > h3{
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        transform: translateY(0);
+        padding: 10px;
+        width: 100%;
+        background-color: black;
+        color: #f8f8f8;
+        writing-mode: unset;
+        text-align: center;
+        font-size: 24px;
+    }
+    
+    article#about-wear div.knitted_hat >section.knitted_1,
+    article#about-wear div.knitted_hat >section.knitted_2{
+        display: block;
+        margin: 0px auto 15px auto;
+        width: 60%;
+        background-color: #ededed;
+        text-align: center;
+        padding:  0px;
+    }
+    
+    article#about-wear div.knitted_hat >section.knitted_1 > img,
+    article#about-wear div.knitted_hat >section.knitted_2 > img{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    article#about-wear div.knitted_hat >section.knitted_1 > p,
+    article#about-wear div.knitted_hat >section.knitted_2 > p{
+        width: 100%;
+        padding-bottom: 5px;
+    }
+
+    article#about-wear div.knitted_hat >section.knitted_2{
+        margin: 20px auto;
+    }
+    
+    /* 毛帽 結束 */
+
+    /* 鴨舌帽 開始 */
+
+    article#about-wear div.cap_hat{
+        display: block;
+        width: 100%;
+        background-color: #f8f8f8;
+        margin:0 auto;
+        transition: 0.5s;
+        margin-top: 30px;
+        font-size: 0;
+    }
+    
+    article#about-wear div.cap_hat:hover{
+        width: 100%;
+    }
+    
+    article#about-wear div.cap_hat div.cap_block{
+        position: relative;
+        padding: 40% 50% 40% 50%;
+        background-image: url(../images/zach-vessels-mdLklXFZBDI-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: 90%;
+        background-position: center;
+    }
+    
+    article#about-wear div.cap_hat div.cap_block > h3{
+        display: inline-block;
+        position: absolute;
+        top: 0%;
+        right: 50%;
+        transform: translateX(50%);
+        padding: 10px 0px;
+        margin: 0 auto;
+        background-color: #f8f8f8;
+        color: black;
+        writing-mode: unset;
+        text-align: center;
+        font-size: 24px;
+    }
+    
+    article#about-wear div.cap_hat >section.cap_1,
+    article#about-wear div.cap_hat >section.cap_2,
+    article#about-wear div.cap_hat >section.cap_3{
+        display: block;
+        margin: 0px auto 15px auto;
+        width: 60%;
+        background-color: #ededed;
+        text-align: center;
+        padding:  0px;
+    }
+    
+    article#about-wear div.cap_hat >section.cap_1 > img,
+    article#about-wear div.cap_hat >section.cap_2 > img,
+    article#about-wear div.cap_hat >section.cap_3 > img{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    article#about-wear div.cap_hat >section.cap_1 > p,
+    article#about-wear div.cap_hat >section.cap_2 > p,
+    article#about-wear div.cap_hat >section.cap_3 > p{
+        padding-bottom: 10px;
+        font-size: 16px;
+    }
+
+    article#about-wear div.cap_hat >section.cap_2,
+    article#about-wear div.cap_hat >section.cap_3{
+        margin:20px auto;
+    }
 }
