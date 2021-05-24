@@ -22,25 +22,34 @@ var footer_know_all = document.getElementsByClassName("footer_know_all");
 
 footer_nav_list1.onclick = function(){
     document.getElementsByClassName("footer_intro")[0].classList.toggle("slide_down");
-    footer_brand_all[0].classList.toggle("footer_nav_open");
-    footer_brand_all[1].classList.toggle("footer_nav_open");
-    footer_brand_all[2].classList.toggle("footer_nav_open");
-    footer_brand_all[3].classList.toggle("footer_nav_open");
+    for(let i = 0; i<footer_brand_all.length;i++){
+        footer_brand_all[i].classList.toggle("footer_nav_open")
+    }
+    // footer_brand_all[0].classList.toggle("footer_nav_open");
+    // footer_brand_all[1].classList.toggle("footer_nav_open");
+    // footer_brand_all[2].classList.toggle("footer_nav_open");
+    // footer_brand_all[3].classList.toggle("footer_nav_open");
 }
 
 footer_nav_list2.onclick = function(){
     document.getElementsByClassName("footer_product")[0].classList.toggle("slide_down");
-    footer_product_all[0].classList.toggle("footer_nav_open");
-    footer_product_all[1].classList.toggle("footer_nav_open");
-    footer_product_all[2].classList.toggle("footer_nav_open");
-    footer_product_all[3].classList.toggle("footer_nav_open");
+    for(let i = 0; i<footer_product_all.length;i++){
+        footer_product_all[i].classList.toggle("footer_nav_open")
+    }
+    // footer_product_all[0].classList.toggle("footer_nav_open");
+    // footer_product_all[1].classList.toggle("footer_nav_open");
+    // footer_product_all[2].classList.toggle("footer_nav_open");
+    // footer_product_all[3].classList.toggle("footer_nav_open");
 }
 
 footer_nav_list3.onclick = function(){
     document.getElementsByClassName("footer_knowledge")[0].classList.toggle("slide_down");
-    footer_know_all[0].classList.toggle("footer_nav_open");
-    footer_know_all[1].classList.toggle("footer_nav_open");
-    footer_know_all[2].classList.toggle("footer_nav_open");
-    footer_know_all[3].classList.toggle("footer_nav_open");
+    for(let i = 0; i<footer_know_all.length;i++){
+        footer_know_all[i].classList.toggle("footer_nav_open")
+    }
+    // footer_know_all[0].classList.toggle("footer_nav_open");
+    // footer_know_all[1].classList.toggle("footer_nav_open");
+    // footer_know_all[2].classList.toggle("footer_nav_open");
+    // footer_know_all[3].classList.toggle("footer_nav_open");
 }
 

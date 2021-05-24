@@ -686,17 +686,18 @@ div.footer_list div.footer_nav div.footer_qa > a:first-child{
     div.footer_knowledge,
     div.footer_qa{
         margin: 10px 0px;
+        transition: 0.5s;
     }
 
 
     div.footer_intro,
     div.footer_product,
     div.footer_knowledge{
-        max-height: 30px;
+        max-height: 40px;
         transition: 0.5s;
     }
     .slide_down{
-        max-height: 1000px !important;
+        max-height: 220px !important;
         transition: 0.5s;
     }
 
