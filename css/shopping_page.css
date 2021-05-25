@@ -67,6 +67,10 @@ aside.aside section{
     text-align: left;
 }
 
+aside.aside button#aside_open{
+    display: none;
+}
+
 aside.aside section > input{
     display: none;
     cursor: pointer;
@@ -168,28 +172,61 @@ aside.aside section > ul >li.item7{
 }
 @media screen and (max-width: 575px){
     aside.aside{
-        margin-top: 30px;
-        position: static;
+        margin-top: 0px;
+        position: fixed;
+        top: 0px;
+        left: 0;
+        transform: translateX(-100%);
         order: 2;
-        width: 100%;
+        width: 180px;
+        background-color: #ededed;
+        height: 100vh;
+        z-index: 100;
+        transition: all 0.5s;
     }
-    
-    aside.aside{
-        width: 100%;
+
+    .aside-on{
+        transform:translateX(0%) !important;
     }
+
+
+    aside.aside button#aside_open{
+        display: inline-block;
+        border: 0;
+        width: 30px;
+        border-radius: 0px 10px 10px 0px;
+        padding: 20px 5px 30px 5px;
+        position: absolute;
+        top: 50%;
+        right: -30px;
+        transform: translateY(-50%);
+        background-color: #ededed;
+        z-index: 100;
+        background-image: url(../icon/index-right-8.png);
+        background-repeat: no-repeat;
+        background-size: 15px;
+        background-position: bottom 10px center;
+    }
+
+    aside.aside button.aside-open{
+        background-image: url(../icon/left.png) !important;
+        background-repeat: no-repeat;
+        background-size: 15px;
+        background-position: bottom 10px center;
+    }
+
     aside.aside h2{
+        margin-top: 50px;
         width: 100%;
-        color: #f8f8f8;
+        color: black;
         padding: 10px;
         text-align: center;
-        background-color: black;
-        margin-bottom: 10px;
     }
     aside.aside section{
-        width: 40%;
+        width: 80%;
         text-align: left;
-        margin-left: 30%;
-        margin-right: 30%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
     
     aside.aside section > input{

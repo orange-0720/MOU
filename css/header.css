@@ -614,6 +614,7 @@ footer{
         margin-top: 60px;
         width: 100%;
         position: relative;
+        z-index: 1;
     }
 }
 
