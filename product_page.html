@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>product_page</title>
-    <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/product_page.css" />
+    <link rel="stylesheet" href="./css/header.css"/>
+    <link rel="stylesheet" href="./css/product_page.css"/>
+    <link rel="stylesheet" href="./css/design.css">
   </head>
     <body>
       <div id="hamburger" class="hamburger">
@@ -159,7 +160,7 @@
                         <p>商品配送日(預估)</p>
                         <h2>5月27日</h2>
                     </div>
-                    <a href="./design.html" class="start">開始客製化</a>
+                    <a class="start">開始客製化</a>
                 </div>
             </div>
             <div class="rules">
@@ -327,6 +328,101 @@
       <a class="pageup" id="pagetop"></a>
     </footer>
 
+    <!-- design頁面 彈窗 -->
+    <div class="design_page">
+        <div class="design_list">
+            <a class="jump_back">返回商品頁面</a>
+            <div class="select_detail">
+                <input type="radio" name="tab_bt" value="1" id="product-tab" >
+                <input type="radio" name="tab_bt" value="2" id="file-tab" checked>
+                <div class="tab">
+                    <label for="product-tab">商品</label>
+                    <span id="under"></span>
+                    <label for="file-tab">設計</label>
+                </div>
+                <div class="design_article">
+                    <p class="two">商品名稱</h3>
+                    <p>素色毛帽</p>
+                    <section class="color">
+                        <p class="two">顏色選擇</p>
+                        <label for="color-1"></label>
+                        <label for="color-2"></label>
+                        <label for="color-3"></label>
+                        <label for="color-4"></label>
+                        <label for="color-5"></label>
+                    </section>
+                    <section class="sizes">
+                        <p class="two">尺寸選擇</p>
+                        <p>F Size</p>
+                    </section>
+                    <p class="two">商品價格</p>
+                    <p>490元</p>
+
+                    <section class="next_step">
+                        <label for="file-tab">進行帽子設計</label>
+                    </section>
+                </div>
+                <div class="design_detail">
+                    <h3>設計圖稿</h3>
+                    <label class="file_bt"> 
+                        <input type="file" id="pick_photo">
+                        <span>上傳圖稿點這</span>
+                    </label>
+                    <input type="checkbox" id="simple">
+                    <label for="simple" class="no_need">
+                        <span>單買素色點這</span>
+                    </label>
+
+                    <h3>圖稿內容確認<span id="check_logo"> (範本)</span></h3>
+                    <div class="logo_detail">
+                        <img src="./images/logo.png" alt="" width="130px" id="photo">
+                        <section>
+                            <p>圖稿檔名 :<span class="name">logo.png</span></p>
+                            <p>檔案類型 :<span class="name">image/png</span></p>
+                        </section>
+                    </div>
+
+                    <h3>加工方法確認</h3>
+                    <div class="plan_select">
+                        <input type="radio" name="plan" value="490" id="plan1" checked>
+                        <label for="plan1" class="plan2d">2D刺繡</label>
+                        <input type="radio" name="plan" value="590" id="plan2">
+                        <label for="plan2" class="plan3d">3D刺繡</label>
+                    </div>
+
+                    <h3 class="memo_note">備註</h3>
+                    <textarea name="" id="" cols="50" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="design_img">
+                <input type="radio" name="hat_color" id="color-1" checked>
+                <input type="radio" name="hat_color" id="color-2">
+                <input type="radio" name="hat_color" id="color-3">
+                <input type="radio" name="hat_color" id="color-4">
+                <input type="radio" name="hat_color" id="color-5">
+                <section class="img_change" ></section>
+                <img src="./images/logo.png" alt="" width="120px" id="big_photo">
+            </div>
+        </main>
+        <div class="put_in">
+            <a href="#">加入購物車</a>
+            <i></i>
+            <div class="change_number">
+                <p>數量變更</p>
+                <section>
+                    <button id="minus"></button>
+                    <input type="text" value="1" id="number_change" disabled>           
+                    <button id="plus"></button>
+                </section>
+            </div>
+            <section>
+                <p class="total_price" id="total_price">總金額490元</p>
+                <p class="price_note"><small>不含稅金及其他費用</small></p>
+            </section>
+        </div>
+    </div>
+
+
   <script>
     "use strict"
 
@@ -353,5 +449,8 @@
   </script>
   <script src="./js/header.js"></script>
   <script src="./js/aside.js"></script>
+  <script src="./js/change_number.js"></script>
+  <script src="./js/design.js"></script>
+  <script src="./js/upload_photo.js"></script>
   </body>
 </html>

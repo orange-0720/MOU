@@ -452,7 +452,7 @@ div.product_article section.color > label{
 @media screen and (max-width: 575px){
     div.product_article section.color > label{
         margin: 10px auto;
-        margin-right: 4px;
+        margin-right: 10px;
         width: auto;
         padding: 5%;
         height: auto;
@@ -688,12 +688,8 @@ div.tab_list > input{
 div.tab_list div.tab_intro{
     vertical-align: bottom;
     font-size: 0;
-    padding: 0 5%;
+    padding: 0;
     background-color: #f8f8f8;
-    position: sticky;
-    top: 0;
-    left: 0;
-    text-align: center;
 }
 
 div.tab_list div.tab_intro > label{
@@ -708,13 +704,24 @@ div.tab_list div.tab_intro > label{
     vertical-align: bottom;
 }
 @media screen and (max-width: 575px){
+    div.tab_list div.tab_intro{
+        vertical-align: bottom;
+        font-size: 0;
+        padding: 0 5%;
+        background-color: #f8f8f8;
+        position: sticky;
+        top: 0;
+        left: 0;
+        text-align: center;
+    }
+
     div.tab_list div.tab_intro > label{
         padding: 30px 10px 10px 10px;
         background-color: #ededed;
         display: inline-block;
         cursor: pointer;
         width: 25%;
-        margin: 0 auto;
+        margin: 0px;
         text-align: center;
         border: 1px solid #737578;
         font-size: 16px;

@@ -14,17 +14,33 @@
     font-family: "noto-regular";
 }
 
-main{
+div.design_page{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+div.design_list{
     margin: 0 auto;
     width: 1200px;
-    position: relative;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform:translateX(-50%);
+    overflow-y: auto;
+    background-color: #f8f8f8;
 }
 
 
-main a.jump_back{
+div.design_list a.jump_back{
     position: absolute;
-    right: 0;
-    top: 60px;
+    right: 30px;
+    top: 30px;
     font-size: 20px;
     width: 150px;
     justify-items: flex-end;
@@ -41,37 +57,40 @@ main a.jump_back{
     transition: 0.5s;
 }
 
-main a.jump_back:hover{
+div.design_list a.jump_back:hover{
     transform: scale(1.1);
 }
 
-main{
+div.design_list{
     display: flex;
-    margin-bottom: 100px;
+    padding: 0 50px;
+    padding-bottom: 50px;    
 }
 
-main div.select_detail{
+div.design_list div.select_detail{
     flex: 1;
-    margin: 50px 0;
+    width: 350px;
+    padding: 50px 0 50px 0;
 }
 
 /* tab頁面 */
 
-main div.select_detail input{
+div.design_list div.select_detail input{
     display: none;
 }
 
-main div.select_detail input#product-tab:checked ~ div.product_article{
+div.design_list div.select_detail input#product-tab:checked ~ div.design_article{
     display: block;
 }
 
-main div.select_detail input#file-tab:checked ~ div.design_detail{
+div.design_list div.select_detail input#file-tab:checked ~ div.design_detail{
     display: block;
 }
 
-main div.select_detail div.tab{
+div.design_list div.select_detail div.tab{
     vertical-align: bottom;
     font-size: 0;
+    text-align: center;
 }
 
 span#under{
@@ -80,7 +99,7 @@ span#under{
     border-bottom: 1px solid #737578;
     vertical-align: bottom;
 }
-main div.select_detail div.tab label{
+div.design_list div.select_detail div.tab label{
     padding: 30px 10px 10px 10px;
     background-color: #ededed;
     display: inline-block;
@@ -93,22 +112,22 @@ main div.select_detail div.tab label{
     
 }
 
-main div.select_detail div.tab label:first-child{
+div.design_list div.select_detail div.tab label:first-child{
     background-image: url(../icon/cap.png);
     background-size: 30px;
     background-repeat: no-repeat;
     background-position: center top 5px;
 }
 
-main div.select_detail div.tab label:last-child{
+div.design_list div.select_detail div.tab label:last-child{
     background-image: url(../icon/creativity.png);
     background-size: 25px;
     background-repeat: no-repeat;
     background-position: center top 5px;
 }
 
-main div.select_detail input#product-tab:checked ~ div.tab label:first-child,
-main div.select_detail input#file-tab:checked ~ div.tab label:last-child{
+div.design_list div.select_detail input#product-tab:checked ~ div.tab label:first-child,
+div.design_list div.select_detail input#file-tab:checked ~ div.tab label:last-child{
     background-color: #f8f8f8;
     border-top:5px solid #ffd900 ;
     border-bottom: none;
@@ -117,21 +136,22 @@ main div.select_detail input#file-tab:checked ~ div.tab label:last-child{
 
 /* tab頁面結束 */
 
-main div.select_detail div.product_article{
+div.design_list div.select_detail div.design_article{
     margin-top: 30px;
+    padding: 0 40px 50px 40px;
     display: none;
 }
 
-div.product_article section.color{
+div.design_article section.color{
     margin: 40px 0px;
 }
 
-div.product_article p.two{
+div.design_article p.two{
     font-size: 20px;
     margin-bottom: 5px;
 }
 
-div.product_article section.color label{
+div.design_article section.color label{
     margin-top: 5px;
     margin-right: 4px;
     width: 20px;
@@ -141,41 +161,41 @@ div.product_article section.color label{
     transition: 0.3s; 
 }
 
-div.product_article section.color > label:hover{
+div.design_article section.color > label:hover{
     transform: scale(1.3);
 }
 
-div.product_article section.color > label:nth-of-type(1){
+div.design_article section.color > label:nth-of-type(1){
     background-color: white;
     border: 1px solid black;
 }
 
-div.product_article section.color > label:nth-of-type(2){
+div.design_article section.color > label:nth-of-type(2){
     background-color: rgb(245, 245, 53);
     border: 1px solid black;
 }
 
-div.product_article section.color > label:nth-of-type(3){
+div.design_article section.color > label:nth-of-type(3){
     background-color: darkred;
     border: 1px solid black;
 }
 
-div.product_article section.color > label:nth-of-type(4){
+div.design_article section.color > label:nth-of-type(4){
     background-color: black;
     border: 1px solid black;
 }
 
-div.product_article section.color > label:nth-of-type(5){
+div.design_article section.color > label:nth-of-type(5){
     background-color: grey;
     border: 1px solid black;
 }
 
-div.product_article section.sizes {
+div.design_article section.sizes {
     margin:40px 0px;
     width:100%
 }
 
-div.product_article section.next_step label{
+div.design_article section.next_step label{
     width: 200px;
     padding: 10px 10px;
     margin: 0 auto;
@@ -189,7 +209,7 @@ div.product_article section.next_step label{
     font-size: 20px;
 }
 
-div.product_article section.next_step label:hover{
+div.design_article section.next_step label:hover{
     background-color: #ffd900;
     color: black;
 }
@@ -197,6 +217,7 @@ div.product_article section.next_step label:hover{
 div.design_detail{
     display: none;
     margin-top: 30px;
+    padding: 0 40px;
 }
 
 div.design_detail > h3{
@@ -336,12 +357,12 @@ div.design_detail > textarea{
 /* 底部fixed部分 */
 
 div.put_in{
-    z-index: 999;
-    /* height: 70px; */
+    z-index: 200;
     background-color: black;
     position: fixed;
     width: 100%;
     bottom: 0;
+    right: 0px;
     display: flex;
     border-top: 4px solid #ededed;
     align-items: center;
@@ -444,18 +465,19 @@ div.put_in section p.price_note{
 
 /* 商品圖片 */
 
-div.product_img {
-    width: 800px;
+div.design_img {
+    padding-top: 50px ;
+    width: 700px;
     height: 600px;
     margin-top: 50px;
     position: relative;
 }
 
-div.product_img >input{
+div.design_img >input{
     display: none;
 }
 
-div.product_img > section{
+div.design_img > section{
     width: 100%;
     height: 600px;
     background-image: url(../images/nethat/001979675f6da9ea18354b4c36fcb702.png);
@@ -464,38 +486,66 @@ div.product_img > section{
     background-position: center center;
 }
 
-div.product_img input#color2:checked ~ section.img_change{
+div.design_img input#color-2:checked ~ section.img_change{
     background-image: url(../images/nethat/da3d8de8325fa9b34f708e89d584a1f9.png);
     background-repeat: no-repeat;
     background-size: 700px;
     background-position: center center;
 }
 
-div.product_img input#color3:checked ~ section.img_change{
+div.design_img input#color-3:checked ~ section.img_change{
     background-image: url(../images/nethat/8c31128a7b0d92026a066fa5ada0055d.png);
     background-repeat: no-repeat;
     background-size: 700px;
     background-position: center center;
 }
 
-div.product_img input#color4:checked ~ section.img_change{
+div.design_img input#color-4:checked ~ section.img_change{
     background-image: url(../images/nethat/2028f7507e3d4ae521f6500ac82ad7da.png);
     background-repeat: no-repeat;
     background-size: 700px;
     background-position: center center;
 }
 
-div.product_img input#color5:checked ~ section.img_change{
+div.design_img input#color-5:checked ~ section.img_change{
     background-image: url(../images/nethat/91a724520815fcf572da571af6b9a8d2.png);
     background-repeat: no-repeat;
     background-size: 700px;
     background-position: center center;
 }
 
-div.product_img > img{
+div.design_img > img{
     position: absolute;
     left: 42%;
-    top: 57%;
+    top: 66%;
 }
 
 /* 商品圖片結束 */
+
+@keyframes fadein{
+    0%{
+      opacity:0;
+    }
+    100%{
+      opacity:1
+    }
+}
+  
+@keyframes fadeout{
+    0%{
+      opacity:1;
+    }
+    100%{
+      opacity:0;
+    }
+}
+
+.fadein{
+    opacity:0;
+    animation:fadein 1s ease 1 forwards;
+}
+  
+.fadeout{
+    opacity:1;
+    animation:fadeout 1s ease 1 forwards;
+}
