@@ -19,7 +19,7 @@ main{
     background-size: cover;
     background-position:center;
 }
-@media screen and (max-width: 599px){
+@media screen and (max-width: 575px){
     main{
         position: relative;
         margin-top: 20px auto;
@@ -36,7 +36,7 @@ main div.signup_list{
     background-color: #f8f8f8;
     position: relative;
 }
-@media screen and (max-width: 599px){
+@media screen and (max-width: 575px){
     main div.signup_list{
         width: 90%;
         margin: 20px auto;
@@ -73,7 +73,7 @@ div.signup_list ul > li:hover{
     background-color: #ffd900;
     transform: scale(1.05);
 }
-@media screen and (max-width: 599px){
+@media screen and (max-width: 575px){
     div.signup_list > h1{
         padding: 20px;
         text-align: center;
@@ -116,7 +116,7 @@ div.signup_list ul li a.facebook{
     background-position-x: 35px;
     color: black;
 }
-@media screen and (max-width: 599px){
+@media screen and (max-width: 575px){
     div.signup_list ul li a.facebook{
         display: inline-block;
         width: 100%;
@@ -144,7 +144,7 @@ div.signup_list ul li a.inst{
     background-position-x: 35px;
     color: black;
 }
-@media screen and (max-width: 599px){
+@media screen and (max-width: 575px){
     div.signup_list ul li a.inst{
         display: inline-block;
         width: 100%;
@@ -171,7 +171,7 @@ div.signup_list ul li a.twitter{
     background-position-x: 35px;
     color: black;
 }
-@media screen and (max-width: 599px){
+@media screen and (max-width: 575px){
     div.signup_list ul li a.twitter{
         display: inline-block;
         width: 100%;
@@ -218,7 +218,7 @@ div.signup_list div.sign_up > label:hover{
     color: black;
     transform: translateY(-10px);
 }
-@media screen and (max-width: 599px){
+@media screen and (max-width: 575px){
     div.sign_up{
         display: block;
         margin-top:30px;
@@ -265,7 +265,7 @@ div.sign_up > section.signup_detail{
 div.sign_up input#signup_bt:checked ~ section.signup_detail {
     display: block;
 }
-@media screen and (max-width: 599px){
+@media screen and (max-width: 575px){
     div.sign_up > section.signup_detail{
         width: 100%;
         margin: 0 auto;
@@ -300,7 +300,7 @@ div.signup_list section.signup_detail label.back{
 div.signup_list section.signup_detail label.back:hover{
     transform: scale(1.1);
 }
-@media screen and (max-width: 599px){
+@media screen and (max-width: 575px){
     div.signup_list section.signup_detail label.back{
         position: absolute;
         display: inline-block;
@@ -324,7 +324,7 @@ div.signup_list section.signup_detail > h1{
     text-align: center;
     font-size: 32px;
 }
-@media screen and (max-width: 599px){
+@media screen and (max-width: 575px){
     div.signup_list section.signup_detail > h1{
         padding: 20px;
         text-align: center;
@@ -336,7 +336,7 @@ div.signup_list section.signup_detail  label{
     width: 300px;
     margin: 0 auto;
 }
-@media screen and (max-width: 599px){
+@media screen and (max-width: 575px){
     div.signup_list section.signup_detail  label{
         width: 300px;
         max-width: 80%;
@@ -371,7 +371,7 @@ div.signup_list  section.signup_detail label.password_check > input:focus{
     box-shadow: 2px 2px 5px 1px #737578;
     outline: none;
 }
-@media screen and (max-width: 599px){
+@media screen and (max-width: 575px){
     div.signup_list section.signup_detail label.form_mail > input ,
     div.signup_list section.signup_detail label.form_password > input,
     div.signup_list section.signup_detail label.password_check > input{
@@ -428,7 +428,7 @@ section.signup_detail > a.signup_checked:hover{
     color: black;
     transform: translateY(-5px);
 }
-@media screen and (max-width: 599px){
+@media screen and (max-width: 575px){
     section.signup_detail > section.signup_note{
         margin:15px 0;
         text-align: center;
@@ -485,7 +485,7 @@ div.forget span{
     display: inline-block;
     margin: 0px 6px;
 }
-@media screen and (max-width: 599px){
+@media screen and (max-width: 575px){
     div.forget{
         margin: 0 auto;
         width: 300px;
@@ -585,7 +585,7 @@ div#qa_alert{
     color: black;
     font-weight: bold;
 }
-@media screen and (max-width: 599px){
+@media screen and (max-width: 575px){
     div#qa_alert{
         position:fixed;
         top:0;

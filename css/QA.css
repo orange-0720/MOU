@@ -18,7 +18,7 @@ main{
     width: 1200px;
     margin: 0 auto;
 }
-@media screen and (max-width: 599px){
+@media screen and (max-width: 575px){
     main{
         width: 100%;
         margin: 0 auto;
@@ -67,7 +67,7 @@ div.page_guide > a:nth-child(3){
     background-size: 70px;
     background-position: center top 0px;
 }
-@media screen and (max-width: 599px){
+@media screen and (max-width: 575px){
     div.page_guide{
         margin: 0 auto;
         margin-top: 10px;
@@ -121,7 +121,7 @@ div.inside{
     margin-top: 30px;
     align-items: flex-start;
 }
-@media screen and (max-width: 599px){
+@media screen and (max-width: 575px){
     div.inside{
         width: 100%;
         margin: 0 auto;
@@ -249,7 +249,7 @@ aside.aside section > ul >li.item7{
     background-size: 50px;
     background-position: right 35px top -2px ;
 }
-@media screen and (max-width: 599px){
+@media screen and (max-width: 575px){
     aside.aside{
         margin-top: 30px;
         position: static;
@@ -378,7 +378,7 @@ div.middle{
     width: 900px;
     margin: 0 auto;
 }
-@media screen and (max-width: 599px){
+@media screen and (max-width: 575px){
     div.middle{
         width: 100%;
         margin: 0 auto;
@@ -396,7 +396,7 @@ div.middle div.qa_block > h3{
     margin-bottom: 30px;
     margin-top: 50px;
 }
-@media screen and (max-width: 599px){
+@media screen and (max-width: 575px){
     div.middle div.qa_block > h3{
         font-size: 22px;
         border-bottom: 3px solid #737578;
@@ -434,7 +434,7 @@ label.open span.q_icon {
     left: 15px;
     top: 15px;
 }
-@media screen and (max-width: 599px){
+@media screen and (max-width: 575px){
     div.middle div.qa_block h3#first_part{
         margin-top: 20px;
     }
@@ -524,7 +524,7 @@ input#block_q15:checked ~ label.open{
     background-size: 16px;
     background-position:right 6px top 10px;
 }
-@media screen and (max-width: 599px){
+@media screen and (max-width: 575px){
     input#block_q1,
     input#block_q2,
     input#block_q3,
@@ -600,7 +600,7 @@ label.back span.a_icon{
     left: 15px;
     top: 15px;
 }
-@media screen and (max-width: 599px){
+@media screen and (max-width: 575px){
     label.back{
         display: none;
         padding: 15px 10% 15px 50px;
@@ -709,7 +709,7 @@ div.anyquestion form.qa_form > a:hover{
     color: black;
 }
 
-@media screen and (max-width: 599px){
+@media screen and (max-width: 575px){
     div.anyquestion{
         width: 100%;
         margin: 50px auto;
@@ -856,7 +856,7 @@ div#qa_alert{
     border: 0px;
 }
 
-@media screen and (max-width: 599px){
+@media screen and (max-width: 575px){
     div#qa_alert{
         position:fixed;
         top:0;
