@@ -647,7 +647,9 @@ div.footer_list div.footer_nav{
     }
 }
 
-div.footer_intro > p{
+div.footer_intro > p,
+div.footer_product > p,
+div.footer_knowledge > p{
     display: none;
 }
 
@@ -672,13 +674,15 @@ div.footer_list div.footer_nav div.footer_qa > a:hover{
     color: #ffd900;
 }
 
-div.footer_list div.footer_nav div.footer_intro > a:first-child ,
-div.footer_list div.footer_nav div.footer_product >a:first-child,
-div.footer_list div.footer_nav div.footer_process > a:first-child,
-div.footer_list div.footer_nav div.footer_knowledge > a:first-child,
-div.footer_list div.footer_nav div.footer_qa > a:first-child{
+div.footer_list div.footer_nav div.footer_intro a:nth-of-type(1),
+div.footer_list div.footer_nav div.footer_product a:nth-of-type(1),
+div.footer_list div.footer_nav div.footer_process a:first-child,
+div.footer_list div.footer_nav div.footer_knowledge  a:nth-of-type(1),
+div.footer_list div.footer_nav div.footer_qa  a:first-child{
     font-size: 20px;
 }
+
+
 @media screen and (max-width: 575px){
     div.footer_intro,
     div.footer_product,
