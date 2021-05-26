@@ -46,6 +46,9 @@ div.design_list{
     transform:translateX(-50%);
     overflow-y: auto;
     background-color: #f8f8f8;
+    display: flex;
+    padding: 0 50px;
+    padding-bottom: 50px;  
 }
 @media screen and (max-width: 575px){
     div.design_list{
@@ -57,6 +60,10 @@ div.design_list{
         transform:translateX(-50%);
         overflow-y: auto;
         background-color: #f8f8f8;
+        display: flex;
+        flex-direction: column;
+        padding: 0 5%;
+        padding-bottom: 100px;  
     }
 }
 
@@ -105,19 +112,6 @@ div.design_list a.jump_back:hover{
     transform: scale(1.1);
 }
 
-div.design_list{
-    display: flex;
-    padding: 0 50px;
-    padding-bottom: 50px;    
-}
-@media screen and (max-width: 575px){
-    div.design_list{
-        display: flex;
-        flex-direction: column;
-        padding: 0 5%;
-        padding-bottom: 50px;    
-    }
-}
 
 div.design_list div.select_detail{
     flex: 1;
@@ -705,6 +699,8 @@ div.design_detail > textarea{
         display: block;
         margin: 0 auto;
         margin-bottom: 0px;
+        max-width: 100%;
+        border: 1px solid black;
         
     }
 }
@@ -859,7 +855,7 @@ div.put_in section p.price_note{
     
     div.put_in div.change_number{
         width: 40%;
-        margin: 0 10%;
+        margin: 0 0 0 10%;
         color: #f8f8f8;
         text-align: center;
     }
@@ -911,9 +907,9 @@ div.put_in section p.price_note{
     }
     
     div.put_in > section{
-        margin-right: 5%;
+        margin-right: 10%;
         display: inline-block;
-        width: 30%;
+        width: 40%;
         vertical-align: bottom;
         justify-items: flex-end;
         color: #f8f8f8;
