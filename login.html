@@ -47,6 +47,8 @@
                 </div>
             </div>
             <a href="./QA.html">常見問題</a>
+            <a href="./login.html" class="header_nav_login">登入</a>
+            <a href="./signup.html" class="header_nav_sign">註冊</a>
         </nav>
         <div class="search">
             <input type="text" placeholder="搜尋商品">
@@ -60,18 +62,19 @@
                 <img src="./icon/add-user.png" alt="signup" width="22px">
             </a>
             <div class="shopping_cart">
-                <input type="checkbox" id="cart">
-                <label for="cart" class="open">
-                    <img src="./icon/shopping-cart.png" alt="shopping" width="22x">
-                </label>
-                <div class="shopping_list">
-                    <label for="cart" class="close"></label>
-                    <section>
-                        <p>購物車清單</p>
-                        <p>共 0 元</p>
-                        <input type="button" value="確定結帳">
-                    </section>
-                </div>
+                <img src="./icon/shopping-cart.png" alt="shopping" width="22x">
+            </div>
+            <div class="shopping_cart_list">
+                <p>購物車一覽</p>
+                <button type="button" class="shopping_cart_close"></button>
+                <section class="shopping_block">
+                    <ul>
+                        目前尚無商品
+                    </ul>
+                </section>
+                <section class="payment_block">
+                    <a class="pay_money">瀏覽商品</a>
+                </section>
             </div>
         </section>  
     </header>

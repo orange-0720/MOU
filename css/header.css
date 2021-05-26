@@ -105,6 +105,7 @@ a.logo:hover{
         left: 50%;
         top: 5px;
         transform: translateX(-50%);
+        z-index: 10;
     }
     a.logo img{
         width: 100%;
@@ -128,6 +129,11 @@ nav.header_nav > a{
     padding: 10px;
     display: inline-block;
     transition: 0.2s;
+}
+
+nav.header_nav a.header_nav_login,
+nav.header_nav a.header_nav_sign{
+    display: none;
 }
 
 nav.header_nav > a:hover,
@@ -170,6 +176,11 @@ nav.header_nav > div  a:hover{
         text-align: left;
         font-size: 16px;
         color: #f8f8f8;
+    }
+
+    nav.header_nav a.header_nav_login,
+    nav.header_nav a.header_nav_sign{
+        display: inline-block;
     }
 
     nav.header_nav > a:hover,
@@ -308,15 +319,11 @@ section.member{
     flex: 0;
     justify-content: flex-end;
     align-items: flex-start;
+    position: relative;
 }
 
 @media screen and (max-width: 575px){
     section.member{
-        /* display: block;
-        width: 100%;
-        position: relative;
-        padding-top: 40px;
-        order: 1; */
         display: flex;
         flex: 1;
         justify-items: flex-end;
@@ -343,7 +350,7 @@ div.search button{
     border: 0px;
     background-image: url(../icon/loupe.png);
     background-repeat: no-repeat;
-    background-size: 22px;
+    background-size: 15px;
     background-position: center;
     cursor: pointer;
     margin-left: 0px;
@@ -382,7 +389,7 @@ div.search input{
         border: 0px;
         background-image: url(../icon/loupe.png);
         background-repeat: no-repeat;
-        background-size: 22px;
+        background-size: 15px;
         background-position: center;
         cursor: pointer;
         margin-left: 0px;
@@ -408,6 +415,7 @@ div.shopping_cart{
     align-self: center;
     margin-left: 20px;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 575px){
@@ -446,154 +454,161 @@ div.shopping_cart label.open img{
     transition: 0.3s;
 }
 
-div.shopping_cart > input{
-    display: none;
-}
-
 /* 購物車彈窗 */
 
-div.shopping_cart div.shopping_list{
-    position: fixed;
+div.shopping_cart_list{
+    position: absolute;
     right: 0;
-    top: 0;
-    width: 500px;
-    transform: translateX(200px);
-    white-space: nowrap;
+    top: 92px;
+    width: 400px;
     background-color: #f8f8f8;
-    opacity: 0;
     color: black;
-    transition: transfrom 1s ease-in, opicity 0s ease-in  ;
-    z-index: -1;
-    display: flex;
-    border: 3px solid black;
-}
-@media screen and (max-width: 575px){
-    div.shopping_cart div.shopping_list{
-        position: fixed;
-        right: -100%;
-        top: 0;
-        width: 50%;
-        height: 100vh;
-        transform: translate(0px,0px);
-        white-space: nowrap;
-        background-color: #f8f8f8;
-        color: black;
-        transition: transfrom 1s ease-in, opicity 0s ease-in  ;
-        z-index: -1;
-        display: flex;
-        border: 3px solid black;
-        z-index: 800;
-        transition: 0.5s;
-    }
+    z-index: 2;
+    display: none;
+    border: 1px solid black;
+    transition: all 1s;
 }
 
-div.shopping_cart > input:checked ~ 
-div.shopping_list{
-    opacity: 1;
-    z-index: 999;
-    transform: translateX(0px);
-    transition: transform 0.5s ease-in, opicity 0s ease-in;
-
+.cart_open{
+    display: block !important;
 }
 
-@media screen and (max-width: 575px){
-    div.shopping_cart > input:checked ~ 
-    div.shopping_list{
-    opacity: 1;
-    z-index: 999;
-    right: 0;
-    transform: translateX(0px);
-    transition: 0.5s;
-    }
-}
-
-div.shopping_cart div.shopping_list
-label.close{
-    display: inline-block;
-    background-image: url(../icon/x-mark.png);
-    background-repeat: no-repeat;
-    background-size: 30px;
-    background-position:50% 50%;
-    width: 50px;
-    border-right: 3px solid black;
-    cursor: pointer;
-}
-
-@media screen and (max-width: 575px){
-    div.shopping_cart div.shopping_list
-    label.close{
-    display: inline-block;
-    background-image: url(../icon/x-mark.png);
-    background-repeat: no-repeat;
-    background-size: 30px;
-    background-position:50% 50%;
-    width: 50px;
-    border-right: 3px solid black;
-    cursor: pointer;
-    }
-}
-
-div.shopping_cart div.shopping_list section{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
-
-div.shopping_cart div.shopping_list section > p:first-child{
-    display: block;
-    width: 100%;
+div.shopping_cart_list > p{
     text-align: center;
     padding: 10px;
-    padding-bottom: 400px;
+    border-bottom: 1px dotted black;
 }
 
-div.shopping_cart div.shopping_list section > p:nth-child(2){
-    display: block;
-    text-align: right;
+div.shopping_cart_list > button.shopping_cart_close{
     padding: 10px;
-    border-top: 1px dotted black;
-}
-
-div.shopping_cart div.shopping_list section > input{
-    height: 50px;
-    background-color: #ffd900;
-    outline: none;
-    color: black;
-    font-size: 22px;
+    border: 0px;
+    appearance: none;
+    position: absolute;
+    background-color: #f8f8f8;
+    top: 10px;
+    right: 20px;
+    background-image: url(../icon/x-mark.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position:center;
+    z-index: 5;
     cursor: pointer;
 }
+
+div.shopping_cart_list > section.shopping_block{
+    min-height: 200px;
+}
+
+div.shopping_cart_list > section.shopping_block > ul{
+    display: inline-block;
+    margin: 0;
+    padding:0;
+    padding-top: 15px;
+    text-align: center;
+    width: 100%;
+    min-height: 200px;
+    background-image: url(../icon/shopping-cart-full-sign\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: 120px;
+    background-position: top 60% center;
+    border-bottom: 1px dotted black;
+}
+
+div.shopping_cart_list > section.payment_block{
+    width: 100%;
+}
+
+div.shopping_cart_list > section.payment_block > a.pay_money{
+    display: block;
+    padding: 5px 10px;
+    margin: 5px auto;
+    width: 95%;
+    text-align: center;
+    background-color: #ffd900;
+    color: black;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
 @media screen and (max-width: 575px){
-    div.shopping_cart div.shopping_list section{
-        display: flex;
-        flex-direction: column;
-        flex: 1;
+    div.shopping_cart_list{
+        position: absolute;
+        right: 10px;
+        top: 92px;
+        width: calc(100% - 20px);
+        margin: 0 auto;
+        background-color: #f8f8f8;
+        color: black;
+        z-index: 2;
+        display: none;
+        border: 1px solid black;
+        transition: all 1s;
     }
-    div.shopping_cart div.shopping_list section > p:first-child{
-        display: block;
-        width: 100%;
+    
+    .cart_open{
+        display: block !important;
+    }
+    
+    div.shopping_cart_list > p{
         text-align: center;
         padding: 10px;
-        padding-bottom: 400px;
+        border-bottom: 1px dotted black;
     }
     
-    div.shopping_cart div.shopping_list section > p:nth-child(2){
-        display: block;
-        text-align: right;
+    div.shopping_cart_list > button.shopping_cart_close{
         padding: 10px;
-        border-top: 1px dotted black;
+        border: 0px;
+        appearance: none;
+        position: absolute;
+        background-color: #f8f8f8;
+        top: 10px;
+        right: 20px;
+        background-image: url(../icon/x-mark.png);
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-position:center;
+        z-index: 5;
+        cursor: pointer;
     }
     
-    div.shopping_cart div.shopping_list section > input{
-        height: 50px;
-        flex: 1;
+    div.shopping_cart_list > section.shopping_block{
+        min-height: 200px;
+    }
+    
+    div.shopping_cart_list > section.shopping_block > ul{
+        display: inline-block;
+        margin: 0;
+        padding:0;
+        padding-top: 15px;
+        text-align: center;
+        width: 100%;
+        min-height: 200px;
+        background-image: url(../icon/shopping-cart-full-sign\ \(1\).png);
+        background-repeat: no-repeat;
+        background-size: 120px;
+        background-position: top 60% center;
+        border-bottom: 1px dotted black;
+    }
+    
+    div.shopping_cart_list > section.payment_block{
+        width: 100%;
+    }
+    
+    div.shopping_cart_list > section.payment_block > a.pay_money{
+        display: block;
+        padding: 5px 10px;
+        margin: 5px auto;
+        width: 95%;
+        text-align: center;
         background-color: #ffd900;
-        outline: none;
         color: black;
-        font-size: 22px;
-        cursor: pointer;
+        border-radius: 10px;
+        font-size: 16px;
     }
 }
 
+
+/* 購物車結束 */
 
 /* footer */
 footer{
@@ -628,8 +643,12 @@ div.footer_list{
         display: flex;
         width: 100%;
         flex-direction: column;
-        /* min-width: 800px; */
         align-items: center;
+    }
+
+    div.footer_list div.footer_logo > img{
+        width: 100px;
+        margin-bottom: 20px;
     }
 }
 
@@ -718,15 +737,16 @@ div.footer_list div.footer_nav div.footer_qa  a:first-child{
         background-size: 15px;
         background-position: top 55%  right 0px;
     }
-    div.footer_list div.footer_nav div.footer_intro > a:first-child ,
-    div.footer_list div.footer_nav div.footer_product >a:first-child,
-    div.footer_list div.footer_nav div.footer_knowledge > a:first-child{
+    div.footer_list div.footer_nav div.footer_intro > a:nth-of-type(1) ,
+    div.footer_list div.footer_nav div.footer_product > a:nth-of-type(1),
+    div.footer_list div.footer_nav div.footer_knowledge > a:nth-of-type(1){
     font-size: 16px;
 }
     div.footer_list div.footer_nav div.footer_intro > a,
     div.footer_list div.footer_nav div.footer_product >a,
     div.footer_list div.footer_nav div.footer_knowledge > a{
-        display: none;
+        opacity: 0;
+        pointer-events: none;
         background-image: url(../icon/index-right-white.png);
         background-repeat: no-repeat;
         background-size: 10px;
@@ -735,6 +755,8 @@ div.footer_list div.footer_nav div.footer_qa  a:first-child{
     .footer_nav_open{
         display: block !important;
         transition: 0.5s;
+        opacity: 1 !important;
+        pointer-events: initial !important;
     }
 
 

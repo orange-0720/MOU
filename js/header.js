@@ -25,10 +25,6 @@ footer_nav_list1.onclick = function(){
     for(let i = 0; i<footer_brand_all.length;i++){
         footer_brand_all[i].classList.toggle("footer_nav_open")
     }
-    // footer_brand_all[0].classList.toggle("footer_nav_open");
-    // footer_brand_all[1].classList.toggle("footer_nav_open");
-    // footer_brand_all[2].classList.toggle("footer_nav_open");
-    // footer_brand_all[3].classList.toggle("footer_nav_open");
 }
 
 footer_nav_list2.onclick = function(){
@@ -36,10 +32,6 @@ footer_nav_list2.onclick = function(){
     for(let i = 0; i<footer_product_all.length;i++){
         footer_product_all[i].classList.toggle("footer_nav_open")
     }
-    // footer_product_all[0].classList.toggle("footer_nav_open");
-    // footer_product_all[1].classList.toggle("footer_nav_open");
-    // footer_product_all[2].classList.toggle("footer_nav_open");
-    // footer_product_all[3].classList.toggle("footer_nav_open");
 }
 
 footer_nav_list3.onclick = function(){
@@ -47,9 +39,21 @@ footer_nav_list3.onclick = function(){
     for(let i = 0; i<footer_know_all.length;i++){
         footer_know_all[i].classList.toggle("footer_nav_open")
     }
-    // footer_know_all[0].classList.toggle("footer_nav_open");
-    // footer_know_all[1].classList.toggle("footer_nav_open");
-    // footer_know_all[2].classList.toggle("footer_nav_open");
-    // footer_know_all[3].classList.toggle("footer_nav_open");
 }
+
+// 購物車談窗
+
+var cart_btn = document.getElementsByClassName("shopping_cart")[0];
+var cart_close_btn = document.getElementsByClassName("shopping_cart_close")[0]
+var shopping_cart_list = document.getElementsByClassName("shopping_cart_list")[0];
+var pay_btn = document.getElementsByClassName("pay_money")[0];
+
+
+cart_btn.addEventListener("click", function(){
+    shopping_cart_list.classList.toggle("cart_open");
+})
+
+cart_close_btn.addEventListener("click", function(){
+    shopping_cart_list.classList.toggle("cart_open");
+})
 
