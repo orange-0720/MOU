@@ -23,6 +23,7 @@ div.design_page{
     min-height: 100vh;
     overflow-y: auto;
     background-color: rgba(0, 0, 0, 0.7);
+    z-index: 5;
 }
 @media screen and (max-width: 575px){
     div.design_page{

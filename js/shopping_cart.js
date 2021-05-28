@@ -28,10 +28,10 @@ put_in.addEventListener("click",function(){
             <div>
                 <p>商品數量</p>
                 <section>
-                    <input type = "text">
+                    <input type = "text" class="in_cart_number" value="">
                     <section>
-                        <button type="button" class ="cart_plus"> + </button>
-                        <button type="button" class ="cart_minus"> - </button>
+                        <button type="button" class ="cart_plus">  </button>
+                        <button type="button" class ="cart_minus">  </button>
                     <section>
                 </section>
             </div>
@@ -39,7 +39,7 @@ put_in.addEventListener("click",function(){
                 <p>金額小記<p>
                 <p>`+ count_price + "元" +`</p>
             </div>
-            <button class='remove'>移除</button>
+            <button class='remove'></button>
         </li>`
     )
     var li_list = document.getElementsByTagName("li")

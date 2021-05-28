@@ -419,7 +419,7 @@ div.product_article{
 
 div.product_article > h1{
     font-size: 32px;
-    padding-left: 25%;
+    padding-left: 30%;
     margin-bottom: 20px;
 }
 @media screen and (max-width: 575px){
@@ -512,7 +512,8 @@ div.product_article section.hat_size{
 }
 
 div.product_article section.hat_size > select#size{
-    width: 100%;
+    
+    width: 80%;
     cursor: pointer;
     margin-top: 5px;
     padding: 5px 0px;

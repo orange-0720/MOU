@@ -535,8 +535,11 @@ input#block_q13:checked ~ label.back,
 input#block_q14:checked ~ label.back,
 input#block_q15:checked ~ label.back{
     display: block;
-    transition: 2s;
+    transition: 0.5s;
     cursor: pointer;
+    padding: 15px 60px;
+    opacity: 1;
+    height: auto;
 }
 
 input#block_q1:checked ~ label.open,
@@ -595,7 +598,7 @@ input#block_q15:checked ~ label.open{
     input#block_q14:checked ~ label.back,
     input#block_q15:checked ~ label.back{
     display: block;
-    transition: 2s;
+    transition: 0.5s;
     cursor: pointer;
     }
 
@@ -622,11 +625,14 @@ input#block_q15:checked ~ label.open{
 }
 
 label.back{
-    display: none;
-    padding: 15px 60px;
+    display: block;
+    /* padding: 15px 60px; */
     width: 900px;
     position: relative;
     border: 1px solid black;
+    opacity: 0;
+    height: 0px;
+    transition:  0.5s;
 
 }
 
@@ -637,12 +643,16 @@ label.back span.a_icon{
 }
 @media screen and (max-width: 575px){
     label.back{
-        display: none;
-        padding: 15px 10% 15px 50px;
+        /* display: none; */
+        display: block;
+        /* padding: 15px 10% 15px 50px; */
         width: 100%;
         position: relative;
         border: 0px;
+        opacity: 0;
+        height: 0px;
         border-bottom: 1px solid black;
+        transition: 0.5s;
     
     }
     

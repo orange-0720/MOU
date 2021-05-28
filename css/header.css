@@ -110,7 +110,7 @@ a.logo:hover{
         left: 50%;
         top: 5px;
         transform: translateX(-50%);
-        z-index: 10;
+        z-index: 4;
     }
     a.logo img{
         width: 100%;
@@ -465,7 +465,7 @@ div.shopping_cart_list{
     position: absolute;
     right: 0;
     top: 92px;
-    width: 400px;
+    width: 500px;
     background-color: #f8f8f8;
     color: black;
     z-index: 2;
@@ -542,6 +542,20 @@ div.shopping_cart_list > section.shopping_block > ul.cart_list > li > div > p{
 
 div.shopping_cart_list > section.shopping_block > ul.cart_list > li > div > section > input{
     width: 50%;
+}
+
+div.shopping_cart_list > section.shopping_block > ul.cart_list > li > button.remove{
+    display:inline-block;
+    appearance: none;
+    border: 0px;
+    background-color: #f8f8f8;
+    width: 40px;
+    padding: 20px;
+    background-image: url(../icon/trash.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+
 }
 
 div.shopping_cart_list > section.payment_block{
