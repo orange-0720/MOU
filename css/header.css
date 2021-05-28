@@ -15,6 +15,11 @@
     font-family: "noto-regular";
 }
 
+.is_fixed{
+    position: fixed;
+    top: 0;
+}
+
 div.hamburger{
     display: none;
 }
@@ -438,13 +443,13 @@ div.shopping_cart{
 }
 
 section.member > a:hover,
-div.shopping_cart>label >img:hover{
+div.shopping_cart:hover{
     transform: scale(1.2);
 }
 
 @media screen and (max-width: 575px){
     section.member > a:hover,
-    div.shopping_cart>label >img:hover{
+    div.shopping_cart>img:hover{
     transform: scale(1);
     }
 }
@@ -499,7 +504,7 @@ div.shopping_cart_list > section.shopping_block{
     min-height: 200px;
 }
 
-div.shopping_cart_list > section.shopping_block > ul{
+div.shopping_cart_list > section.shopping_block > p{
     display: inline-block;
     margin: 0;
     padding:0;
@@ -514,8 +519,35 @@ div.shopping_cart_list > section.shopping_block > ul{
     border-bottom: 1px dotted black;
 }
 
+div.shopping_cart_list > section.shopping_block > ul.cart_list{
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+    list-style: none;
+}
+
+div.shopping_cart_list > section.shopping_block > ul.cart_list > li{
+    border-bottom: 1px dotted black;
+}
+
+div.shopping_cart_list > section.shopping_block > ul.cart_list > li > div{
+    width: calc((100% - 50px) / 5);
+    display: inline-block;
+    margin: 0 5px;
+    vertical-align: top;
+}
+
+div.shopping_cart_list > section.shopping_block > ul.cart_list > li > div > p{
+}
+
+div.shopping_cart_list > section.shopping_block > ul.cart_list > li > div > section > input{
+    width: 50%;
+}
+
 div.shopping_cart_list > section.payment_block{
     width: 100%;
+    padding: 5px 0px;
+    border-top: 1px dotted black;
 }
 
 div.shopping_cart_list > section.payment_block > a.pay_money{
@@ -575,7 +607,7 @@ div.shopping_cart_list > section.payment_block > a.pay_money{
         min-height: 200px;
     }
     
-    div.shopping_cart_list > section.shopping_block > ul{
+    div.shopping_cart_list > section.shopping_block > p{
         display: inline-block;
         margin: 0;
         padding:0;
@@ -637,6 +669,10 @@ div.footer_list{
     display: flex;
     width: 100%;
     /* min-width: 800px; */
+}
+
+div.footer_list div.footer_logo > img{
+    width: 120px;
 }
 @media screen and (max-width: 575px){
     div.footer_list{

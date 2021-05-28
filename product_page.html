@@ -14,8 +14,8 @@
         <div id="hamburger_top_line" class="hamburger_top_line"></div>
         <div id="hamburger_middle_line" class="hamburger_middle_line"></div>
         <div id="hamburger_under_line" class="hamburger_under_line"></div>
-    </div>
-    <header id="header">
+      </div>
+      <header id="header">
         <a href="./index.html" class="logo">
             <img src="./images/logo.svg" alt="logo" width="100px" >
         </a>
@@ -69,17 +69,16 @@
                 <p>購物車一覽</p>
                 <button type="button" class="shopping_cart_close"></button>
                 <section class="shopping_block">
-                    <ul>
-                        目前尚無商品
-                    </ul>
+                    <p id="inside_cart">目前沒有商品</p>
+                    <ul class="cart_list"></ul>
                 </section>
                 <section class="payment_block">
                     <a class="pay_money">瀏覽商品</a>
                 </section>
             </div>
         </section>  
-    </header>
-    <main>
+      </header>
+      <main>
         <aside class="aside">
           <button type="button" id="aside_open">商品列表</button>
           <h2>商品列表</h2>
@@ -270,9 +269,9 @@
 
             </div>
         </div>
-    </main>
-    <footer>
-      <div class="footer_list">
+      </main>
+      <footer>
+        <div class="footer_list">
           <div class="footer_logo">
               <img src="./images/logo.svg" alt="logo" width="200px">
           </div>
@@ -321,18 +320,18 @@
                   </a>
               </div>
           </div>
-      </div>
-      <div class="tibame">
+        </div>
+        <div class="tibame">
           <p>本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，</p>
           <p>本平台僅供學習、展示之用。參考資源:XXXXXXXXXXXXX。</p>
           <p>若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養成班]，後續會由專人協助處理</p>
-      </div>
+        </div>
 
-      <a class="pageup" id="pagetop"></a>
-    </footer>
+        <a class="pageup" id="pagetop"></a>
+      </footer>
 
-    <!-- design頁面 彈窗 -->
-    <div class="design_page">
+      <!-- design頁面 彈窗 -->
+      <div class="design_page">
         <div class="design_list">
             <a class="jump_back">返回</a>
             <div class="select_detail">
@@ -345,7 +344,7 @@
                 </div>
                 <div class="design_article">
                     <p class="two">商品名稱</h3>
-                    <p>素色毛帽</p>
+                    <p class="product_name">素色毛帽</p>
                     <section class="color">
                         <p class="two">顏色選擇</p>
                         <label for="color-1"></label>
@@ -403,12 +402,12 @@
                 <input type="radio" name="hat_color" id="color-3">
                 <input type="radio" name="hat_color" id="color-4">
                 <input type="radio" name="hat_color" id="color-5">
-                <section class="img_change" ></section>
+                <section class="design_img_change" style="background-image: url(../images/nethat/001979675f6da9ea18354b4c36fcb702.png);"></section>
                 <img src="./images/logo.png" alt="" width="120px" id="big_photo">
             </div>
         </main>
         <div class="put_in">
-            <a href="#">加入購物車</a>
+            <button type="button" id="put_in">加入購物車</button>
             <i></i>
             <div class="change_number">
                 <p>數量變更</p>
@@ -419,11 +418,11 @@
                 </section>
             </div>
             <section>
-                <p class="total_price" id="total_price">總金額490元</p>
+                <p class="total_price" id="total_price">總金額<span id="count_price">490</span>元</p>
                 <p class="price_note"><small>不含稅金及其他費用</small></p>
             </section>
         </div>
-    </div>
+      </div>
 
 
   <script>
@@ -455,5 +454,6 @@
   <script src="./js/change_number.js"></script>
   <script src="./js/design.js"></script>
   <script src="./js/upload_photo.js"></script>
+  <script src="./js/shopping_cart.js"></script>
   </body>
 </html>

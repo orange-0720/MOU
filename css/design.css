@@ -242,7 +242,7 @@ div.design_list div.select_detail input#file-tab:checked ~ div.tab label:last-ch
 
 div.design_list div.select_detail div.design_article{
     margin-top: 30px;
-    padding: 0 40px 50px 40px;
+    padding: 0 40px 50px 80px;
     display: none;
 }
 
@@ -376,7 +376,7 @@ div.design_article section.next_step label:hover{
     
     div.design_article section.sizes {
         margin:40px 0px;
-        width:100%
+        width:100%;
     }
     
     div.design_article section.next_step label{
@@ -721,7 +721,7 @@ div.put_in{
     align-items: center;
     padding: 20px 0px;
 }
-div.put_in >a{
+div.put_in >button{
     padding: 10px 20px;
     text-align: center;
     background-color: #ffd900;
@@ -733,9 +733,10 @@ div.put_in >a{
     margin-bottom: 5px;
     font-size: 20px;
     transition: 0.4s;
+    border: 0px;
 }
 
-div.put_in > a:hover{
+div.put_in > button:hover{
     transform: scale(1.05);
     
 }
@@ -827,7 +828,7 @@ div.put_in section p.price_note{
         align-items: center;
         padding: 20px 0px;
     }
-    div.put_in >a{
+    div.put_in > button{
         order: 3;
         padding: 10px 20px;
         width: 80%;
@@ -843,7 +844,7 @@ div.put_in section p.price_note{
         transition: 0.4s;
     }
     
-    div.put_in > a:hover{
+    div.put_in > button:hover{
         transform: scale(1.05);
         
     }
@@ -952,28 +953,28 @@ div.design_img > section{
     background-position: center center;
 }
 
-div.design_img input#color-2:checked ~ section.img_change{
+div.design_img input#color-2:checked ~ section.design_img_change{
     background-image: url(../images/nethat/da3d8de8325fa9b34f708e89d584a1f9.png);
     background-repeat: no-repeat;
     background-size: 700px;
     background-position: center center;
 }
 
-div.design_img input#color-3:checked ~ section.img_change{
+div.design_img input#color-3:checked ~ section.design_img_change{
     background-image: url(../images/nethat/8c31128a7b0d92026a066fa5ada0055d.png);
     background-repeat: no-repeat;
     background-size: 700px;
     background-position: center center;
 }
 
-div.design_img input#color-4:checked ~ section.img_change{
+div.design_img input#color-4:checked ~ section.design_img_change{
     background-image: url(../images/nethat/2028f7507e3d4ae521f6500ac82ad7da.png);
     background-repeat: no-repeat;
     background-size: 700px;
     background-position: center center;
 }
 
-div.design_img input#color-5:checked ~ section.img_change{
+div.design_img input#color-5:checked ~ section.design_img_change{
     background-image: url(../images/nethat/91a724520815fcf572da571af6b9a8d2.png);
     background-repeat: no-repeat;
     background-size: 700px;
@@ -1009,28 +1010,28 @@ div.design_img > img{
         background-position: center  center;
     }
     
-    div.design_img input#color-2:checked ~ section.img_change{
+    div.design_img input#color-2:checked ~ section.design_img_change{
         background-image: url(../images/nethat/da3d8de8325fa9b34f708e89d584a1f9.png);
         background-repeat: no-repeat;
         background-size: 90%;
         background-position: center center;
     }
     
-    div.design_img input#color-3:checked ~ section.img_change{
+    div.design_img input#color-3:checked ~ section.design_img_change{
         background-image: url(../images/nethat/8c31128a7b0d92026a066fa5ada0055d.png);
         background-repeat: no-repeat;
         background-size: 90%;
         background-position: center center;
     }
     
-    div.design_img input#color-4:checked ~ section.img_change{
+    div.design_img input#color-4:checked ~ section.design_img_change{
         background-image: url(../images/nethat/2028f7507e3d4ae521f6500ac82ad7da.png);
         background-repeat: no-repeat;
         background-size: 90%;
         background-position: center center;
     }
     
-    div.design_img input#color-5:checked ~ section.img_change{
+    div.design_img input#color-5:checked ~ section.design_img_change{
         background-image: url(../images/nethat/91a724520815fcf572da571af6b9a8d2.png);
         background-repeat: no-repeat;
         background-size: 90%;
