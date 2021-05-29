@@ -719,8 +719,8 @@ div.shopping_cart_list > section.shopping_block > ul.cart_list > li > div{
     vertical-align: top;
 }
 
-div.shopping_cart_list > section.shopping_block > ul.cart_list > li > div > p{
-}
+/* div.shopping_cart_list > section.shopping_block > ul.cart_list > li > div > p{
+} */
 
 div.shopping_cart_list > section.shopping_block > ul.cart_list > li > div > section > input{
     width: 50%;
@@ -839,8 +839,8 @@ div.shopping_cart_list > section.payment_block > a.pay_money{
         vertical-align: top;
     }
     
-    div.shopping_cart_list > section.shopping_block > ul.cart_list > li > div > p{
-    }
+    /* div.shopping_cart_list > section.shopping_block > ul.cart_list > li > div > p{
+    } */
     
     div.shopping_cart_list > section.shopping_block > ul.cart_list > li > div > section > input{
         width: 50%;
