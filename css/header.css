@@ -71,6 +71,7 @@ header{
     margin: 0 auto;
     margin-top: 10px;
     width: 1200px;
+    max-width: 100%;
 }
 
 @media screen and (min-width:992px) and (max-width:1199px){
@@ -113,11 +114,11 @@ a.logo:hover{
 @media screen and (min-width:992px) and (max-width:1199px){
     a.logo{
         width: 100px;
-        order: 1;
+        order: 0;
         text-align: center;
         display: inline-block;
         transition: 0.5s;
-        margin-left: 25px;
+        margin-left: 100px;
     }
     
     a.logo img{
@@ -443,16 +444,17 @@ section.member{
     justify-content: flex-end;
     align-items: flex-start;
     position: relative;
+    margin-right: 5px;
 }
 @media screen and (min-width:992px) and (max-width:1199px){
     section.member{
         display: flex;
-        order: 0;
-        flex: 1;
+        order: 2;
+        flex: 0;
         justify-content: flex-end;
         align-items: flex-start;
         position: relative;
-        margin-right: 50px;
+        margin-right: 90px;
     }
 }
 
@@ -505,12 +507,12 @@ div.search input{
 }
 @media screen and (min-width:992px) and (max-width:1199px){
     div.search{
-        order: 3;
+        order: 1;
         justify-self: flex-end;
         align-self: center;
         font-size: 0;
         flex: 1;
-        text-align: left;
+        text-align: right;
         margin-left: 50px;
     }
       
@@ -596,7 +598,7 @@ div.shopping_cart{
     section.member > a,
     div.shopping_cart{
         align-self: center;
-        margin-left: 40px;
+        margin-left: 20px;
         transition: 0.3s;
         cursor: pointer;
     }
@@ -757,8 +759,8 @@ div.shopping_cart_list > section.payment_block > a.pay_money{
 }
 @media screen and (min-width:992px) and (max-width:1199px){
     div.shopping_cart_list{
-        position: fixed;
-        left: 0px;
+        position: absolute;
+        right: -90px;
         top: 120px;
         transform: translateY(-500px);
         width: 500px;
@@ -965,6 +967,7 @@ footer{
     margin: 0 auto;
     padding: 30px 100px;
     margin-top: 100px;
+    width: 100%;
 }
 @media screen and (min-width:992px) and (max-width:1199px){
     footer{
@@ -992,7 +995,6 @@ footer{
 div.footer_list{
     display: flex;
     width: 100%;
-    /* min-width: 800px; */
 }
 
 div.footer_list div.footer_logo > img{
