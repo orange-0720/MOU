@@ -9,6 +9,7 @@
 main{
     width: 1200px;
     margin: 0 auto ;
+    max-width: 100%;
 }
 @media screen and (min-width:992px) and (max-width:1199px){
     main{
@@ -57,6 +58,7 @@ div.inside{
     display: flex;
     margin-top: 50px;
     align-items: flex-start;
+    max-width: 100%;
 }
 @media screen and (min-width:992px) and (max-width:1199px){
     div.inside{
@@ -537,17 +539,19 @@ div.middle > section > a.startmaking{
 @media screen and (min-width:992px) and (max-width:1199px){
     div.middle{
         width: 700px;
-        margin: 0 auto;
+        margin: 0;
+        /* padding: 0 40px; */
         flex: 1;
-        display: block;
-        grid-template-columns:  auto auto ;
-        font-size: 0px;
+        display: grid;
+        grid-template-columns:  1fr 1fr 1fr ;
+        gap: 20px;
+        row-gap: 60px;
     }
     
     div.middle > section{
         display: inline-block;
-        width: calc((700px - 80px)/2);
-        margin: 20px;
+        /* width: calc((700px - 80px)/2); */
+        margin: 10px;
         color: black;
         text-decoration: none;
         position: relative;
@@ -565,7 +569,7 @@ div.middle > section > a.startmaking{
     
     div.middle > section:hover a.startmaking{
         visibility: visible;
-        transform: translateY(-125px);
+        transform: translateY(-100px);
         
     }
     
@@ -694,7 +698,7 @@ div.change_page a:hover{
 @media screen and (min-width:992px) and (max-width:1199px){
     div.change_page{
         margin: 0 auto;
-        margin-top: 50px;
+        /* margin-top: 50px; */
         font-size: 0;
         text-align: center;
     }
