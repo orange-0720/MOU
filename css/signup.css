@@ -19,6 +19,19 @@ main{
     background-size: cover;
     background-position:center;
 }
+@media screen and (min-width:992px) and (max-width:1199px){
+    main{
+        max-width: 100%;
+        margin: 0 auto;
+        position: relative;
+        margin-top: 20px;
+        padding: 50px 0 100px 0 ;
+        background-image: url(../images/erik-mclean-W52IJbtsrfM-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center;
+    }
+}
 @media screen and (max-width: 575px){
     main{
         position: relative;
@@ -35,6 +48,16 @@ main div.signup_list{
     z-index: 50;
     background-color: #f8f8f8;
     position: relative;
+}
+@media screen and (min-width:992px) and (max-width:1199px){
+    main div.signup_list{
+        width: 420px;
+        margin-top: 3%;
+        margin-left: 10%;
+        z-index: 50;
+        background-color: #f8f8f8;
+        position: relative;
+    }
 }
 @media screen and (max-width: 575px){
     main div.signup_list{
@@ -264,6 +287,21 @@ div.sign_up > section.signup_detail{
 
 div.sign_up input#signup_bt:checked ~ section.signup_detail {
     display: block;
+}
+@media screen and (min-width:992px) and (max-width:1199px){
+    div.sign_up > section.signup_detail{
+        width: 420px;
+        margin: 0 auto;
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #f8f8f8;
+    }
+    
+    div.sign_up input#signup_bt:checked ~ section.signup_detail {
+        display: block;
+    }
 }
 @media screen and (max-width: 575px){
     div.sign_up > section.signup_detail{

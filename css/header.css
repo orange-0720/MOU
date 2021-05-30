@@ -1004,7 +1004,6 @@ div.footer_list div.footer_logo > img{
     div.footer_list{
         display: flex;
         width: 100%;
-        min-width: 960px;
         flex-wrap: wrap;
     }
     div.footer_list div.footer_logo > img{

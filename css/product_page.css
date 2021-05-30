@@ -11,6 +11,16 @@ main{
     margin: 0 auto;
     display: flex;
     margin-top: 60px;
+    max-width: 100%;
+}
+@media screen and (min-width:992px) and (max-width:1199px){
+    main{
+        width: 960px;
+        margin: 0 auto;
+        display: flex;
+        margin-top: 60px;
+        max-width: 100%;
+    }
 }
 
 @media screen and (max-width: 575px){
@@ -135,7 +145,124 @@ aside.aside section > ul >li.item7{
     background-size: 50px;
     background-position: right 35px top -2px ;
 }
-
+@media screen and (min-width:992px) and (max-width:1199px){
+    aside.aside{
+        position: sticky;
+        top: 20px;
+        bottom: 100px;
+    }
+    
+    aside.aside,
+    aside.aside h2,
+    aside.aside section{
+        width: 200px;
+        text-align: left;
+    }
+    
+    aside.aside button#aside_open{
+        display: none;
+    }
+    
+    aside.aside section > input{
+        display: none;
+        cursor: pointer;
+    }
+    
+    aside.aside section > label{
+        display: inline-block;
+        width: 200px;
+        font-size: 20px;
+        margin-top: 30px;
+        background-image: url(../icon/down-arrow.png);
+        background-repeat: no-repeat;
+        background-size: 16px;
+        background-position:right 50px top 8px ;
+        cursor: pointer;
+    }
+    
+    aside.aside section > ul{
+        display: none;
+    }
+    
+    aside.aside section > input:checked ~ label{
+        background-image: url(../icon/up-chevron.png);
+        background-size: 16px;
+        background-repeat: no-repeat;
+        background-position: right 50px top 8px ;
+    }
+    
+    aside.aside section > input:checked ~ ul{
+        display: block;
+    }
+    
+    aside.aside section > ul{
+        padding: 0;
+    }
+    
+    aside.aside section > ul > li{
+        margin-top: 10px;
+        list-style: none;
+        padding: 5px 15px;
+        cursor: pointer;
+    } 
+    
+    aside.aside section > ul > li >a{
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    } 
+    
+    aside.aside section > ul >li.item1{
+        background-image: url(../images/CAP/b2fda4edc80e63dca8a536a0d1d8bfbf.png);
+        background-repeat: no-repeat;
+        background-size: 40px;
+        background-position: right 40px top 3px ;
+    }
+    
+    aside.aside section > ul >li.item2{
+        background-image: url(../images/CAP/img_color02-8.png);
+        background-repeat: no-repeat;
+        background-size: 55px;
+        background-position: right 35px top -10px ;
+    }
+    
+    aside.aside section > ul >li.item3{
+        background-image: url(../images/buscket_hat/0853011-001-08.png);
+        background-repeat: no-repeat;
+        background-size: 50px;
+        background-position: right 35px top 0px ;
+    }
+    
+    aside.aside section > ul >li.item4{
+        background-image: url(../images/buscket_hat/0853011-001-09.png);
+        background-repeat: no-repeat;
+        background-size: 50px;
+        background-position: right 35px top 0px ;
+    }
+    
+    aside.aside section > ul >li.item5{
+        background-image: url(../images/baseball_hat/2-2.png);
+        background-repeat: no-repeat;
+        background-size: 45px;
+        background-position: right 40px top 0px ;
+    }
+    
+    aside.aside section > ul >li.item6{
+        background-image: url(../images/baseball_hat/TRC-55_05_s.png);
+        background-repeat: no-repeat;
+        background-size: 50px;
+        background-position: right 35px top -2px ;
+    }
+    
+    aside.aside section > ul >li.item7{
+        background-image: url(../images/nethat/da3d8de8325fa9b34f708e89d584a1f9.png);
+        background-repeat: no-repeat;
+        background-size: 50px;
+        background-position: right 35px top -2px ;
+    }
+}
 @media screen and (max-width: 575px){
     aside.aside{
         margin-top: 0px;
@@ -298,10 +425,22 @@ aside.aside section > ul >li.item7{
 div.product_intro{
     flex:1;
     margin: 0 auto;
+    max-width: 100%;
 }
 
 div.product_detail{
     display: flex;
+}
+@media screen and (min-width:992px) and (max-width:1199px){
+    div.product_intro{
+        flex:1;
+        margin: 0 auto;
+        width: 760px;
+    }
+    
+    div.product_detail{
+        display: flex;
+    } 
 }
 @media screen and (max-width: 575px){
     div.product_intro{
@@ -318,6 +457,12 @@ div.product_detail{
 div.product_img{
     width: 500px;
     margin:0 30px;
+}
+@media screen and (min-width:992px) and (max-width:1199px){
+    div.product_img{
+        width: 350px;
+        margin:0px 15px;
+    }
 }
 @media screen and (max-width: 575px){
     div.product_img{
@@ -337,6 +482,16 @@ div.product_img > section{
     background-repeat: no-repeat;
     background-size: 500px;
     background-position: center center;
+}
+@media screen and (min-width:992px) and (max-width:1199px){
+    div.product_img > section{
+        width: 100%;
+        height: 100%;
+        background-image: url(../images/nethat/001979675f6da9ea18354b4c36fcb702.png);
+        background-repeat: no-repeat;
+        background-size: 400px;
+        background-position: center center;
+    }
 }
 @media screen and (max-width: 575px){
     div.product_img > section{
@@ -376,6 +531,35 @@ div.product_img input#color5:checked ~ section.img_change{
     background-repeat: no-repeat;
     background-size: 500px;
     background-position: center center;
+}
+@media screen and (min-width:992px) and (max-width:1199px){
+    div.product_img input#color2:checked ~ section.img_change{
+        background-image: url(../images/nethat/da3d8de8325fa9b34f708e89d584a1f9.png);
+        background-repeat: no-repeat;
+        background-size: 400px;
+        background-position: center center;
+    }
+    
+    div.product_img input#color3:checked ~ section.img_change{
+        background-image: url(../images/nethat/8c31128a7b0d92026a066fa5ada0055d.png);
+        background-repeat: no-repeat;
+        background-size: 400px;
+        background-position: center center;
+    }
+    
+    div.product_img input#color4:checked ~ section.img_change{
+        background-image: url(../images/nethat/2028f7507e3d4ae521f6500ac82ad7da.png);
+        background-repeat: no-repeat;
+        background-size: 400px;
+        background-position: center center;
+    }
+    
+    div.product_img input#color5:checked ~ section.img_change{
+        background-image: url(../images/nethat/91a724520815fcf572da571af6b9a8d2.png);
+        background-repeat: no-repeat;
+        background-size: 400px;
+        background-position: center center;
+    }
 }
 
 @media screen and (max-width: 575px){
@@ -609,6 +793,7 @@ div.rules{
     background-color: #ededed;
     margin-top: 40px;
     padding: 30px;
+    max-width: 100%;
 }
 
 div.rules h3{
@@ -644,7 +829,48 @@ div.rules section.logo_select{
     background-size: 50px;
     background-position: left 70px top 13px;
 }
+@media screen and (min-width:992px) and (max-width:1199px){
+    div.rules{
+    display: flex;
+    background-color: #ededed;
+    margin-top: 40px;
+    padding: 30px;
+    }
 
+    div.rules h3{
+        margin-top: 5px;
+    }
+
+    div.rules section.logo_size{
+        flex: 1;
+        padding: 0px;
+        padding-left: 150px;
+        background-image: url(../icon/photo-gallery.png);
+        background-repeat: no-repeat;
+        background-size: 60px;
+        background-position: left 70px top 10px;
+    }
+
+    div.rules section.logo_place{
+        flex: 1;
+        padding: 0px;
+        padding-left: 150px;
+        background-image: url(../icon/livejournal.png);
+        background-repeat: no-repeat;
+        background-size: 50px;
+        background-position: left 80px top 13px;
+    }
+
+    div.rules section.logo_select{
+        flex: 1;
+        padding: 0px;
+        padding-left: 150px;
+        background-image: url(../icon/knitting.png);
+        background-repeat: no-repeat;
+        background-size: 50px;
+        background-position: left 80px top 13px;
+    }
+}
 @media screen and (max-width: 575px){
     div.rules{
         display: flex;
@@ -703,6 +929,7 @@ div.rules section.logo_select{
 div.tab_list{
     margin: 0 auto;
     margin-top: 40px;
+    max-width: 100%;
 }
 @media screen and (max-width: 575px){
     div.tab_list{
@@ -866,7 +1093,13 @@ div.tab_list div.tab_about_place table th,td{
     padding: 10px 100px;
     text-align: center;
 }
-
+@media screen and (min-width:992px) and (max-width:1199px){
+    div.tab_list div.tab_about_place table th,td{
+        border: 1px solid black;
+        padding: 10px 50px;
+        text-align: center;
+    }
+}
 @media screen and (max-width: 575px){
     div.tab_list div.tab_about_place table > tbody{
         display: inline-block;
@@ -904,6 +1137,13 @@ div.tab_list >input#tab_select:checked ~ div.tab_about_select{
 div.tab_about_select {
     margin-top: 40px;
     display: none;
+    max-width: 100%;
+}
+@media screen and (min-width:992px) and (max-width:1199px){
+    div.tab_about_select {
+        margin-top: 40px;
+        display: none;
+    }
 }
 
 @media screen and (max-width: 575px){
@@ -920,6 +1160,22 @@ div.tab_about_select div.select3,
 div.tab_about_select div.select4{
     display: flex;
     margin-top: 70px;
+}
+@media screen and (min-width:992px) and (max-width:1199px){
+    div.tab_about_select div.select1,
+    div.tab_about_select div.select2,
+    div.tab_about_select div.select3,
+    div.tab_about_select div.select4{
+        display: flex;
+        margin-top: 70px;
+    }
+    div.tab_about_select div.select1 > img,
+    div.tab_about_select div.select2 > img,
+    div.tab_about_select div.select3 > img,
+    div.tab_about_select div.select4 > img{
+        width: 220px;
+        max-width: 100%;
+    }
 }
 
 @media screen and (max-width: 575px){
@@ -949,6 +1205,14 @@ div.tab_about_select div.select3 section,
 div.tab_about_select div.select4 section{
     margin-left: 40px;
     width: 600px;
+}
+@media screen and (min-width:992px) and (max-width:1199px){
+    div.tab_about_select div.select1 section,
+    div.tab_about_select div.select2 section,
+    div.tab_about_select div.select3 section,
+    div.tab_about_select div.select4 section{
+        width: 100%;
+    }
 }
 @media screen and (max-width: 575px){
     div.tab_about_select div.select1 section,
