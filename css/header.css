@@ -645,19 +645,23 @@ div.shopping_cart label.open img{
 
 div.shopping_cart_list{
     position: absolute;
-    right: 0;
-    top: 92px;
+    right: -5px;
+    top: 104px;
+    opacity: 0;
     width: 500px;
     background-color: #f8f8f8;
     color: black;
-    z-index: 2;
-    display: none;
+    z-index: -1;
+    /* display: none; */
     border: 1px solid black;
     transition: all 1s;
 }
 
 .cart_open{
-    display: block !important;
+    /* display: block !important; */
+    opacity: 1 !important;
+    z-index: 20 !important;
+    transition: 1s;
 }
 
 div.shopping_cart_list > p{
@@ -762,11 +766,10 @@ div.shopping_cart_list > section.payment_block > a.pay_money{
         position: absolute;
         right: -90px;
         top: 120px;
-        transform: translateY(-500px);
         width: 500px;
         background-color: #f8f8f8;
         color: black;
-        z-index: 2;
+        z-index: -1;
         display: block;
         opacity: 0;
         border: 1px solid black;
@@ -775,8 +778,8 @@ div.shopping_cart_list > section.payment_block > a.pay_money{
     
     .cart_open{
         display: block !important;
-        transform: translateY(0px) !important;
         opacity: 1 !important;
+        z-index: 20 !important;
         transition: 1s;
     }
     

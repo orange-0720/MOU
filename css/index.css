@@ -29,6 +29,7 @@ main{
     width: 1200px;
     margin: 0 auto;
     max-width: 100%;
+    overflow: hidden;
 }
 @media screen and (min-width:992px) and (max-width:1199px){
     main{
@@ -39,10 +40,16 @@ main{
 
 
 div.intro{
-    /* width: 1200px; */
+    width: 1200px;
     margin: 0 auto;
     position: relative;
+    max-width: 100%;
 }
+div.intro > img{
+    width: 100%;
+    max-width: 100%;
+}
+
 @media screen and (min-width:992px) and (max-width:1199px){
     div.intro{
         width: 960px;
