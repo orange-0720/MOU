@@ -18,6 +18,13 @@ main{
         max-width: 100%;
     }
 }
+@media screen and (min-width:768px) and (max-width:991px){
+    main{
+        width: 720px;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+}
 @media screen and (max-width: 575px){
     main{
         width: 100%;
@@ -34,6 +41,16 @@ div.page_guide{
     text-align: center;  
 }
 @media screen and (min-width:992px) and (max-width:1199px){
+    div.page_guide{
+        margin: 0 auto;
+        margin-top: 10px;
+        padding: 20px;
+        width: 100%;
+        background-color: #ededed;
+        text-align: center;  
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px){
     div.page_guide{
         margin: 0 auto;
         margin-top: 10px;
@@ -62,6 +79,14 @@ div.inside{
     align-items: flex-start;
 }
 @media screen and (min-width:992px) and (max-width:1199px){
+    div.inside{
+        margin: 0 auto;
+        display: flex;
+        margin-top: 30px;
+        align-items: flex-start;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px){
     div.inside{
         margin: 0 auto;
         display: flex;
@@ -315,6 +340,124 @@ aside.aside section > ul >li.item7{
         background-position: right 35px top -2px ;
     }
 }
+@media screen and (min-width:768px) and (max-width:991px){
+    aside.aside{
+        position: sticky;
+        top: 20px;
+        bottom: 100px;
+        width: 180px;
+    }
+    
+    aside.aside h2{
+        margin-top: 0px;
+        width: 100%;
+        color: black;
+        padding: 10px;
+        text-align: left;
+    }
+    aside.aside section{
+        width: 80%;
+        text-align: left;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    aside.aside section > input{
+        display: none;
+    }
+    
+    aside.aside section > label{
+        display: inline-block;
+        width: 100%;
+        font-size: 20px;
+        margin-top: 20px;
+        background-image: url(../icon/down-arrow.png);
+        background-repeat: no-repeat;
+        background-size: 16px;
+        background-position:right 20px top 50% ;
+        cursor: pointer;
+    }
+    
+    aside.aside section > ul{
+        display: none;
+        padding: 0;
+    }
+    
+    aside.aside section > input:checked ~ label{
+        background-image: url(../icon/up-chevron.png);
+        background-size: 16px;
+        background-repeat: no-repeat;
+        background-position: right 20px top 50% ;
+    }
+    
+    aside.aside section > input:checked ~ ul{
+        display: block;
+    }
+    
+    aside.aside section > ul > li{
+        margin-top: 10px;
+        list-style: none;
+        padding: 5px 5px;
+        cursor: pointer;
+    } 
+    
+    aside.aside section > ul > li >a{
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    } 
+    
+    aside.aside section > ul >li.item1{
+        background-image: url(../images/CAP/b2fda4edc80e63dca8a536a0d1d8bfbf.png);
+        background-repeat: no-repeat;
+        background-size: 40px;
+        background-position: right 1% top 50% ;
+    }
+    
+    aside.aside section > ul >li.item2{
+        background-image: url(../images/CAP/img_color02-8.png);
+        background-repeat: no-repeat;
+        background-size: 55px;
+        background-position: right -2% top 50% ;
+    }
+    
+    aside.aside section > ul >li.item3{
+        background-image: url(../images/buscket_hat/0853011-001-08.png);
+        background-repeat: no-repeat;
+        background-size: 50px;
+        background-position: right -2% top 50% ;
+    }
+    
+    aside.aside section > ul >li.item4{
+        background-image: url(../images/buscket_hat/0853011-001-09.png);
+        background-repeat: no-repeat;
+        background-size: 50px;
+        background-position: right -2% top 50% ;
+    }
+    
+    aside.aside section > ul >li.item5{
+        background-image: url(../images/baseball_hat/2-2.png);
+        background-repeat: no-repeat;
+        background-size: 45px;
+        background-position: right 0% top 50% ;
+    }
+    
+    aside.aside section > ul >li.item6{
+        background-image: url(../images/baseball_hat/TRC-55_05_s.png);
+        background-repeat: no-repeat;
+        background-size: 50px;
+        background-position: right -2% top 50% ;
+    }
+    
+    aside.aside section > ul >li.item7{
+        background-image: url(../images/nethat/da3d8de8325fa9b34f708e89d584a1f9.png);
+        background-repeat: no-repeat;
+        background-size: 50px;
+        background-position: right -2% top 50% ;
+    }
+}
 @media screen and (max-width: 575px){
     aside.aside{
         margin-top: 0px;
@@ -496,6 +639,20 @@ div.process{
         margin-bottom: 50px;
     }
 }
+@media screen and (min-width:768px) and (max-width:991px){
+    div.process_midlle{
+        width: 520px;
+        margin: 0 auto;
+    }
+    div.process{
+        width: 520px;
+        padding: 0 10px;
+        margin:0 auto;
+        display: block;
+        margin-bottom: 50px;
+        font-size: 0px;
+    }
+}
 @media screen and (max-width: 575px){
     div.process_midlle{
         width: 100%;
@@ -536,6 +693,21 @@ div.process div.pickup{
         color:black;
     }
 }
+@media screen and (min-width:768px) and (max-width:991px){
+    div.process div.send_order,
+    div.process div.coversation,
+    div.process div.approve,
+    div.process div.pay,
+    div.process div.make,
+    div.process div.pickup{
+        margin: 30px 0px 30px 20px;
+        font-size: 20px;
+        text-align: center;
+        color:black;
+        width: calc((500px - 40px)/2);
+        display: inline-block;
+    }
+}
 @media screen and (max-width: 575px){
     div.process div.send_order,
     div.process div.coversation,
@@ -567,7 +739,15 @@ section.back_color{
         margin: 0 auto;
     }   
 }
-
+@media screen and (min-width:768px) and (max-width:991px){
+    section.back_color{
+        width: calc((500px - 40px)/2);
+        height: 230px;
+        background-color: #FFD900;
+        border-radius: 50%;
+        margin: 0 auto;
+    }   
+}
 @media screen and (max-width: 575px){
     section.back_color{
         width: 250px;
@@ -586,6 +766,17 @@ h3.step{
     padding: 30px 10px 20px 10px;
 }
 @media screen and (min-width:992px) and (max-width:1199px){
+    h3.step{
+        width: 100%;
+        text-align: center;
+        padding: 20px 10px 20px 10px;
+    }
+    section.back_color > img{
+        width: 110px;
+        max-width: 100%;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px){
     h3.step{
         width: 100%;
         text-align: center;
@@ -659,7 +850,32 @@ div.handmade_note article span{
         padding: 10px 10px 0px 10px;
     }
 }
-
+@media screen and (min-width:768px) and (max-width:991px){
+    div.handmade_note{
+        border: 2px solid #737578;
+        border-radius: 5px;
+        background-color:#f6f3f1 ;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    div.handmade_note h2{
+        text-align: center;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    
+    div.handmade_note article p{
+        padding: 5px 10px;
+    }
+    div.handmade_note article span{
+        display: block;
+        text-align: left;
+        padding: 10px 10px 0px 10px;
+    }
+}
 @media screen and (max-width: 575px){
     div.handmade_note{
         border: 2px solid #737578;

@@ -32,6 +32,15 @@ main{
         background-position:center;
     }
 }
+@media screen and (min-width:768px) and (max-width:991px){
+    main{
+        max-width: 100%;
+        margin: 50px auto;
+        position: relative;
+        padding: 0px;
+        background-image: none;
+    }
+}
 @media screen and (max-width: 575px){
     main{
         position: relative;
@@ -57,6 +66,18 @@ main div.signup_list{
         z-index: 50;
         background-color: #f8f8f8;
         position: relative;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px){
+    main div.signup_list{
+        width: 500px;
+        margin: 0 auto;
+        z-index: 50;
+        background-color: #f8f8f8;
+        position: relative;
+        border: 1px solid black;
+        border-radius: 10px;
+        overflow: hidden;
     }
 }
 @media screen and (max-width: 575px){
@@ -274,7 +295,6 @@ div.signup_list div.sign_up > label:hover{
     }
 }
 
-
 div.sign_up > section.signup_detail{
     width: 500px;
     margin: 0 auto;
@@ -291,6 +311,21 @@ div.sign_up input#signup_bt:checked ~ section.signup_detail {
 @media screen and (min-width:992px) and (max-width:1199px){
     div.sign_up > section.signup_detail{
         width: 420px;
+        margin: 0 auto;
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #f8f8f8;
+    }
+    
+    div.sign_up input#signup_bt:checked ~ section.signup_detail {
+        display: block;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px){
+    div.sign_up > section.signup_detail{
+        width: 500px;
         margin: 0 auto;
         display: none;
         position: absolute;

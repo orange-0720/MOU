@@ -68,7 +68,38 @@ div.page_guide > h1{
         z-index: 5;
     }
 }
-
+@media screen and (min-width:768px) and (max-width:991px){
+    div.page_guide{
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+        height: 300px;
+        text-align: center;  
+        margin-top: 10px;
+    }
+    
+    div.page_guide::after{
+        content: "";
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../images/priscilla-du-preez-hYEW-2wsduE-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    div.page_guide > h1{
+        position: absolute;
+        left: 50%;
+        top: 70%;
+        transform: translate(-50% , -50%);
+        font-size: 32px;
+        color: #f8f8f8;
+        z-index: 5;
+    }
+}
 @media screen and (max-width: 599px){
     div.page_guide{
         position: relative;
@@ -195,6 +226,50 @@ div.knowledge_guide > a:hover{
         color: #ffd900;
     }
 }
+@media screen and (min-width:768px) and (max-width:991px){
+    div.knowledge_guide{
+        margin: 0 auto;
+        margin-top: 0px;
+        padding: 20px;
+        width: 100%;
+        background-color: #ededed;
+        text-align: center;
+        vertical-align: bottom;  
+    }
+    
+    div.knowledge_guide > a{
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        margin: 0 60px;
+        padding-top: 80px;
+    }
+    
+    div.knowledge_guide > a:nth-child(1){
+        background-image: url(../icon/measuring-tape.png);
+        background-repeat: no-repeat;
+        background-size: 60px;
+        background-position: center top 10px;
+    }
+    
+    div.knowledge_guide > a:nth-child(2){
+        background-image: url(../icon/cleaning-tools.png);
+        background-repeat: no-repeat;
+        background-size: 70px;
+        background-position: center top 5px;
+    }
+    
+    div.knowledge_guide > a:nth-child(3){
+        background-image: url(../icon/cap-knowledge.png);
+        background-repeat: no-repeat;
+        background-size: 60px;
+        background-position: center top 10px;
+    }
+    
+    div.knowledge_guide > a:hover{
+        color: #ffd900;
+    }
+}
 @media screen and (max-width: 599px){
     div.knowledge_guide{
         margin: 0 auto;
@@ -255,6 +330,16 @@ main{
 @media screen and (min-width:992px) and (max-width:1199px){
     main{
         width: 960px;
+        margin: 0 auto;
+        display: flex;
+        margin-top: 60px;
+        align-items: flex-start;
+        max-width: 100%;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px){
+    main{
+        width: 720px;
         margin: 0 auto;
         display: flex;
         margin-top: 60px;
@@ -511,6 +596,124 @@ aside.aside section > ul >li.item7{
         background-position: right 35px top -2px ;
     }
 }
+@media screen and (min-width:768px) and (max-width:991px){
+    aside.aside{
+        position: sticky;
+        top: 20px;
+        bottom: 100px;
+        width: 180px;
+    }
+    
+    aside.aside h2{
+        margin-top: 0px;
+        width: 100%;
+        color: black;
+        padding: 10px;
+        text-align: left;
+    }
+    aside.aside section{
+        width: 80%;
+        text-align: left;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    aside.aside section > input{
+        display: none;
+    }
+    
+    aside.aside section > label{
+        display: inline-block;
+        width: 100%;
+        font-size: 20px;
+        margin-top: 20px;
+        background-image: url(../icon/down-arrow.png);
+        background-repeat: no-repeat;
+        background-size: 16px;
+        background-position:right 20px top 50% ;
+        cursor: pointer;
+    }
+    
+    aside.aside section > ul{
+        display: none;
+        padding: 0;
+    }
+    
+    aside.aside section > input:checked ~ label{
+        background-image: url(../icon/up-chevron.png);
+        background-size: 16px;
+        background-repeat: no-repeat;
+        background-position: right 20px top 50% ;
+    }
+    
+    aside.aside section > input:checked ~ ul{
+        display: block;
+    }
+    
+    aside.aside section > ul > li{
+        margin-top: 10px;
+        list-style: none;
+        padding: 5px 5px;
+        cursor: pointer;
+    } 
+    
+    aside.aside section > ul > li >a{
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    } 
+    
+    aside.aside section > ul >li.item1{
+        background-image: url(../images/CAP/b2fda4edc80e63dca8a536a0d1d8bfbf.png);
+        background-repeat: no-repeat;
+        background-size: 40px;
+        background-position: right 1% top 50% ;
+    }
+    
+    aside.aside section > ul >li.item2{
+        background-image: url(../images/CAP/img_color02-8.png);
+        background-repeat: no-repeat;
+        background-size: 55px;
+        background-position: right -2% top 50% ;
+    }
+    
+    aside.aside section > ul >li.item3{
+        background-image: url(../images/buscket_hat/0853011-001-08.png);
+        background-repeat: no-repeat;
+        background-size: 50px;
+        background-position: right -2% top 50% ;
+    }
+    
+    aside.aside section > ul >li.item4{
+        background-image: url(../images/buscket_hat/0853011-001-09.png);
+        background-repeat: no-repeat;
+        background-size: 50px;
+        background-position: right -2% top 50% ;
+    }
+    
+    aside.aside section > ul >li.item5{
+        background-image: url(../images/baseball_hat/2-2.png);
+        background-repeat: no-repeat;
+        background-size: 45px;
+        background-position: right 0% top 50% ;
+    }
+    
+    aside.aside section > ul >li.item6{
+        background-image: url(../images/baseball_hat/TRC-55_05_s.png);
+        background-repeat: no-repeat;
+        background-size: 50px;
+        background-position: right -2% top 50% ;
+    }
+    
+    aside.aside section > ul >li.item7{
+        background-image: url(../images/nethat/da3d8de8325fa9b34f708e89d584a1f9.png);
+        background-repeat: no-repeat;
+        background-size: 50px;
+        background-position: right -2% top 50% ;
+    }
+}
 @media screen and (max-width: 575px){
     aside.aside{
         margin-top: 0px;
@@ -681,6 +884,14 @@ div.knowledge_intro{
         padding: 0px 30px;
     }
 }
+@media screen and (min-width:768px) and (max-width:991px){
+    div.knowledge_intro{
+        flex: 1;
+        margin: 0 auto;
+        padding: 0px 0px 0px 30px;
+        width: 540px;
+    }
+}
 @media screen and (max-width: 599px){
     div.knowledge_intro{
         flex: 1;
@@ -717,7 +928,20 @@ div.knowledge_intro article.keep_up > h2{
         padding: 5px 0;
     }
 }
-
+@media screen and (min-width:768px) and (max-width:991px){
+    div.knowledge_intro article#about-size{
+        line-height: 2rem;
+    }
+    
+    div.knowledge_intro article#about-size > h2,
+    div.knowledge_intro article.about-measure > h2,
+    div.knowledge_intro article#wash1 > h2,
+    div.knowledge_intro article.keep_up > h2{
+        margin-bottom: 20px;
+        border-bottom: 3px solid #ededed;
+        padding: 5px 0;
+    }
+}
 @media screen and (max-width: 599px){
     div.knowledge_intro article#about-size{
         line-height: 2rem;
@@ -763,7 +987,22 @@ div.knowledge_intro article.about-measure >ol ,li{
         list-style: none;
     }
 }
-
+@media screen and (min-width:768px) and (max-width:991px){
+    div.knowledge_intro article.about-measure{
+        line-height: 2rem;
+        margin-top: 70px;
+        background-image: url(../icon/head_1-8.png);
+        background-repeat: no-repeat;
+        background-size: 110px;
+        background-position: top 50px  right 0px ;
+    }
+    
+    div.knowledge_intro article.about-measure >ol ,li{
+        margin-top: 10px;
+        padding: 0;
+        list-style: none;
+    }
+}
 @media screen and (max-width: 599px){
     div.knowledge_intro article.about-measure{
         line-height: 2rem;
@@ -830,7 +1069,40 @@ div.knowledge_intro article.wash3 > article p.wash_note{
         padding-top: 10px;
         text-align: center;
     }
+    
+    div.knowledge_intro article#wash1 >article,
+    div.knowledge_intro article.wash2 >article,
+    div.knowledge_intro article.wash3 >article{
+        margin-top: 10px;
+    }
 
+    div.knowledge_intro article.wash3 > article p.wash_note{
+        font-size: 20px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px){
+    div.knowledge_intro article#wash1,
+    div.knowledge_intro article.wash2,
+    div.knowledge_intro article.wash3,
+    div.knowledge_intro article.keep_up,
+    article#about-wear{
+        margin-top: 50px;
+        line-height: 2rem;
+    }
+
+    div.knowledge_intro article#wash1 p.wash_label,
+    div.knowledge_intro article.wash2 p.wash_label,
+    div.knowledge_intro article.wash3 p.wash_label{
+        width: 100%;
+        margin-bottom: 10px;
+        padding-top: 10px;
+        text-align: center;
+    }
+    div.knowledge_intro article#wash1 > img,
+    div.knowledge_intro article.wash2 > img,
+    div.knowledge_intro article.wash3 > img{
+        max-width: 100%;
+    }
     div.knowledge_intro article#wash1 >article,
     div.knowledge_intro article.wash2 >article,
     div.knowledge_intro article.wash3 >article{
@@ -1365,7 +1637,276 @@ article#about-wear div.cap_hat >section.cap_3{
     article#about-wear div.cap_hat >section.cap_3 > p{
         padding: 5px 0px;
     }    
+}
+@media screen and (min-width:768px) and (max-width:991px){
+        article#about-wear{
+        width: 720px;
+        margin:0 auto;
+        margin-top: 80px;;
+    }
 
+    article#about-wear > h2{
+        margin-bottom: 50px;
+        padding: 5px 0;
+        text-align: center;
+    }
+
+    article#about-wear div.flat_hat{
+        display: flex;
+        align-items: center;
+        justify-items: flex-start;
+        width: 250px;
+        overflow: hidden;
+        background-color: black;
+        margin-left: 100px;
+        transition: 0.5s;
+
+    }
+
+    article#about-wear div.flat_hat:hover{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    article#about-wear div.flat_hat div.flat_block{
+        position: relative;
+        padding: 125px;
+        background-image: url(../images/ana-itonishvili-pfEsPSRACHA-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+    }
+
+    article#about-wear div.flat_hat div.flat_block > h3{
+        position: absolute;
+        top: 50%;
+        right: -0px;
+        transform: translateY(-50%);
+        padding: 30px 0;
+        background-color: black;
+        color: #f8f8f8;
+        writing-mode: vertical-rl;
+        text-align: center;
+        background-image: url(../icon/next_white.png);
+        background-repeat: no-repeat;
+        background-size: 15px;
+        background-position: bottom 5% left 50%;
+
+    }
+
+    article#about-wear div.flat_hat >section.flat_1,
+    article#about-wear div.flat_hat >section.flat_2{
+        margin-left: 40px;
+        background-color: #ededed;
+        text-align: center;
+        padding: 0px;
+    }
+
+    article#about-wear div.flat_hat >section.flat_1 > img,
+    article#about-wear div.flat_hat >section.flat_2 > img{
+        width: 180px;
+        vertical-align: bottom  ;
+    }
+    article#about-wear div.flat_hat >section.flat_1 > p,
+    article#about-wear div.flat_hat >section.flat_2 > p{
+        line-height: 1.2rem;
+        padding: 5px;
+    }
+
+    article#about-wear div.canvas_hat{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: flex-start;
+        width: 250px;
+        overflow: hidden;
+        background-color: black;
+        margin-left: 420px;
+        transition: 0.5s;
+    }
+
+    article#about-wear div.canvas_hat:hover{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    article#about-wear div.canvas_hat div.canvas_block{
+        position: relative;
+        padding: 125px;
+        background-image: url(../images/johan-mouchet-ZR5t-9vjeGQ-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    article#about-wear div.canvas_hat div.canvas_block > h3{
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        transform: translateY(-50%);
+        padding: 30px 0;
+        background-color: black;
+        color: #f8f8f8;
+        writing-mode: vertical-rl;
+        text-align: center;
+        background-image: url(../icon/previous_white.png);
+        background-repeat: no-repeat;
+        background-size: 15px;
+        background-position: bottom 5% left 50%;
+    }
+
+    article#about-wear div.canvas_hat >section.canvas_1,
+    article#about-wear div.canvas_hat >section.canvas_2{
+        margin:0 30px;
+        background-color: #ededed;
+        text-align: center;
+        padding: 0px;
+    }
+    article#about-wear div.canvas_hat >section.canvas_1 > img,
+    article#about-wear div.canvas_hat >section.canvas_2 >img{
+        width: 180px;
+        /* max-width: 100%; */
+        vertical-align: bottom;
+    }
+    article#about-wear div.canvas_hat >section.canvas_1 > p,
+    article#about-wear div.canvas_hat >section.canvas_2 >p{
+        line-height: 1.2rem;
+        padding: 5px;
+    }
+
+    article#about-wear div.knitted_hat{
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        width: 250px;
+        overflow: hidden;
+        background-color: black;
+        margin-left: 100px;
+        transition: 0.5s;
+    }
+
+    article#about-wear div.knitted_hat:hover{
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    article#about-wear div.knitted_hat div.knitted_block{
+        position: relative;
+        padding: 125px;
+        background-image: url(../images/iamninoslav-03V5lIoIH0Q-unsplash1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+    }
+
+    article#about-wear div.knitted_hat div.knitted_block > h3{
+        position: absolute;
+        top: 50%;
+        right: 0px;
+        transform: translateY(-50%);
+        padding: 30px 0;
+        background-color: black;
+        color: #f8f8f8;
+        writing-mode: vertical-rl;
+        text-align: center;
+        background-image: url(../icon/next_white.png);
+        background-repeat: no-repeat;
+        background-size: 15px;
+        background-position: bottom 5% left 50%;
+
+    }
+
+    article#about-wear div.knitted_hat >section.knitted_1,
+    article#about-wear div.knitted_hat >section.knitted_2{
+        margin-left: 35px;
+        background-color: #ededed;
+        text-align: center;
+        padding: 0px;
+    }
+
+    article#about-wear div.knitted_hat >section.knitted_2{
+        margin-top: 0px;
+    }
+    article#about-wear div.knitted_hat >section.knitted_1 > img,
+    article#about-wear div.knitted_hat >section.knitted_2 > img{
+        width: 200px;
+        /* max-width: 100%; */
+        vertical-align: bottom  ;
+    }
+    article#about-wear div.knitted_hat >section.knitted_1 > p,
+    article#about-wear div.knitted_hat >section.knitted_2 > p{
+        line-height: 1.2rem;
+        padding: 5px;
+    }
+
+    article#about-wear div.cap_hat{
+        margin: 50px 0;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: flex-start;
+        width: 200px;
+        overflow: hidden;
+        background-color: black;
+        margin-left: 420px;
+        transition: 0.5s;
+    }
+
+    article#about-wear div.cap_hat:hover{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    article#about-wear div.cap_hat div.cap_block{
+        position: relative;
+        padding: 100px;
+        background-image: url(../images/zach-vessels-mdLklXFZBDI-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    article#about-wear div.cap_hat div.cap_block > h3{
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        transform: translateY(-50%);
+        padding: 30px 0;
+        white-space: nowrap;
+        background-color: black;
+        color: #f8f8f8;
+        writing-mode: vertical-rl;
+        text-align: center;
+        background-image: url(../icon/previous_white.png);
+        background-repeat: no-repeat;
+        background-size: 15px;
+        background-position: bottom 5% left 50%;
+
+    }
+
+    article#about-wear div.cap_hat >section.cap_1,
+    article#about-wear div.cap_hat >section.cap_2,
+    article#about-wear div.cap_hat >section.cap_3{
+        margin:0px 10px;
+        background-color: #ededed;
+        text-align: center;
+        padding: 0px;
+    }
+
+    article#about-wear div.cap_hat >section.cap_1 > img,
+    article#about-wear div.cap_hat >section.cap_2 > img,
+    article#about-wear div.cap_hat >section.cap_3 > img{
+        width: 160px;
+        vertical-align: bottom;
+    }    
+    article#about-wear div.cap_hat >section.cap_1 > p,
+    article#about-wear div.cap_hat >section.cap_2 > p,
+    article#about-wear div.cap_hat >section.cap_3 > p{
+        padding: 5px 0px;
+    }    
 }
 @media screen and (max-width: 599px){
     article#about-wear{

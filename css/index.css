@@ -37,7 +37,12 @@ main{
         margin: 0 auto;
     }
 }
-
+@media screen and (min-width:768px) and (max-width:991px){
+    main{
+        width: 720px;
+        margin: 0 auto;
+    }
+}
 
 div.intro{
     width: 1200px;
@@ -53,6 +58,14 @@ div.intro > img{
 @media screen and (min-width:992px) and (max-width:1199px){
     div.intro{
         width: 960px;
+        margin: 0 auto;
+        position: relative;
+        margin-top: 30px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px){
+    div.intro{
+        width: 100%;
         margin: 0 auto;
         position: relative;
         margin-top: 30px;
@@ -74,6 +87,13 @@ div.intro > section{
     top: 80px;
 }
 @media screen and (min-width:992px) and (max-width:1199px){
+    div.intro > section{
+        position: absolute;
+        left: 40px;
+        top: 30px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px){
     div.intro > section{
         position: absolute;
         left: 40px;
@@ -132,7 +152,28 @@ div.intro > section > a{
         font-weight: bold;
     }
 }
-
+@media screen and (min-width:768px) and (max-width:991px){
+    div.intro > section > a{
+        display: block;
+        background: #ffd900;
+        width: 300px;
+        text-align: center;
+        color: black;
+        text-decoration: none;
+        font-size: 24px;
+        margin-left: 60px;
+        margin-top: 30px;
+        font-weight: bold;
+        background-image: url(../icon/right.png);
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-position: right 15px top 7px;
+        animation-name: move;
+        animation-iteration-count: infinite;
+        animation-duration: 2s;
+        font-weight: bold;
+    }
+}
 @media screen and (max-width: 575px){
     div.intro > section > a{
         display: block;
@@ -161,15 +202,9 @@ div.intro > section > a{
 
 div.intro > img{
     display: block;
-    /* width: 1200px ; */
     max-width: 100%;
 }
-@media screen and (min-width:992px) and (max-width:1199px){
-    div.intro  img{
-        display: block;
-        width: 100%;
-    }
-}
+
 @media screen and (max-width: 575px){
     div.intro  img{
         display: block;
@@ -178,7 +213,7 @@ div.intro > img{
 }
 
 main div.hothat{
-    /* width: 1200px; */
+    width: 1200px;
     margin: 0 auto;
     margin-top: 100px;
     padding: 0 20px;
@@ -186,6 +221,14 @@ main div.hothat{
 @media screen and (min-width:992px) and (max-width:1199px){
     main div.hothat{
         width: 960px;
+        margin: 0 auto;
+        margin-top: 40px;
+        padding: 0px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px){
+    main div.hothat{
+        width: 720px;
         margin: 0 auto;
         margin-top: 40px;
         padding: 0px;
@@ -212,6 +255,13 @@ div.hothat > h1{
         padding: 10px;
     }
 }
+@media screen and (min-width:768px) and (max-width:991px){
+    div.hothat > h1{
+        text-align: center;
+        margin: 30px 0 80px 0;
+        padding: 10px;
+    }
+}
 @media screen and (max-width: 575px){
     div.hothat > h1{
         text-align: center;
@@ -224,6 +274,13 @@ div.hothat div.bestseller{
     display: flex;
 }
 @media screen and (min-width:992px) and (max-width:1199px){
+    div.hothat div.bestseller{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px){
     div.hothat div.bestseller{
         display: flex;
         width: 100%;
@@ -259,6 +316,19 @@ div.hothat div.bestseller section{
         transition: 0.5s;
     }
 }
+@media screen and (min-width:768px) and (max-width:991px){
+    div.hothat div.bestseller section{
+        display: inline-block;
+        width: calc(660px / 3);
+        margin: 0 auto;
+        text-align: center;
+        border: 1px solid black;
+        background-color: #f8f8f8;
+        border-radius: 8px;
+        transition: 0.5s;
+    }
+}
+
 @media screen and (max-width: 575px){
     div.hothat div.bestseller section{
         display: block;
@@ -281,6 +351,13 @@ div.hothat div.bestseller section > img{
         max-width: 100%;
     }
 }
+@media screen and (min-width:768px) and (max-width:991px){
+    div.hothat div.bestseller section > img{
+        margin-top: 20px;
+        max-width: 100%;
+    }
+}
+
 @media screen and (max-width: 575px){
     div.hothat div.bestseller section > img{
         margin-top: 50px;
@@ -292,20 +369,6 @@ div.hothat div.bestseller section:first-child,
 div.hothat div.bestseller section:nth-child(2),
 div.hothat div.bestseller section:last-child{
     position: relative;
-}
-@media screen and (min-width:992px) and (max-width:1199px){
-    div.hothat div.bestseller section:first-child,
-    div.hothat div.bestseller section:nth-child(2),
-    div.hothat div.bestseller section:last-child{
-        position: relative;    
-    }
-}
-@media screen and (max-width: 575px){
-    div.hothat div.bestseller section:first-child,
-    div.hothat div.bestseller section:nth-child(2),
-    div.hothat div.bestseller section:last-child{
-        position: relative;
-    }
 }
 
 /* top123 標籤 */
@@ -324,6 +387,19 @@ div.hothat div.bestseller section:first-child::after{
     div.hothat div.bestseller section:first-child::after{
         content: "Top 1";
         width: 100px;
+        padding: 5px;
+        color: #f8f8f8;
+        background-color: black;
+        position: absolute;
+        top: -33px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px){
+    div.hothat div.bestseller section:first-child::after{
+        content: "Top 1";
+        width: 80px;
         padding: 5px;
         color: #f8f8f8;
         background-color: black;
@@ -371,6 +447,19 @@ div.hothat div.bestseller section:nth-of-type(2)::after{
         transform: translate(-50%);
     }
 }
+@media screen and (min-width:768px) and (max-width:991px){
+    div.hothat div.bestseller section:nth-of-type(2)::after{
+        content: "Top 2";
+        width: 80px;
+        padding: 5px;
+        color: #f8f8f8;
+        background-color: black;
+        position: absolute;
+        top: -33px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
 @media screen and (max-width: 575px){
     div.hothat div.bestseller section:nth-of-type(2)::after{
         content: "Top 2";
@@ -409,6 +498,19 @@ div.hothat div.bestseller section:last-child::after{
         transform: translate(-50%);
     }
 }
+@media screen and (min-width:768px) and (max-width:991px){
+    div.hothat div.bestseller section:last-child::after{
+        content: "Top 3";
+        width: 80px;
+        padding: 5px;
+        color: #f8f8f8;
+        background-color: black;
+        position: absolute;
+        top: -33px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
 @media screen and (max-width: 575px){
     div.hothat div.bestseller section:last-child::after{
         content: "Top 3";
@@ -433,6 +535,12 @@ div.hothat div.bestseller section:hover{
         transform: scale(1.05);
     }
 }
+@media screen and (min-width:768px) and (max-width:991px){
+    div.hothat div.bestseller section:hover{
+        box-shadow: 0 0 6px #737578;
+        transform: scale(1.05);
+    }
+}
 @media screen and (max-width: 575px){
     div.hothat div.bestseller section:hover{
         box-shadow: none;
@@ -443,16 +551,7 @@ div.hothat div.bestseller section:hover{
 div.hothat div.bestseller section > p{
     padding-top: 5px;
 }
-@media screen and (min-width:992px) and (max-width:1199px){
-    div.hothat div.bestseller section > p{
-        padding-top: 5px;
-    } 
-}
-@media screen and (max-width: 575px){
-    div.hothat div.bestseller section > p{
-        padding-top: 5px;
-    } 
-}
+
 
 div.hothat div.bestseller section > p:nth-of-type(2){
     margin: 10px 0;
@@ -463,6 +562,13 @@ div.hothat div.bestseller section > p:nth-of-type(2){
     div.hothat div.bestseller section > p:nth-of-type(2){
         margin: 10px 0;
         font-size: 20px;
+        font-weight: bold;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px){
+    div.hothat div.bestseller section > p:nth-of-type(2){
+        margin: 10px 0;
+        font-size: 16px;
         font-weight: bold;
     }
 }
@@ -489,6 +595,22 @@ div.hothat div.bestseller section > a{
     font-weight: bold;
 }
 @media screen and (min-width:992px) and (max-width:1199px){
+    div.hothat div.bestseller section > a{
+        text-decoration: none;
+        outline: none;
+        background-color: #ededed;
+        border: 1px solid #737578;
+        color: black;
+        padding: 10px;
+        margin: 10px 0;
+        width: 120px;
+        border-radius: 5px;
+        display: inline-block;
+        margin-bottom: 20px;
+        font-weight: bold;
+    } 
+}
+@media screen and (min-width:768px) and (max-width:991px){
     div.hothat div.bestseller section > a{
         text-decoration: none;
         outline: none;
@@ -572,6 +694,26 @@ main div.hothat > a {
         background-position: right 15px top 15px;
     }
 }
+@media screen and (min-width:768px) and (max-width:991px){
+    main div.hothat > a {
+        display: block;
+        width: 200px;
+        background-color: black;
+        color: #f8f8f8;
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0 auto;
+        padding: 10px 10px;
+        margin-top: 60px;
+        text-decoration: none;
+        border-radius: 5px;
+        background-image: url(../icon/right.png);
+        background-repeat: no-repeat;
+        background-size: 16px;
+        background-position: right 15px top 15px;
+    }
+}
 @media screen and (max-width: 575px){
     main div.hothat > a {
         display: block;
@@ -607,7 +749,7 @@ main div.hothat > a:hover{
 
 
 div.about{
-    /* width: 1200px; */
+    width: 1200px;
     margin: 0 auto;
     margin-top: 100px;
     display: flex;
@@ -616,6 +758,15 @@ div.about{
 @media screen and (min-width:992px) and (max-width:1199px){
     div.about{
         width: 960px;
+        margin: 0 auto;
+        margin-top: 60px;
+        display: flex;
+        padding: 0px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px){
+    div.about{
+        width: 720px;
         margin: 0 auto;
         margin-top: 60px;
         display: flex;
@@ -641,6 +792,17 @@ div.about_picture{
     div.about_picture{
         flex: 1;
         margin-top: 40px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px){
+    div.about_picture{
+        flex: 1;
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+    div.about_picture img{
+        width: 400px;
+        max-width: 100%;
     }
 }
 @media screen and (max-width: 575px){
@@ -688,6 +850,40 @@ div.about_jump a:hover{
     color: black;
 }
 @media screen and (min-width:992px) and (max-width:1199px){
+    div.about_jump{
+        flex: 1;
+        text-align: center;
+        align-self: center;
+        margin-top: 50px;
+    }
+    div.about_jump p{
+        margin-top: 30px;
+        padding: 5px 10px;
+    }
+    div.about_jump a{
+        display: block;
+        width: 150px;
+        color: #f8f8f8;
+        background-color: black;
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0 auto;
+        padding: 10px 10px;
+        margin-top: 30px;
+        text-decoration: none;
+        border-radius: 5px;
+        background-image: url(../icon/right.png);
+        background-repeat: no-repeat;
+        background-size: 16px;
+        background-position: right 15px top 15px;
+    }
+    div.about_jump a:hover{
+        background-color: #ffd900;
+        color: black;
+    } 
+}
+@media screen and (min-width:768px) and (max-width:991px){
     div.about_jump{
         flex: 1;
         text-align: center;
@@ -780,6 +976,19 @@ div.about_process{
         padding: 0px;
     } 
 }
+@media screen and (min-width:768px) and (max-width:991px){
+    div.about_process{
+        width: 720px;
+        margin: 0 auto;
+        margin-top: 100px;
+        display: flex;
+        padding: 0px;
+    } 
+    div.process_picture img{
+        width: 400px;
+        max-width: 100%;
+    }
+}
 @media screen and (max-width: 575px){
     div.about_process{
         width: 100%;
@@ -825,6 +1034,18 @@ div.index_knowledge > h1{
     }
 }
 
+@media screen and (min-width:768px) and (max-width:991px){
+    div.index_knowledge{
+        width: 720px;
+        margin:0 auto;
+        margin-top: 80px;
+    }
+    div.index_knowledge > h1{
+        padding: 10px;
+        text-align: center;
+    }
+}
+
 @media screen and (max-width: 575px){
     div.index_knowledge{
         width: 100%;
@@ -850,6 +1071,20 @@ div.index_knowledge ul.slides{
     padding: 0;
 }
 @media screen and (min-width:992px) and (max-width:1199px){
+    div.index_knowledge ul.slides{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        position: relative;
+        height: auto;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        padding: 0;
+        padding: 50px 0px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px){
     div.index_knowledge ul.slides{
         display: flex;
         justify-content: space-around;
@@ -937,6 +1172,36 @@ li.slide section > a:hover{
         margin-top: 10px;
     }
 }
+@media screen and (min-width:768px) and (max-width:991px){
+    li.slide{
+        margin: 0;
+        padding: 0;
+        position: relative;
+        transition: .5s transform ease-in-out;
+        opacity: 0.5;
+    }
+    li.slide > img{
+        width: 220px;
+    }
+    li.slide section{
+        text-align: center;
+        padding: 5px 10px;
+    } 
+    li.slide section > a {
+        display: inline-block;
+        padding: 10px;
+        background-color:#ededed ;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin-top: 20px;
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    li.slide section > p{
+        margin-top: 10px;
+    }
+}
 @media screen and (max-width: 575px){
     li.slide{
         margin: 0;
@@ -992,6 +1257,14 @@ div.index_knowledge ul.slides div.control_visible{
         text-align: center;
     }
 }
+@media screen and (min-width:768px) and (max-width:991px){
+    div.index_knowledge ul.slides div.control_visible{
+        width: 300px;
+        position: absolute;
+        bottom:10px;
+        text-align: center;
+    }
+}
 @media screen and (max-width: 575px){
     div.index_knowledge ul.slides div.control_visible{
         width: 100%;
@@ -1010,18 +1283,6 @@ div.index_knowledge ul.slides div.control_visible > label{
     border: 3px solid black;
     display: inline-block;
     cursor: pointer;
-}
-@media screen and (min-width:992px) and (max-width:1199px){
-    div.index_knowledge ul.slides div.control_visible > label{
-        width: 12px;
-        height: 12px;
-        margin: 0 3px;
-        border-radius: 50%;
-        background-color: black;
-        border: 3px solid black;
-        display: inline-block;
-        cursor: pointer;
-    }
 }
 
 ul.slides input[type="radio"]:nth-of-type(1):checked ~ div.control_visible label:nth-of-type(1){
@@ -1061,6 +1322,17 @@ ul.slides input[type="radio"]:nth-of-type(3):checked ~ div.control_visible label
     }
     .slides input[type="radio"]:nth-of-type(3):checked ~ li.slide {
         transform:translateX(-320px);
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px){
+    .slides input[type="radio"]:nth-of-type(1):checked ~ li.slide {
+        transform:translateX(240px);
+    }
+    .slides input[type="radio"]:nth-of-type(2):checked ~ li.slide {
+        transform:translateX(0px);
+    }
+    .slides input[type="radio"]:nth-of-type(3):checked ~ li.slide {
+        transform:translateX(-240px);
     }
 }
 @media screen and (max-width: 575px){
@@ -1214,6 +1486,24 @@ ul.slides div.setblock2{
     ul.slides div.setblock2{
         position: absolute;
         right: 35px;
+        top: 0;
+        width: 250px;
+        height: 100%;
+        z-index: 50;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px){
+    ul.slides div.setblock1{
+        position: absolute;
+        left: 10px;
+        top: 0;
+        width: 220px;
+        height: 100%;
+        z-index: 50;
+    }
+    ul.slides div.setblock2{
+        position: absolute;
+        right: 15px;
         top: 0;
         width: 250px;
         height: 100%;

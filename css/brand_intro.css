@@ -26,6 +26,12 @@ main{
         margin: 0 auto;
     }
 }
+@media screen and (min-width:768px) and (max-width:991px){
+    main{
+        width: 720px;
+        margin: 0 auto;
+    }
+}
 @media screen and (max-width: 575px){
     main{
         width: 100%;
@@ -102,7 +108,40 @@ div.page_guide > h2{
         z-index: 5;
     }
 }
-
+@media screen and (min-width:768px) and (max-width:991px){
+    div.page_guide{
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+        height: 400px;
+        text-align: center;
+        margin-top: 10px;  
+    }
+    
+    div.page_guide::after{
+        content: "";
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../images/thom-holmes-nx0RXgbOH1o-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.5;
+    }
+    
+    div.page_guide > h2{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        display: inline-block;
+        transform: translate(-50% , -50%);
+        font-size: 32px;
+        color: black;
+        z-index: 5;
+    }
+}
 @media screen and (max-width: 575px){
     div.page_guide{
         position: relative;
@@ -182,6 +221,29 @@ div#insist{
         animation-fill-mode: forwards;
     }
 }
+@media screen and (min-width:768px) and (max-width:991px){
+    div#story,
+    div#think,
+    div#advantage,
+    div#insist{
+        width: 720px;
+        display: block;
+        margin-top: 80px;
+        position: relative;
+    }
+
+    div#think,
+    div#advantage,
+    div#insist{
+        transform: translateY(50%);
+    }
+
+    .move_up{
+        animation-name: move_up;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+}
 @media screen and (max-width: 575px){
     div#story,
     div#think,
@@ -222,7 +284,19 @@ div#advantage div.advantage_picture{
         max-width: 100%;
     }
 }
-
+@media screen and (min-width:768px) and (max-width:991px){
+    div#story div.intro_picture,
+    div#advantage div.advantage_picture{
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    }
+    div#story div.intro_picture > img,
+    div#advantage div.advantage_picture > img{
+        width: 400px;
+        max-width: 100%;
+    }
+}
 @media screen and (max-width: 575px){
     div#story div.intro_picture,
     div#advantage div.advantage_picture{
@@ -266,6 +340,22 @@ div#insist article.insist_article{
         margin-top: 0px;
     }
 }
+@media screen and (min-width:768px) and (max-width:991px){
+    div#story article.story_article,
+    div#think article.think_article,
+    div#advantage article.advantage_article,
+    div#insist article.insist_article{
+        margin: 0 auto;
+        width: 100%;
+        padding: 0 10px;
+        height: auto;
+    }
+
+    div#story article.story_article,
+    div#insist article.insist_article{
+        margin-top: 0px;
+    }
+}
 @media screen and (max-width: 575px){
     div#story article.story_article,
     div#think article.think_article,
@@ -298,6 +388,17 @@ div#insist article.insist_article h2{
         text-align: center;
         padding: 5px 10px;
         font-size: 32px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px){
+    div#story article.story_article h2,
+    div#think article.think_article h2,
+    div#advantage article.advantage_article h2,
+    div#insist article.insist_article h2{
+        text-align: center;
+        padding: 5px 10px;
+        font-size: 32px;
+        margin-top: 20px;
     }
 }
 @media screen and (max-width: 575px){
@@ -335,6 +436,18 @@ div#insist div.insist_picture{
         max-width: 100%;
     }
 }
+@media screen and (min-width:768px) and (max-width:991px){
+    div#think div.think_picture,
+    div#insist div.insist_picture{
+        margin: auto ;
+        text-align: center;
+    }
+    div#think div.think_picture > img,
+    div#insist div.insist_picture img{
+        width: 400px;
+        max-width: 100%;
+    }
+}
 @media screen and (max-width: 575px){
     div#think div.think_picture,
     div#insist div.insist_picture{
@@ -369,6 +482,17 @@ div#insist article.insist_article >p{
         font-size: 20px;
     }
 }
+@media screen and (min-width:768px) and (max-width:991px){
+    div#story article.story_article > p,
+    div#think article.think_article > p,
+    div#advantage article.advantage_article > p,
+    div#insist article.insist_article >p{
+        margin-top: 10px;
+        padding: 5px 100px;
+        line-height: 1.8rem;
+        font-size: 20px;
+    }
+}
 @media screen and (max-width: 575px){
     div#story article.story_article > p,
     div#think article.think_article > p,
@@ -387,6 +511,11 @@ div#advantage div.advantage_picture > img{
 @media screen and (min-width:992px) and (max-width:1199px){
     div#advantage div.advantage_picture > img{
         margin-top: 20px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px){
+    div#advantage div.advantage_picture > img{
+        margin-top: 0px;
     }
 }
 @media screen and (max-width: 575px){
