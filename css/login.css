@@ -44,6 +44,16 @@ main{
         opacity: 1;
     }
 }
+@media screen and (min-width:576px) and (max-width:767px){
+    main{
+        width: 100%;
+        position: relative;
+        padding:0px;
+        margin:20px auto;
+        background-image: none;
+        opacity: 1;
+    }
+}
 @media screen and (max-width: 575px){
     main{
         width: 100%;
@@ -71,6 +81,16 @@ main div.login_list{
     }
 }
 @media screen and (min-width:768px) and (max-width:991px){
+    main div.login_list{
+        width: 500px;
+        padding: 0px;
+        margin: 0 auto;
+        background-color: #f8f8f8;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+}
+@media screen and (min-width:576px) and (max-width:767px){
     main div.login_list{
         width: 500px;
         padding: 0px;

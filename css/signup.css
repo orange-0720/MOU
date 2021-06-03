@@ -41,6 +41,15 @@ main{
         background-image: none;
     }
 }
+@media screen and (min-width:576px) and (max-width:767px){
+    main{
+        max-width: 100%;
+        margin: 20px auto;
+        position: relative;
+        padding: 0px;
+        background-image: none;
+    }
+}
 @media screen and (max-width: 575px){
     main{
         position: relative;
@@ -69,6 +78,18 @@ main div.signup_list{
     }
 }
 @media screen and (min-width:768px) and (max-width:991px){
+    main div.signup_list{
+        width: 500px;
+        margin: 0 auto;
+        z-index: 50;
+        background-color: #f8f8f8;
+        position: relative;
+        border: 1px solid black;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+}
+@media screen and (min-width:576px) and (max-width:767px){
     main div.signup_list{
         width: 500px;
         margin: 0 auto;
@@ -117,6 +138,34 @@ div.signup_list ul > li:hover{
     background-color: #ffd900;
     transform: scale(1.05);
 }
+@media screen and (min-width:576px) and (max-width:767px){
+    div.signup_list > h1{
+        padding: 20px;
+        text-align: center;
+    }
+    
+    div.signup_list ul{
+        list-style: none;
+        margin: 0 auto;
+        padding: 0;
+    }
+    div.signup_list ul > li{
+        width: 300px;
+        max-width: 70%;
+        margin: 0 auto;
+        padding: 5px;
+        margin-top: 30px;
+        text-align: center;
+        border: 1px solid #737578;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+    
+    div.signup_list ul > li:hover{
+        background-color: #ffd900;
+        transform: scale(1.05);
+    }  
+}
 @media screen and (max-width: 575px){
     div.signup_list > h1{
         padding: 20px;
@@ -145,7 +194,6 @@ div.signup_list ul > li:hover{
         transform: scale(1.05);
     }  
 }
-
 
 div.signup_list ul li a.facebook{
     display: inline-block;
@@ -262,6 +310,38 @@ div.signup_list div.sign_up > label:hover{
     color: black;
     transform: translateY(-10px);
 }
+@media screen and (min-width:576px) and (max-width:767px){
+    div.sign_up{
+        display: block;
+        margin-top:30px;
+        width: 300px;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    div.sign_up > input{
+        display: none;
+    }
+    div.signup_list div.sign_up > label{
+        display: inline-block;
+        width: 100%;
+        padding: 10px;
+        margin: 0 auto;
+        margin-top: 30px;
+        border-radius: 10px;
+        background-color: black;
+        color: #f8f8f8;
+        font-weight: bold;
+        font-size: 20px;
+        cursor: pointer;
+        text-align: center;
+        transition: 0.3s;
+    }
+    div.signup_list div.sign_up > label:hover{
+        background-color: #ffd900;
+        color: black;
+        transform: translateY(-10px);
+    }
+}
 @media screen and (max-width: 575px){
     div.sign_up{
         display: block;
@@ -338,6 +418,21 @@ div.sign_up input#signup_bt:checked ~ section.signup_detail {
         display: block;
     }
 }
+@media screen and (min-width:576px) and (max-width:767px){
+    div.sign_up > section.signup_detail{
+        width: 540px;
+        margin: 0 auto;
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #f8f8f8;
+    }
+    
+    div.sign_up input#signup_bt:checked ~ section.signup_detail {
+        display: block;
+    }
+}
 @media screen and (max-width: 575px){
     div.sign_up > section.signup_detail{
         width: 100%;
@@ -372,6 +467,24 @@ div.signup_list section.signup_detail label.back{
 
 div.signup_list section.signup_detail label.back:hover{
     transform: scale(1.1);
+}
+@media screen and (min-width:576px) and (max-width:767px){
+    div.signup_list section.signup_detail label.back{
+        position: absolute;
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        background-image: url(../icon/x-mark.png);
+        background-repeat: no-repeat;
+        background-size: 30px;
+        background-position: left 20px top 20px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    
+    div.signup_list section.signup_detail label.back:hover{
+        transform: scale(1.1);
+    } 
 }
 @media screen and (max-width: 575px){
     div.signup_list section.signup_detail label.back{
@@ -409,6 +522,13 @@ div.signup_list section.signup_detail  label{
     width: 300px;
     margin: 0 auto;
 }
+@media screen and (min-width:576px) and (max-width:767px){
+    div.signup_list section.signup_detail  label{
+        width: 300px;
+        max-width: 80%;
+        margin: 0px auto;
+    }
+}
 @media screen and (max-width: 575px){
     div.signup_list section.signup_detail  label{
         width: 300px;
@@ -428,7 +548,19 @@ div.signup_list section.signup_detail label.password_check > input{
     margin: 0 auto;
     transition: 0.3s;
 }
-
+@media screen and (min-width:576px) and (max-width:767px){
+    div.signup_list section.signup_detail label.form_mail > input ,
+    div.signup_list section.signup_detail label.form_password > input,
+    div.signup_list section.signup_detail label.password_check > input{
+        width: 100%;
+        margin: 5px 0px;
+        border: 1px solid #737578;
+        border-radius: 5px;
+        height: 40px;
+        margin: 0 auto;
+        transition: 0.3s;
+    }
+}
 
 div.signup_list section.signup_detail label.form_mail,
 div.signup_list section.signup_detail label.form_password,
@@ -500,6 +632,35 @@ section.signup_detail > a.signup_checked:hover{
     background-color: #ffd900;
     color: black;
     transform: translateY(-5px);
+}
+@media screen and (min-width:576px) and (max-width:767px){
+    section.signup_detail > section.signup_note{
+        margin:15px 0;
+        text-align: center;
+    }
+    
+    section.signup_detail > a.signup_checked{
+        display: block;
+        width: 300px;
+        max-width: 80%;
+        padding: 10px;
+        margin: 20px auto;
+        border-radius: 5px;
+        border: 0;
+        background-color: black;
+        color: #f8f8f8;
+        font-weight: bold;
+        font-size: 20px;
+        cursor: pointer;
+        text-align: center;
+        transition: 0.3s;
+    }
+    
+    section.signup_detail > a.signup_checked:hover{
+        background-color: #ffd900;
+        color: black;
+        transform: translateY(-5px);
+    }
 }
 @media screen and (max-width: 575px){
     section.signup_detail > section.signup_note{

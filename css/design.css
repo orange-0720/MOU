@@ -82,6 +82,22 @@ div.design_list{
         padding-bottom: 50px;  
     }
 }
+@media screen and (min-width:576px) and (max-width:767px){
+    div.design_list{
+        margin: 0 auto;
+        width: 90%;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform:translateX(-50%);
+        overflow-y: auto;
+        background-color: #f8f8f8;
+        display: flex;
+        flex-direction: column;
+        padding: 0 5%;
+        padding-bottom: 100px;
+    }
+}
 @media screen and (max-width: 575px){
     div.design_list{
         margin: 0 auto;
@@ -117,6 +133,27 @@ div.design_list a.jump_back{
     cursor: pointer;
     z-index: 30;
     transition: 0.5s;
+}
+@media screen and (min-width:576px) and (max-width:767px){
+    div.design_list a.jump_back{
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 20px;
+        width: 70px;
+        justify-items: flex-end;
+        display: inline-block;
+        text-align: right;
+        text-decoration: none;
+        color: black;
+        background-image: url(../icon/x-mark.png);
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-position: left 2px top 6px;
+        cursor: pointer;
+        z-index: 30;
+        transition: 0.5s;
+    }
 }
 @media screen and (max-width: 575px){
     div.design_list a.jump_back{
@@ -162,6 +199,14 @@ div.design_list div.select_detail{
         /* flex: 1; */
         width: 400px;
         padding: 50px 0 50px 0;
+    }
+}
+@media screen and (min-width:576px) and (max-width:767px){
+    div.design_list div.select_detail{
+        order: 1;
+        flex: 1;
+        width: 100%;
+        padding: 50px 0 160px 0;
     }
 }
 @media screen and (max-width: 575px){
@@ -240,6 +285,53 @@ div.design_list div.select_detail input#file-tab:checked ~ div.tab label:last-ch
     border-top:5px solid #ffd900 ;
     border-bottom: none;
     z-index: 5;
+}
+@media screen and (min-width:576px) and (max-width:767px){
+    div.design_list div.select_detail div.tab{
+        vertical-align: bottom;
+        font-size: 0;
+        text-align: center;
+    }
+    
+    span#under{
+        display: inline-block;
+        width: 20px;
+        border-bottom: 1px solid #737578;
+        vertical-align: bottom;
+    }
+    div.design_list div.select_detail div.tab label{
+        padding: 30px 10px 10px 10px;
+        background-color: #ededed;
+        display: inline-block;
+        cursor: pointer;
+        width: calc((100% - 20px)/2);
+        text-align: center;
+        border: 1px solid #737578;
+        font-size: 16px;
+        vertical-align: bottom;
+    }
+    
+    div.design_list div.select_detail div.tab label:first-child{
+        background-image: url(../icon/cap.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center top 5px;
+    }
+    
+    div.design_list div.select_detail div.tab label:last-child{
+        background-image: url(../icon/creativity.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center top 5px;
+    }
+    
+    div.design_list div.select_detail input#product-tab:checked ~ div.tab label:first-child,
+    div.design_list div.select_detail input#file-tab:checked ~ div.tab label:last-child{
+        background-color: #f8f8f8;
+        border-top:5px solid #ffd900 ;
+        border-bottom: none;
+        z-index: 5;
+    }
 }
 @media screen and (max-width: 575px){
     div.design_list div.select_detail div.tab{
@@ -521,6 +613,87 @@ div.design_article section.next_step label:hover{
         background-color: black;
         color: white;
         border-radius: 8px;
+        display:block;
+        cursor: pointer;
+        margin-top: 50px;
+        font-size: 20px;
+    }
+    
+    div.design_article section.next_step label:hover{
+        background-color: #ffd900;
+        color: black;
+    }
+}
+@media screen and (min-width:576px) and (max-width:767px){
+    div.design_list div.select_detail div.design_article{
+        margin-top: 30px;
+        padding: 0 5% 0 5%;
+        display: none;
+        text-align: center;
+    }
+    
+    div.design_article section.color{
+        margin: 40px 0px;
+    }
+    
+    div.design_article p.two{
+        font-size: 20px;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    
+    div.design_article section.color label{
+        margin: 5px 5px;
+        width: auto;
+        height: auto;
+        padding: 5%;
+        display: inline-block;
+        cursor: pointer;
+        transition: 0.3s; 
+    }
+    
+    div.design_article section.color > label:hover{
+        transform: scale(1.3);
+    }
+    
+    div.design_article section.color > label:nth-of-type(1){
+        background-color: white;
+        border: 1px solid black;
+    }
+    
+    div.design_article section.color > label:nth-of-type(2){
+        background-color: rgb(245, 245, 53);
+        border: 1px solid black;
+    }
+    
+    div.design_article section.color > label:nth-of-type(3){
+        background-color: darkred;
+        border: 1px solid black;
+    }
+    
+    div.design_article section.color > label:nth-of-type(4){
+        background-color: black;
+        border: 1px solid black;
+    }
+    
+    div.design_article section.color > label:nth-of-type(5){
+        background-color: grey;
+        border: 1px solid black;
+    }
+    
+    div.design_article section.sizes {
+        margin:40px 0px;
+        width:100%;
+    }
+    
+    div.design_article section.next_step label{
+        width: 70%;
+        padding: 10px 10px;
+        margin: 0 auto;
+        text-align: center;
+        background-color: black;
+        color: white;
+        border-radius: 10px;
         display:block;
         cursor: pointer;
         margin-top: 50px;
@@ -897,6 +1070,167 @@ div.design_detail > textarea{
         margin-bottom: 40px;
     }
 }
+@media screen and (min-width:576px) and (max-width:767px){
+    div.design_detail{
+        display: none;
+        margin-top: 30px;
+        padding: 0 5%;
+        font-size: 0;
+    }
+    
+    div.design_detail > h3{
+        margin-top: 40px;
+        font-size: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    div.design_detail label.file_bt{
+        margin:0 5%;
+        display: inline-block;
+        width: 40%;
+        height: 100px;
+        background-image: url(../icon/photo.png);
+        background-repeat: no-repeat;
+        background-size: 60px;
+        background-position: top 0px left 50%;
+        text-align: center;
+        cursor: pointer;
+        vertical-align: top;
+    }
+    
+    div.design_detail label.file_bt > span{
+        display: inline-block;
+        padding: 5px;
+        width: 100%;
+        background-color: black;
+        color: white;
+        border-radius: 8px;
+        margin-top: 60px;
+        font-size: 16px;
+    }
+    
+    .prevent{
+        pointer-events: none;
+    }
+    
+    div.design_detail label.no_need{
+        display: inline-block;
+        margin: 0 5%;
+        width: 40%;
+        height: 100px;
+        text-align: center;
+        cursor: pointer;
+        vertical-align: top;
+        background-image: url(../icon/check-box.jpg);
+        background-repeat: no-repeat;
+        background-size: 50px;
+        background-position: top 3px left 50%;
+        cursor: pointer;
+    }
+    
+    input#simple:checked + label.no_need{
+        background-image: url(../icon/check-mark.png);
+        background-repeat: no-repeat;
+        background-size: 50px;
+        background-position: top 3px left 40px;
+    }
+    
+    input#simple:checked ~ h3,
+    input#simple:checked ~ div{
+        display: none;
+    }
+    
+    input#simple:checked ~ textarea,
+    input#simple:checked ~ h3.memo_note{
+        display: block;
+    }
+    
+    div.design_detail label.no_need > span{
+        display: inline-block;
+        background-color: black;
+        color: white;
+        border-radius: 8px;
+        width: 100%;
+        text-align: center;
+        padding: 5px;
+        margin-top: 60px;
+        font-size: 16px;
+    }
+    
+    div.design_detail div.logo_detail{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        vertical-align: bottom;
+        width: 100%;
+    }
+    span#check_logo{
+        display: inline-block;
+        margin: 0px 5%;
+    }
+    
+    div.design_detail div.logo_detail > img{
+        display: inline-block;
+        margin:0 auto;
+        align-self: center;
+        width: 20%;
+    }
+    
+    div.design_detail div.logo_detail > section p{
+        width: 60%;
+        padding: 10px ;
+        text-align: center;
+        border-bottom:1px solid black;
+        vertical-align: bottom;
+        margin-top: 10px;
+        margin: 10px auto 10px auto;
+        font-size: 16px;
+    }
+    
+    div.design_detail div.logo_detail > section span.name{
+        display: inline-block;
+        margin-left: 10px;
+        font-weight: bold;
+    }
+    
+    div.design_detail div.plan_select label.plan2d,
+    div.design_detail div.plan_select label.plan3d{
+        display: inline-block;
+        width: 40%;
+        margin: 0 0 0 10%;
+        padding: 5px 0px 5px 40px;
+        background-image: url(../icon/check-box.jpg);
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-position: left 10px top 50%;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    div.design_detail div.plan_select input#plan1:checked + label.plan2d,
+    div.design_detail div.plan_select input#plan2:checked + label.plan3d{
+        background-image: url(../icon/check-mark.png);
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-position: left 10px top 50%;
+    }
+    
+    
+    
+    div.design_detail > h3.memo_note{
+        margin-bottom: 20px;
+    }
+    
+    div.design_detail > textarea{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 0px;
+        max-width: 100%;
+        border: 1px solid black;
+        
+    }
+}
 @media screen and (max-width: 575px){
     div.design_detail{
         display: none;
@@ -1167,6 +1501,118 @@ div.put_in section p.total_price{
 
 div.put_in section p.price_note{
     text-align: right;
+}
+@media screen and (min-width:576px) and (max-width:767px){
+    div.put_in{
+        z-index: 200;
+        background-color: black;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        right: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        border-top: 4px solid #ededed;
+        align-items: center;
+        padding: 20px 0px;
+    }
+    div.put_in > button{
+        order: 3;
+        padding: 10px 20px;
+        width: 80%;
+        text-align: center;
+        background-color: #ffd900;
+        color: black;
+        border-radius: 8px;
+        display:inline-block;
+        text-decoration: none;
+        margin:20px 10%;
+        margin-bottom: 5px;
+        font-size: 20px;
+        transition: 0.4s;
+    }
+    
+    div.put_in > button:hover{
+        transform: scale(1.05);
+        
+    }
+    
+    div.put_in > i {
+        flex: 1;
+        display: none;
+    }
+    
+    div.put_in div.change_number{
+        width: 40%;
+        margin: 0 0 0 10%;
+        color: #f8f8f8;
+        text-align: center;
+    }
+    
+    div.put_in div.change_number > p{
+        transform: translateY(-5px);
+        text-align: center;
+    }
+    
+    div.put_in div.change_number > section button{
+        display: inline-block;
+        padding: 8%;
+        margin-bottom: 5px;
+        width: 10%;
+        background-color: #f8f8f8;
+        border-radius: 8px;
+        border: 1px solid black;    
+        outline: none;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    
+    div.put_in div.change_number > section button#plus{
+        background-image: url(../icon/plus.png);
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-position: center;
+    }
+    
+    div.put_in div.change_number > section button#minus{
+        background-image: url(../icon/minus.png);
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-position: center;
+    }
+    
+    div.put_in div.change_number > section input {
+        display: inline-block;
+        padding: 5px;
+        text-align: center;
+        font-size: 16px;
+        width: 40%;
+        border: 1px solid black;
+        margin: 0 5px;
+        border-radius: 8px;
+        outline: none;
+        background-color: #f8f8f8;
+        color: black;
+    }
+    
+    div.put_in > section{
+        margin-right: 10%;
+        display: inline-block;
+        width: 40%;
+        vertical-align: bottom;
+        justify-items: flex-end;
+        color: #f8f8f8;
+
+    }
+    
+    div.put_in section p.total_price{
+        font-size: 20px;
+        text-align: right;
+    }
+    
+    div.put_in section p.price_note{
+        text-align: right;
+    }
 }
 @media screen and (max-width: 575px){
     div.put_in{
@@ -1453,6 +1899,66 @@ div.design_img > img{
         position: absolute;
         left: 35%;
         top: 75%;
+    }
+}
+@media screen and (min-width:576px) and (max-width:767px){
+    div.design_img {
+        order: 0;
+        padding-top: 0 ;
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+        position: relative;
+    }
+    
+    div.design_img >input{
+        display: none;
+    }
+    
+    div.design_img > section{
+        width: 100%;
+        padding-top: 60%;
+        height: auto;
+        background-image: url(../images/nethat/001979675f6da9ea18354b4c36fcb702.png);
+        background-repeat: no-repeat;
+        background-size: 90%;
+        background-position: center  center;
+    }
+    
+    div.design_img input#color-2:checked ~ section.design_img_change{
+        background-image: url(../images/nethat/da3d8de8325fa9b34f708e89d584a1f9.png);
+        background-repeat: no-repeat;
+        background-size: 90%;
+        background-position: center center;
+    }
+    
+    div.design_img input#color-3:checked ~ section.design_img_change{
+        background-image: url(../images/nethat/8c31128a7b0d92026a066fa5ada0055d.png);
+        background-repeat: no-repeat;
+        background-size: 90%;
+        background-position: center center;
+    }
+    
+    div.design_img input#color-4:checked ~ section.design_img_change{
+        background-image: url(../images/nethat/2028f7507e3d4ae521f6500ac82ad7da.png);
+        background-repeat: no-repeat;
+        background-size: 90%;
+        background-position: center center;
+    }
+    
+    div.design_img input#color-5:checked ~ section.design_img_change{
+        background-image: url(../images/nethat/91a724520815fcf572da571af6b9a8d2.png);
+        background-repeat: no-repeat;
+        background-size: 90%;
+        background-position: center center;
+    }
+    
+    div.design_img > img{
+        width: 15%;
+        position: absolute;
+        left: 50%;
+        top: 63%;
+        transform: translateX(-50%);
     }
 }
 @media screen and (max-width: 575px){

@@ -33,6 +33,13 @@ main{
         max-width: 100%;
     }
 }
+@media screen and (min-width:576px) and (max-width:767px){
+    main{
+        width: 540px;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+}
 @media screen and (max-width: 575px){
     main{
         width: 100%;
@@ -170,6 +177,50 @@ div.page_guide > a:nth-child(3){
         background-position: center top 0px;
     }
 }
+@media screen and (min-width:576px) and (max-width:767px){
+    div.page_guide{
+        margin: 0 auto;
+        margin-top: 10px;
+        padding: 20px;
+        width: 100%;
+        background-color: #ededed;
+        text-align: center;
+        vertical-align: bottom;  
+    }
+    
+    div.page_guide > a{
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        margin: 0 30px;
+        padding-top: 80px;
+    }
+    
+    div.page_guide > a:hover{
+        color: #ffd900;
+    }
+    
+    div.page_guide > a:nth-child(1){
+        background-image: url(../icon/return-box.png);
+        background-repeat: no-repeat;
+        background-size: 80px;
+        background-position: center top -5px;
+    }
+    
+    div.page_guide > a:nth-child(2){
+        background-image: url(../icon/livejournal.png);
+        background-repeat: no-repeat;
+        background-size: 60px;
+        background-position: center top 5px;
+    }
+    
+    div.page_guide > a:nth-child(3){
+        background-image: url(../icon/pickup-truck.png);
+        background-repeat: no-repeat;
+        background-size: 70px;
+        background-position: center top 0px;
+    }
+}
 @media screen and (max-width: 575px){
     div.page_guide{
         margin: 0 auto;
@@ -234,121 +285,21 @@ div.inside{
     }
 }
 @media screen and (min-width:768px) and (max-width:991px){
-    aside.aside{
-        position: sticky;
-        top: 20px;
-        bottom: 100px;
-        width: 180px;
+    div.inside{
+        width: 720px;
+        margin: 0 auto;
+        display: flex;
+        margin-top: 30px;
+        align-items: flex-start;
     }
-    
-    aside.aside h2{
-        margin-top: 0px;
-        width: 100%;
-        color: black;
-        padding: 10px;
-        text-align: left;
-    }
-    aside.aside section{
-        width: 80%;
-        text-align: left;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-    
-    aside.aside section > input{
-        display: none;
-    }
-    
-    aside.aside section > label{
-        display: inline-block;
-        width: 100%;
-        font-size: 20px;
-        margin-top: 20px;
-        background-image: url(../icon/down-arrow.png);
-        background-repeat: no-repeat;
-        background-size: 16px;
-        background-position:right 20px top 50% ;
-        cursor: pointer;
-    }
-    
-    aside.aside section > ul{
-        display: none;
-        padding: 0;
-    }
-    
-    aside.aside section > input:checked ~ label{
-        background-image: url(../icon/up-chevron.png);
-        background-size: 16px;
-        background-repeat: no-repeat;
-        background-position: right 20px top 50% ;
-    }
-    
-    aside.aside section > input:checked ~ ul{
-        display: block;
-    }
-    
-    aside.aside section > ul > li{
-        margin-top: 10px;
-        list-style: none;
-        padding: 5px 5px;
-        cursor: pointer;
-    } 
-    
-    aside.aside section > ul > li >a{
-        color: black;
-        text-decoration: none;
-        display: inline-block;
-        width: 100%;
-        height: 100%;
-    } 
-    
-    aside.aside section > ul >li.item1{
-        background-image: url(../images/CAP/b2fda4edc80e63dca8a536a0d1d8bfbf.png);
-        background-repeat: no-repeat;
-        background-size: 40px;
-        background-position: right 1% top 50% ;
-    }
-    
-    aside.aside section > ul >li.item2{
-        background-image: url(../images/CAP/img_color02-8.png);
-        background-repeat: no-repeat;
-        background-size: 55px;
-        background-position: right -2% top 50% ;
-    }
-    
-    aside.aside section > ul >li.item3{
-        background-image: url(../images/buscket_hat/0853011-001-08.png);
-        background-repeat: no-repeat;
-        background-size: 50px;
-        background-position: right -2% top 50% ;
-    }
-    
-    aside.aside section > ul >li.item4{
-        background-image: url(../images/buscket_hat/0853011-001-09.png);
-        background-repeat: no-repeat;
-        background-size: 50px;
-        background-position: right -2% top 50% ;
-    }
-    
-    aside.aside section > ul >li.item5{
-        background-image: url(../images/baseball_hat/2-2.png);
-        background-repeat: no-repeat;
-        background-size: 45px;
-        background-position: right 0% top 50% ;
-    }
-    
-    aside.aside section > ul >li.item6{
-        background-image: url(../images/baseball_hat/TRC-55_05_s.png);
-        background-repeat: no-repeat;
-        background-size: 50px;
-        background-position: right -2% top 50% ;
-    }
-    
-    aside.aside section > ul >li.item7{
-        background-image: url(../images/nethat/da3d8de8325fa9b34f708e89d584a1f9.png);
-        background-repeat: no-repeat;
-        background-size: 50px;
-        background-position: right -2% top 50% ;
+}
+@media screen and (min-width:576px) and (max-width:767px){
+    div.inside{
+        width: 540px;
+        margin: 0 auto;
+        display: flex;
+        margin-top: 30px;
+        align-items: flex-start;
     }
 }
 @media screen and (max-width: 575px){
@@ -717,6 +668,161 @@ aside.aside section > ul >li.item7{
         background-position: right -2% top 50% ;
     }
 }
+@media screen and (min-width:576px) and (max-width:767px){
+    aside.aside{
+        margin-top: 0px;
+        position: fixed;
+        top: 0px;
+        left: 0;
+        transform: translateX(-100%);
+        order: 2;
+        width: 180px;
+        background-color: #ededed;
+        height: 100vh;
+        z-index: 100;
+        transition: all 0.5s;
+    }
+
+    .aside-on{
+        transform:translateX(0%) !important;
+    }
+
+
+    aside.aside button#aside_open{
+        display: inline-block;
+        border: 0;
+        width: 30px;
+        border-radius: 0px 10px 10px 0px;
+        padding: 20px 10px 30px 10px;
+        position: absolute;
+        top: 50%;
+        right: -30px;
+        transform: translateY(-50%);
+        background-color: #ededed;
+        z-index: 100;
+        background-image: url(../icon/next_black.png);
+        background-repeat: no-repeat;
+        background-size: 15px;
+        background-position: bottom 10px center;
+    }
+
+    aside.aside button.aside-open{
+        background-image: url(../icon/previous.png) !important;
+        background-repeat: no-repeat;
+        background-size: 15px;
+        background-position: bottom 10px center;
+    }
+
+    aside.aside h2{
+        margin-top: 70px;
+        width: 100%;
+        color: black;
+        padding-left: 10%;
+        text-align: left;
+    }
+    aside.aside section{
+        width: 80%;
+        text-align: left;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    aside.aside section > input{
+        display: none;
+    }
+    
+    aside.aside section > label{
+        display: inline-block;
+        width: 100%;
+        font-size: 20px;
+        margin-top: 20px;
+        background-image: url(../icon/down-arrow.png);
+        background-repeat: no-repeat;
+        background-size: 16px;
+        background-position:right 0 top 50% ;
+        cursor: pointer;
+    }
+    
+    aside.aside section > ul{
+        display: none;
+        padding: 0;
+    }
+    
+    aside.aside section > input:checked ~ label{
+        background-image: url(../icon/up-chevron.png);
+        background-size: 16px;
+        background-repeat: no-repeat;
+        background-position: right 0 top 50% ;
+    }
+    
+    aside.aside section > input:checked ~ ul{
+        display: block;
+    }
+    
+    aside.aside section > ul > li{
+        margin-top: 10px;
+        list-style: none;
+        padding: 5px 10px;
+        cursor: pointer;
+    } 
+    
+    aside.aside section > ul > li >a{
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    } 
+    
+    aside.aside section > ul >li.item1{
+        background-image: url(../images/CAP/b2fda4edc80e63dca8a536a0d1d8bfbf.png);
+        background-repeat: no-repeat;
+        background-size: 40px;
+        background-position: right 1% top 50% ;
+    }
+    
+    aside.aside section > ul >li.item2{
+        background-image: url(../images/CAP/img_color02-8.png);
+        background-repeat: no-repeat;
+        background-size: 55px;
+        background-position: right -2% top 50% ;
+    }
+    
+    aside.aside section > ul >li.item3{
+        background-image: url(../images/buscket_hat/0853011-001-08.png);
+        background-repeat: no-repeat;
+        background-size: 50px;
+        background-position: right -2% top 50% ;
+    }
+    
+    aside.aside section > ul >li.item4{
+        background-image: url(../images/buscket_hat/0853011-001-09.png);
+        background-repeat: no-repeat;
+        background-size: 50px;
+        background-position: right -2% top 50% ;
+    }
+    
+    aside.aside section > ul >li.item5{
+        background-image: url(../images/baseball_hat/2-2.png);
+        background-repeat: no-repeat;
+        background-size: 45px;
+        background-position: right 0% top 50% ;
+    }
+    
+    aside.aside section > ul >li.item6{
+        background-image: url(../images/baseball_hat/TRC-55_05_s.png);
+        background-repeat: no-repeat;
+        background-size: 50px;
+        background-position: right -2% top 50% ;
+    }
+    
+    aside.aside section > ul >li.item7{
+        background-image: url(../images/nethat/da3d8de8325fa9b34f708e89d584a1f9.png);
+        background-repeat: no-repeat;
+        background-size: 50px;
+        background-position: right -2% top 50% ;
+    }
+}
 @media screen and (max-width: 575px){
     aside.aside{
         margin-top: 0px;
@@ -749,25 +855,25 @@ aside.aside section > ul >li.item7{
         transform: translateY(-50%);
         background-color: #ededed;
         z-index: 100;
-        background-image: url(../icon/index-right-8.png);
+        background-image: url(../icon/next_black.png);
         background-repeat: no-repeat;
         background-size: 15px;
         background-position: bottom 10px center;
     }
 
     aside.aside button.aside-open{
-        background-image: url(../icon/left.png) !important;
+        background-image: url(../icon/previous.png) !important;
         background-repeat: no-repeat;
         background-size: 15px;
         background-position: bottom 10px center;
     }
 
     aside.aside h2{
-        margin-top: 50px;
+        margin-top: 70px;
         width: 100%;
         color: black;
-        padding: 10px;
-        text-align: center;
+        padding-left: 10% ;
+        text-align: left;
     }
     aside.aside section{
         width: 80%;
@@ -900,6 +1006,14 @@ div.middle{
         padding: 0px 20px;
     }
 }
+@media screen and (min-width:576px) and (max-width:767px){
+    div.middle{
+        width: 540px;
+        margin: 0 auto;
+        max-width: 100%;
+        padding: 0px 20px;
+    }
+}
 @media screen and (max-width: 575px){
     div.middle{
         width: 100%;
@@ -928,6 +1042,14 @@ div.middle div.qa_block > h3{
     }
 }
 @media screen and (min-width:768px) and (max-width:991px){
+    div.middle div.qa_block > h3{
+        font-size: 24px;
+        border-bottom: 3px solid #737578;
+        margin-bottom: 30px;
+        margin-top: 50px;
+    }
+}
+@media screen and (min-width:576px) and (max-width:767px){
     div.middle div.qa_block > h3{
         font-size: 24px;
         border-bottom: 3px solid #737578;
@@ -1022,7 +1144,37 @@ label.open span.q_icon {
         background-size: 16px;
         background-position:right 6px top 40%;
         position: relative;
-        padding: 15px 60px;
+        padding: 15px 30px 15px 60px;
+        cursor: pointer;
+    }
+    
+    
+    label.open span.q_icon {
+        position: absolute;
+        left: 15px;
+        top: 15px;
+    }
+}
+@media screen and (min-width:576px) and (max-width:767px){
+    div.middle div.qa_block h3#first_part{
+        margin-top: 20px;
+    }
+    
+    div.middle div.qa_block_list{
+        margin: 20px 0 ;
+    }
+    
+    div.qa_block_list label.open{
+        background-color: #fbf2de;
+        padding: 10px 40px;
+        width: 100%;
+        display: inline-block;
+        background-image: url(../icon/down-arrow.png);
+        background-repeat: no-repeat;
+        background-size: 16px;
+        background-position:right 6px top 40%;
+        position: relative;
+        padding: 15px 30px 15px 60px;
         cursor: pointer;
     }
     
@@ -1230,7 +1382,72 @@ input#block_q15:checked ~ label.open{
         display: block;
         transition: 0.5s;
         cursor: pointer;
-        padding: 15px 15px 15px 60px;
+        padding: 15px 30px 15px 60px;
+        opacity: 1;
+        height: auto;
+    }
+
+    input#block_q1:checked ~ label.open,
+    input#block_q2:checked ~ label.open,
+    input#block_q3:checked ~ label.open,
+    input#block_q4:checked ~ label.open,
+    input#block_q5:checked ~ label.open,
+    input#block_q6:checked ~ label.open,
+    input#block_q7:checked ~ label.open,
+    input#block_q8:checked ~ label.open,
+    input#block_q9:checked ~ label.open,
+    input#block_q10:checked ~ label.open,
+    input#block_q11:checked ~ label.open,
+    input#block_q12:checked ~ label.open,
+    input#block_q13:checked ~ label.open,
+    input#block_q14:checked ~ label.open,
+    input#block_q15:checked ~ label.open{
+        background-image: url(../icon/up-chevron.png);
+        background-repeat: no-repeat;
+        background-size: 16px;
+        background-position:right 6px top 40%;
+    }
+}
+@media screen and (min-width:576px) and (max-width:767px){
+    input#block_q1,
+    input#block_q2,
+    input#block_q3,
+    input#block_q4,
+    input#block_q5,
+    input#block_q6,
+    input#block_q7,
+    input#block_q8,
+    input#block_q9,
+    input#block_q10,
+    input#block_q11,
+    input#block_q12,
+    input#block_q13,
+    input#block_q14,
+    input#block_q15{
+        display: none;
+        transition: 2s;
+        
+    }
+
+    input#block_q1:checked ~ label.back,
+    input#block_q2:checked ~ label.back,
+    input#block_q3:checked ~ label.back,
+    input#block_q4:checked ~ label.back,
+    input#block_q5:checked ~ label.back,
+    input#block_q6:checked ~ label.back,
+    input#block_q7:checked ~ label.back,
+    input#block_q8:checked ~ label.back,
+    input#block_q9:checked ~ label.back,
+    input#block_q10:checked ~ label.back,
+    input#block_q11:checked ~ label.back,
+    input#block_q12:checked ~ label.back,
+    input#block_q13:checked ~ label.back,
+    input#block_q14:checked ~ label.back,
+    input#block_q15:checked ~ label.back{
+        display: block;
+        transition: 0.5s;
+        cursor: pointer;
+        padding: 15px 30px 15px 60px;
         opacity: 1;
         height: auto;
     }
@@ -1320,7 +1537,6 @@ input#block_q15:checked ~ label.open{
 
 label.back{
     display: block;
-    /* padding: 15px 60px; */
     width: 900px;
     position: relative;
     border: 1px solid black;
@@ -1357,6 +1573,24 @@ label.back span.a_icon{
     label.back{
         display: block;
         /* padding: 15px 60px; */
+        width: 100%;
+        position: relative;
+        border: 1px solid black;
+        opacity: 0;
+        height: 0px;
+        transition:  0.5s;
+    
+    }
+    
+    label.back span.a_icon{
+        position: absolute;
+        left: 15px;
+        top: 15px;
+    }
+}
+@media screen and (min-width:576px) and (max-width:767px){
+    label.back{
+        display: block;
         width: 100%;
         position: relative;
         border: 1px solid black;
@@ -1574,6 +1808,95 @@ div.anyquestion form.qa_form > a:hover{
     }
 }
 @media screen and (min-width:768px) and (max-width:991px){
+    div.anyquestion{
+        width: 100%;
+        margin: 50px auto;
+    }
+    
+    div.anyquestion  h2{
+        text-align: center;
+        margin: 30px 0;
+        font-size: 24px;
+    }
+    
+    div.anyquestion form.qa_form{
+        border: 1px solid black;
+        border-radius: 8px;
+        width: 100%;
+        margin: 0 auto;
+        background-color:#f8f8f8 ;
+    }
+    
+    div.anyquestion form.qa_form div.qa_block{
+        margin: 30px auto;
+    }
+    
+    div.anyquestion form.qa_form div.qa_block > label{
+        display: block;
+        padding: 10px 0;
+        margin-left: 15%;
+    }
+    
+    div.anyquestion form.qa_form div.qa_block > input{
+        display: block;
+        width: 300px;
+        padding: 10px;
+        margin-left: 15%;
+        transition: 0.3s;
+        border: 1px solid #737578;
+    }
+    
+    div.anyquestion form.qa_form div.qa_block > input:focus{
+        border: 1px solid #737578;
+        box-shadow: 2px 2px 5px 1px #737578;
+        outline: none;
+    }
+    
+    div.anyquestion form.qa_form div.question{
+        margin: 30px 0;
+    }
+    
+    div.anyquestion form.qa_form div.question > p{
+        padding: 10px 0;
+        margin-left: 15%;
+    }
+    
+    div.anyquestion form.qa_form div.question > textarea{
+        display: block;
+        margin: 0 auto;
+        transition: 0.3s;
+    }
+    
+    div.anyquestion form.qa_form div.question > textarea:focus{
+        box-shadow: 2px 2px 5px 1px #737578;
+        outline: none;
+    }
+    
+    div.anyquestion form.qa_form > p{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    div.anyquestion form.qa_form >  a{
+        width: 150px;
+        display:block;
+        margin: 20px auto;
+        background-color: black;
+        text-decoration: none;
+        padding: 10px;
+        color: #f8f8f8;
+        text-align: center;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    div.anyquestion form.qa_form > a:hover{
+        background-color: #ffd900;
+        color: black;
+    }
+}
+@media screen and (min-width:576px) and (max-width:767px){
     div.anyquestion{
         width: 100%;
         margin: 50px auto;
