@@ -1307,6 +1307,36 @@ div.product_article a.start{
     margin: 30px auto;
     padding: 10px;
 }
+@media screen and (min-width:768px) and (max-width:991px){
+    div.product_article a.start{
+        display: block;
+        width: 80%;
+        background-color: black;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #f8f8f8;
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 20%;
+        padding: 10px;
+    }
+}
+@media screen and (min-width:576px) and (max-width:767px){
+    div.product_article a.start{
+        display: block;
+        width: 80%;
+        background-color: black;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #f8f8f8;
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 20%;
+        padding: 10px;
+    }
+}
 @media screen and (max-width: 575px){
     div.product_article a.start{
         display: block;

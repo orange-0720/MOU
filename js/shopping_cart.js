@@ -92,27 +92,27 @@ document.addEventListener("click", function(e){
     }
 })
 
-document.addEventListener("click", function(e){
-    if(e.target.classList.contains("cart_plus")){
-        let in_cart_number = e.target.closest("section").querySelector("input");
-        let cart_total_price = e.target.closest("li").querySelector("p.cart_total_price");
+// document.addEventListener("click", function(e){
+//     if(e.target.classList.contains("cart_plus")){
+//         let in_cart_number = e.target.closest("section").querySelector("input");
+//         let cart_total_price = e.target.closest("li").querySelector("p.cart_total_price");
          
-        e.target.closest("section").querySelector("input").value = parseInt(in_cart_number.value) + 1;
-        cart_total_price.innerHTML = (490 * parseInt(in_cart_number.value)) + "元";
-    }
-})
+//         e.target.closest("section").querySelector("input").value = parseInt(in_cart_number.value) + 1;
+//         cart_total_price.innerHTML = (490 * parseInt(in_cart_number.value)) + "元";
+//     }
+// })
 
-document.addEventListener("click", function(e){
-    if(e.target.classList.contains("cart_minus")){
-        let in_cart_number = e.target.closest("section").querySelector("input");
-        let cart_total_price = e.target.closest("li").querySelector("p.cart_total_price");
-        if(in_cart_number.value > 1){
-            e.target.closest("section").querySelector("input").value = parseInt(in_cart_number.value) - 1 ;
-            cart_total_price.innerHTML = (490 * parseInt(in_cart_number.value)) + "元";
-        }
+// document.addEventListener("click", function(e){
+//     if(e.target.classList.contains("cart_minus")){
+//         let in_cart_number = e.target.closest("section").querySelector("input");
+//         let cart_total_price = e.target.closest("li").querySelector("p.cart_total_price");
+//         if(in_cart_number.value > 1){
+//             e.target.closest("section").querySelector("input").value = parseInt(in_cart_number.value) - 1 ;
+//             cart_total_price.innerHTML = (490 * parseInt(in_cart_number.value)) + "元";
+//         }
         
-    }
-})
+//     }
+// })
 
 
 

@@ -348,7 +348,7 @@ nav.header_nav > div  a:hover{
         background-color: black;
         padding-top: 50px;
         transition: 0.5s;
-        overflow-y: auto;
+        /* overflow-y: auto; */
     }
     .nav_open{
         position: fixed;
