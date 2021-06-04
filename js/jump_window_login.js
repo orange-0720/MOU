@@ -7,6 +7,7 @@ const twitter = document.getElementById("twitter")
 
 
 btn.addEventListener("click",function(e){
+  e.preventDefault;
   let email_el = document.getElementById("mail");
   let password_el = document.getElementById("password")
   if(email_el.value.indexOf("@") >0 && email_el.value.indexOf(".com") > 0 && password_el.value.length >= 8){
@@ -25,6 +26,7 @@ btn.addEventListener("click",function(e){
         let form_mail_el = document.getElementsByClassName("form_mail")[0];
         let str = '<p class="insert_element" style="color:red;dispaly:block">e-mail格式有誤，請確認!</p>'
         form_mail_el.insertAdjacentHTML("afterend", str);
+        
       }else if(password_el.value.length < 8){
         password_el.focus();
         password_el.style.border = "1px solid red";

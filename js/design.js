@@ -45,3 +45,36 @@ color_change[4].addEventListener("click", function(){
     let img_el = document.getElementsByClassName("img_el")[0];
     img_el.src = "./images/nethat/91a724520815fcf572da571af6b9a8d2.png";
 })
+
+
+/* 拖拉圖片 */
+
+var big_photo = document.getElementById("big_photo");
+let design_img = document.getElementsByClassName("design_img")[0];
+let design_img_offsetLeft = design_img.offsetLeft;
+let design_img_offsetTop = design_img.offsetTop;
+console.log("desing_img的offsetLeft =" + design_img_offsetLeft );
+console.log("desing_img的offsetTop =" + design_img_offsetTop );
+
+big_photo.addEventListener("mousedown", function(e){
+    let big_photo_left = e.pageX - design_img_offsetLeft - e.target.offsetLeft;
+    let big_photo_top = e.pageY - design_img_offsetTop - e.target.offsetTop;
+    console.log(e)
+    console.log(e.target)
+    console.log("e.pageX =" + e.pageX );
+    console.log("e.pageY =" + e.pageY);
+    console.log("e.target的offsetLeft =" + e.target.offsetLeft);
+    console.log("e.target的offsetTop =" + e.target.offsetTop);
+    console.log("big_photo_left =" + big_photo_left);
+    console.log("big_photo_top =" + big_photo_top)
+    const move = e=>{
+        big_photo.style.left = e.pageX - big_photo_left - design_img_offsetLeft + "px";
+        big_photo.style.top = e.pageY - big_photo_top - design_img_offsetTop + "px";
+    }
+
+    document.addEventListener("mousemove", move);
+
+    big_photo.addEventListener("mouseup", function(e){
+        document.removeEventListener("mousemove", move);
+    })
+});
