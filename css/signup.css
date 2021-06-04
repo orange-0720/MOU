@@ -607,12 +607,12 @@ div.signup_list  section.signup_detail label.password_check > input:focus{
     }
 }
 
-section.signup_detail > section.signup_note{
+section.signup_detail> form > section.signup_note{
     margin:10px 0;
     text-align: center;
 }
 
-section.signup_detail > a.signup_checked{
+section.signup_detail >form > input.signup_checked{
     display: block;
     width: 300px;
     padding: 10px;
@@ -628,18 +628,18 @@ section.signup_detail > a.signup_checked{
     transition: 0.3s;
 }
 
-section.signup_detail > a.signup_checked:hover{
+section.signup_detail > form > input.signup_checked:hover{
     background-color: #ffd900;
     color: black;
     transform: translateY(-5px);
 }
 @media screen and (min-width:576px) and (max-width:767px){
-    section.signup_detail > section.signup_note{
+    section.signup_detail > form > section.signup_note{
         margin:15px 0;
         text-align: center;
     }
     
-    section.signup_detail > a.signup_checked{
+    section.signup_detail > form > input.signup_checked{
         display: block;
         width: 300px;
         max-width: 80%;
@@ -656,19 +656,19 @@ section.signup_detail > a.signup_checked:hover{
         transition: 0.3s;
     }
     
-    section.signup_detail > a.signup_checked:hover{
+    section.signup_detail > input.signup_checked:hover{
         background-color: #ffd900;
         color: black;
         transform: translateY(-5px);
     }
 }
 @media screen and (max-width: 575px){
-    section.signup_detail > section.signup_note{
+    section.signup_detail > form > section.signup_note{
         margin:15px 0;
         text-align: center;
     }
     
-    section.signup_detail > a.signup_checked{
+    section.signup_detail > form > input.signup_checked{
         display: block;
         width: 300px;
         max-width: 80%;
@@ -685,7 +685,7 @@ section.signup_detail > a.signup_checked:hover{
         transition: 0.3s;
     }
     
-    section.signup_detail > a.signup_checked:hover{
+    section.signup_detail > input.signup_checked:hover{
         background-color: #ffd900;
         color: black;
         transform: translateY(-5px);

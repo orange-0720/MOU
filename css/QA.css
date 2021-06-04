@@ -563,7 +563,7 @@ aside.aside section > ul >li.item7{
         width: 100%;
         color: black;
         padding: 10px;
-        text-align: center;
+        text-align: left;
     }
     aside.aside section{
         width: 80%;
@@ -2163,7 +2163,7 @@ div#qa_alert{
     #qa_close{
         appearance: none;
         padding: 15px;
-        width: 100px;
+        width: 60%;
         background-color: black;
         color: white;
         border-radius: 10px;

@@ -132,7 +132,7 @@ div.page_guide > h1{
         z-index: 5;
     }
 }
-@media screen and (max-width: 599px){
+@media screen and (max-width: 575px){
     div.page_guide{
         position: relative;
         margin: 0 auto;
@@ -346,7 +346,7 @@ div.knowledge_guide > a:hover{
         color: #ffd900;
     }
 }
-@media screen and (max-width: 599px){
+@media screen and (max-width: 575px){
     div.knowledge_guide{
         margin: 0 auto;
         /* margin-top: 0px; */
@@ -433,7 +433,7 @@ main{
         max-width: 100%;
     }
 }
-@media screen and (max-width: 599px){
+@media screen and (max-width: 575px){
     main{
         width: 100%;
         margin: 0 auto;
@@ -1141,7 +1141,7 @@ div.knowledge_intro{
         width: 540px;
     }
 }
-@media screen and (max-width: 599px){
+@media screen and (max-width: 575px){
     div.knowledge_intro{
         flex: 1;
         width: 100%;
@@ -1205,7 +1205,7 @@ div.knowledge_intro article.keep_up > h2{
         padding: 5px 0;
     }
 }
-@media screen and (max-width: 599px){
+@media screen and (max-width: 575px){
     div.knowledge_intro article#about-size{
         line-height: 2rem;
     }
@@ -1282,7 +1282,7 @@ div.knowledge_intro article.about-measure >ol ,li{
         list-style: none;
     }
 }
-@media screen and (max-width: 599px){
+@media screen and (max-width: 575px){
     div.knowledge_intro article.about-measure{
         line-height: 2rem;
         margin-top: 30px;
@@ -1425,7 +1425,7 @@ div.knowledge_intro article.wash3 > article p.wash_note{
         font-size: 20px;
     }
 }
-@media screen and (max-width: 599px){
+@media screen and (max-width: 575px){
     div.knowledge_intro article#wash1,
     div.knowledge_intro article.wash2,
     div.knowledge_intro article.wash3,
@@ -2165,6 +2165,7 @@ article#about-wear div.cap_hat >section.cap_3{
         background-color: black;
         margin-left: 420px;
         transition: 0.5s;
+        padding: 10px 0px;
     }
 
     article#about-wear div.cap_hat:hover{
@@ -2275,7 +2276,7 @@ article#about-wear div.flat_hat div.flat_block > h3{
     color: #f8f8f8;
     writing-mode: initial;
     text-align: center;
-    background-image: url(../icon/next_white.png);
+    background-image: url(../icon/down_white.png);
     background-repeat: no-repeat;
     background-size: 30px;
     background-position: top 50% right 5%;
@@ -2344,7 +2345,7 @@ article#about-wear div.canvas_hat div.canvas_block > h3{
     color: #f8f8f8;
     writing-mode: initial;
     text-align: center;
-    background-image: url(../icon/next_white.png);
+    background-image: url(../icon/down_white.png);
     background-repeat: no-repeat;
     background-size: 30px;
     background-position: top 50% right 5%;
@@ -2412,7 +2413,7 @@ article#about-wear div.knitted_hat div.knitted_block > h3{
     color: #f8f8f8;
     writing-mode: initial;
     text-align: center;
-    background-image: url(../icon/next_white.png);
+    background-image: url(../icon/down_white.png);
     background-repeat: no-repeat;
     background-size: 30px;
     background-position: top 50% right 5%;
@@ -2487,7 +2488,7 @@ article#about-wear div.cap_hat div.cap_block > h3{
     color: #f8f8f8;
     writing-mode: initial;
     text-align: center;
-    background-image: url(../icon/next_white.png);
+    background-image: url(../icon/down_white.png);
     background-repeat: no-repeat;
     background-size: 30px;
     background-position: top 50% right 5%;
@@ -2515,7 +2516,7 @@ article#about-wear div.cap_hat >section.cap_3 > p{
     padding: 5px 0px;
 }    
 }
-@media screen and (max-width: 599px){
+@media screen and (max-width: 575px){
     article#about-wear{
         width: 100%;
         margin:0 auto;
@@ -2527,7 +2528,13 @@ article#about-wear div.cap_hat >section.cap_3 > p{
         padding: 0px;
         text-align: center;
     }
-
+    .-on{
+        display: block !important;
+        transition: 1s !important;
+        opacity: 1 !important;
+        height: auto !important;
+        margin: 15px auto !important;
+    }
     /* 報童帽開始 */
 
     article#about-wear div.flat_hat{
@@ -2557,27 +2564,34 @@ article#about-wear div.cap_hat >section.cap_3 > p{
     
     article#about-wear div.flat_hat div.flat_block > h3{
         position: absolute;
-        top: 1%;
+        top: initial;
+        bottom: 0%;
         right: 0%;
         padding: 0px;
         transform: translateY(0);
         width: 100%;
         background-color: black;
         color: #f8f8f8;
-        writing-mode: unset;
+        writing-mode: initial;
         text-align: center;
         font-size: 24px;
+        background-image: url(../icon/down_white.png);
+        background-repeat: no-repeat;
+        background-size: 30px;
+        background-position: top 50% right 5%;
     }
     
     article#about-wear div.flat_hat >section.flat_1,
     article#about-wear div.flat_hat >section.flat_2{
         display: block;
-        margin: 0 auto;
+        height: 0;
+        opacity: 0;
+        margin: 0px auto;
         width: 60%;
         background-color: #ededed;
         text-align: center;
         padding:  0px;
-        margin-bottom: 15px;
+        transition: 1s;
     }
 
     article#about-wear div.flat_hat >section.flat_1 > img,
@@ -2620,7 +2634,9 @@ article#about-wear div.cap_hat >section.cap_3 > p{
     
     article#about-wear div.canvas_hat div.canvas_block > h3{
         position: absolute;
-        top: 0%;
+        top: initial;
+        bottom: 0%;
+        left: 0px;
         right: 0%;
         transform: translateY(0);
         padding: 5px;
@@ -2630,13 +2646,18 @@ article#about-wear div.cap_hat >section.cap_3 > p{
         writing-mode: unset;
         text-align: center;
         font-size: 24px;
-    
+        background-image: url(../icon/down_black.png);
+        background-repeat: no-repeat;
+        background-size: 30px;
+        background-position: top 50% right 5%;
     }
     
     article#about-wear div.canvas_hat >section.canvas_1,
     article#about-wear div.canvas_hat >section.canvas_2{
         display: block;
-        margin: 30px auto 15px auto;
+        height: 0;
+        opacity: 0;
+        margin: 0px auto;
         width: 60%;
         background-color: #ededed;
         text-align: center;
@@ -2684,22 +2705,30 @@ article#about-wear div.cap_hat >section.cap_3 > p{
     
     article#about-wear div.knitted_hat div.knitted_block > h3{
         position: absolute;
-        top: 0%;
+        top: initial;
+        bottom: 0px;
+        left: 0;
         right: 0%;
         transform: translateY(0);
-        padding: 10px;
+        padding: 0px;
         width: 100%;
         background-color: black;
         color: #f8f8f8;
         writing-mode: unset;
         text-align: center;
         font-size: 24px;
+        background-image: url(../icon/down_white.png);
+        background-repeat: no-repeat;
+        background-size: 30px;
+        background-position: top 50% right 5%;
     }
     
     article#about-wear div.knitted_hat >section.knitted_1,
     article#about-wear div.knitted_hat >section.knitted_2{
         display: block;
-        margin: 0px auto 15px auto;
+        height: 0;
+        opacity: 0;
+        margin: 0px auto;
         width: 60%;
         background-color: #ededed;
         text-align: center;
@@ -2719,7 +2748,7 @@ article#about-wear div.cap_hat >section.cap_3 > p{
     }
 
     article#about-wear div.knitted_hat >section.knitted_2{
-        margin: 20px auto;
+        margin: 0px auto;
     }
     
     /* 毛帽 結束 */
@@ -2752,7 +2781,8 @@ article#about-wear div.cap_hat >section.cap_3 > p{
     article#about-wear div.cap_hat div.cap_block > h3{
         display: inline-block;
         position: absolute;
-        top: 0%;
+        top: initial;
+        bottom: 0;
         left: 0;
         transform: translateX(0);
         width: 100%;
@@ -2763,13 +2793,19 @@ article#about-wear div.cap_hat >section.cap_3 > p{
         writing-mode: unset;
         text-align: center;
         font-size: 24px;
+        background-image: url(../icon/down_black.png);
+        background-repeat: no-repeat;
+        background-size: 30px;
+        background-position: top 50% right 5%;
     }
     
     article#about-wear div.cap_hat >section.cap_1,
     article#about-wear div.cap_hat >section.cap_2,
     article#about-wear div.cap_hat >section.cap_3{
         display: block;
-        margin: 0px auto 15px auto;
+        height: 0;
+        opacity: 0;
+        margin: 0px auto;
         width: 60%;
         background-color: #ededed;
         text-align: center;

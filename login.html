@@ -88,12 +88,12 @@
             </ul>
             <form>
                 <label for="mail" class="form_mail">Email :<br>
-                    <input type="email" value="" placeholder="請輸入註冊Email" id="mail">
+                    <input type="email" value="" placeholder="請輸入註冊Email" id="mail" required>
                 </label>
                 <label for="password" class="form_password">Password :<br>
-                    <input type="text" placeholder="請輸入密碼" value="" id="password">
+                    <input type="password" placeholder="請輸入密碼" value="" id="password" required >
                 </label>
-                <input type="submit" value="登入" class="login_bt" id="jump_window">
+                <input type="submit" value="登入" class="login_bt" id="jump_window" value="No validate submit">
             </form>
             <div class="forget">
                 <a href="./signup.html">註冊</a>
@@ -109,7 +109,23 @@
         </div>
     </main>
 
-    <script src="./js/jump_window.js"></script>
+    <script src="./js/jump_window_login.js"></script>
     <script src="js/header.js"></script>
+    <script>
+        facebook.addEventListener("click",function(){
+            qa_alert.classList.add("fadein");
+            qa_alert.style.display = "block";
+        });
+
+        inst.addEventListener("click",function(){
+            qa_alert.classList.add("fadein");
+            qa_alert.style.display = "block";
+        });
+
+        twitter.addEventListener("click",function(){
+            qa_alert.classList.add("fadein");
+            qa_alert.style.display = "block";
+        });
+    </script>
 </body>
 </html>

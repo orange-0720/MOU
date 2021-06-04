@@ -1231,7 +1231,7 @@ div.index_knowledge ul.slides{
 }
 @media screen and (min-width:576px) and (max-width:767px){
     div.index_knowledge ul.slides{
-        width: 100%;
+        width: 540px;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -1259,11 +1259,13 @@ div.index_knowledge ul.slides{
 }
 
 li.slide{
-    margin: 0;
+    width: 300px;
+    margin: 0 50px;
     padding: 0;
     position: relative;
     transition: .5s transform ease-in-out;
     opacity: 0.5;
+    flex-shrink: 1;
 }
 
 li.slide section{
@@ -1289,7 +1291,8 @@ li.slide section > a:hover{
 }
 @media screen and (min-width:992px) and (max-width:1199px){
     li.slide{
-        margin: 0;
+        width: 320px;
+        margin: 0 35px;
         padding: 0;
         position: relative;
         transition: .5s transform ease-in-out;
@@ -1319,14 +1322,15 @@ li.slide section > a:hover{
 }
 @media screen and (min-width:768px) and (max-width:991px){
     li.slide{
-        margin: 0;
+        width: 200px;
+        margin: 0 20px;
         padding: 0;
         position: relative;
         transition: .5s transform ease-in-out;
         opacity: 0.5;
     }
     li.slide > img{
-        width: 220px;
+        width: 200px;
     }
     li.slide section{
         text-align: center;
@@ -1357,6 +1361,10 @@ li.slide section > a:hover{
         opacity: 0.5;
         flex-shrink: 0;
         text-align: center;
+    }
+    li.slide:nth-of-type(1),
+    li.slide:nth-of-type(5){
+        display: none !important;
     }
     
     li.slide section{
@@ -1554,9 +1562,9 @@ ul.slides input[type="radio"]:nth-of-type(3):checked ~ div.control_visible label
 .slides label.go_right2-1,
 .slides label.go_right1-1,
 .slides label.go_right3-1{
-    display: none;
+    display: inline-block;
     position: absolute;
-    right: -100px;
+    right: -480px;
     top: 50px;
     width: 100px;
     height: 100px;
@@ -1570,9 +1578,9 @@ ul.slides input[type="radio"]:nth-of-type(3):checked ~ div.control_visible label
 .slides label.go_left2-2,
 .slides label.go_left1-2,
 .slides label.go_left3-2{
-    display: none;
+    display: inline-block;
     position: absolute;
-    left: -100px;
+    left: -485px;
     top: 50px;
     width: 100px;
     height: 100px;
@@ -1581,7 +1589,73 @@ ul.slides input[type="radio"]:nth-of-type(3):checked ~ div.control_visible label
     background-size: 50px;
     background-position: center ;
     cursor: pointer;
-} 
+}
+@media screen and (min-width:992px) and (max-width:1199px){ 
+    .slides label.go_right2-1,
+    .slides label.go_right1-1,
+    .slides label.go_right3-1{
+        display: inline-block;
+        position: absolute;
+        right: -394px;
+        top: 50px;
+        width: 100px;
+        height: 100px;
+        background-image: url(../icon/index-right-8.png);
+        background-repeat: no-repeat;
+        background-size: 40px;
+        background-position: center ;
+        cursor: pointer;
+    } 
+
+    .slides label.go_left2-2,
+    .slides label.go_left1-2,
+    .slides label.go_left3-2{
+        display: inline-block;
+        position: absolute;
+        left: -394px;
+        top: 50px;
+        width: 100px;
+        height: 100px;
+        background-image: url(../icon/left.png);
+        background-repeat: no-repeat;
+        background-size: 40px;
+        background-position: center ;
+        cursor: pointer;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px){ 
+    .slides label.go_right2-1,
+    .slides label.go_right1-1,
+    .slides label.go_right3-1{
+        display: inline-block;
+        position: absolute;
+        right: -300px;
+        top: 50px;
+        width: 100px;
+        height: 100px;
+        background-image: url(../icon/index-right-8.png);
+        background-repeat: no-repeat;
+        background-size: 30px;
+        background-position: center ;
+        cursor: pointer;
+    } 
+
+    .slides label.go_left2-2,
+    .slides label.go_left1-2,
+    .slides label.go_left3-2{
+        display: inline-block;
+        position: absolute;
+        left: -300px;
+        top: 50px;
+        width: 100px;
+        height: 100px;
+        background-image: url(../icon/left.png);
+        background-repeat: no-repeat;
+        background-size: 30px;
+        background-position: center ;
+        cursor: pointer;
+    }
+}
 @media screen and (min-width:576px) and (max-width:767px){
     .slides label.go_right2-1,
     .slides label.go_right1-1,
@@ -1733,19 +1807,19 @@ ul.slides div.setblock2{
 @media screen and (min-width:768px) and (max-width:991px){
     ul.slides div.setblock1{
         position: absolute;
-        left: 10px;
+        left: 20px;
         top: 0;
-        width: 220px;
+        width: 200px;
         height: 100%;
         z-index: 50;
     }
     ul.slides div.setblock2{
         position: absolute;
-        right: 15px;
+        right: 20px;
         top: 0;
-        width: 250px;
+        width: 200px;
         height: 100%;
-        z-index: 50;
+        z-index: ;
     }
 }
 @media screen and (min-width:576px) and (max-width:767px){
@@ -1770,15 +1844,15 @@ ul.slides div.setblock2{
 
 /* 去模糊 */
 
-.slides input[type="radio"]:nth-of-type(1):checked ~ li.slide:nth-of-type(1) {
+.slides input[type="radio"]:nth-of-type(1):checked ~ li.slide:nth-of-type(2) {
     opacity: 1;
 }
   
-.slides input[type="radio"]:nth-of-type(2):checked ~ li.slide:nth-of-type(2) {
+.slides input[type="radio"]:nth-of-type(2):checked ~ li.slide:nth-of-type(3) {
     opacity: 1;
 }
   
-.slides input[type="radio"]:nth-of-type(3):checked ~ li.slide:nth-of-type(3) {
+.slides input[type="radio"]:nth-of-type(3):checked ~ li.slide:nth-of-type(4) {
     opacity: 1;
 }
 

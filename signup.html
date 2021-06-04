@@ -92,20 +92,22 @@
                 <section class="signup_detail">
                     <label for="signup_bt" class="back"></label>
                     <h1>會員註冊資料</h1>
-                    <label for="mail" class="form_mail">Email :<br>
-                        <input type="email" value="" placeholder="請輸入註冊Email" id="mail">
-                    </label>
-                    <label for="password" class="form_password">Password :<br>
-                        <input type="text" placeholder="請輸入密碼" value="" id="password">
-                    </label>
-                    <label for="password_again" class="password_check">密碼確認 : <br>
-                        <input type="text" placeholder="請再輸入一次密碼" value="" id="password_again">
-                    </label>
-                    <section class="signup_note">
-                        <input type="radio" value="" id="precheck">
-                        <label for="precheck" class="signup_note" >我已同意遵守會員準則</label>
-                    </section>
-                    <a class="signup_checked" id="jump_window">確認註冊會員</a>
+                    <form>
+                        <label for="mail" class="form_mail">Email :<br>
+                            <input type="email" value="" placeholder="請輸入註冊Email" id="mail" required>
+                        </label>
+                        <label for="password" class="form_password">Password :<br>
+                            <input type="text" placeholder="請輸入密碼" value="" id="password" required>
+                        </label>
+                        <label for="password_again" class="password_check">密碼確認 : <br>
+                            <input type="text" placeholder="請再輸入一次密碼" value="" id="password_again" required>
+                        </label>
+                        <section class="signup_note">
+                            <input type="radio" value="" id="precheck">
+                            <label for="precheck" class="signup_note" >我已同意遵守會員準則</label>
+                        </section>
+                        <input type="submit" value="確認註冊會員" class="signup_checked" id="jump_window">
+                    </form>
                     <div class="forget">
                         <a href="./login.html">登入</a>
                         <span>or</span>
@@ -127,7 +129,23 @@
         </div>
     </main>
 
-    <script src="./js/jump_window.js"></script>
+    <script src="./js/jump_window_signup.js"></script>
     <script src="./js/header.js"></script>
+    <script>
+        facebook.addEventListener("click",function(){
+            qa_alert.classList.add("fadein");
+            qa_alert.style.display = "block";
+        });
+
+        inst.addEventListener("click",function(){
+            qa_alert.classList.add("fadein");
+            qa_alert.style.display = "block";
+        });
+
+        twitter.addEventListener("click",function(){
+            qa_alert.classList.add("fadein");
+            qa_alert.style.display = "block";
+        });
+    </script>
 </body>
 </html>

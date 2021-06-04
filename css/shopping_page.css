@@ -1054,6 +1054,7 @@ div.middle > section > a.startmaking{
         position: relative;
         transition: 0.5s ease;
         margin-bottom: 40px;
+        margin-top: 20px;
     }
     
     div.middle > section > img{
