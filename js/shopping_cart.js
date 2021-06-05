@@ -57,40 +57,40 @@ put_in.addEventListener("click",function(){
     localStorage.setItem("tasks", JSON.stringify(tasks));
 })
 
-document.addEventListener("click", function(e){
-    if(e.target.classList.contains("remove")){
-        let shopping_list = e.target.closest("li");
-        let cart_list = e.target.closest("ul").querySelectorAll("li");
-        let pay_money = document.getElementsByClassName("pay_money")[0];
-        console.log(cart_list);
-        if(confirm("確定刪除此商品??")){
-            shopping_list.closest("li").remove();
+// document.addEventListener("click", function(e){
+//     if(e.target.classList.contains("remove")){
+//         let shopping_list = e.target.closest("li");
+//         let cart_list = e.target.closest("ul").querySelectorAll("li");
+//         let pay_money = document.getElementsByClassName("pay_money")[0];
+//         console.log(cart_list);
+//         if(confirm("確定刪除此商品??")){
+//             shopping_list.closest("li").remove();
 
-            let this_id = e.target.closest("li").getAttribute("data-id");  //找出該項目的item_id
-            let tasks = JSON.parse(localStorage.getItem("tasks"));    // 從 localStorage 取得資料
-            let updated_tasks = [];   // 準備用來放要存到 localStorage 裡的資料
+//             let this_id = e.target.closest("li").getAttribute("data-id");  //找出該項目的item_id
+//             let tasks = JSON.parse(localStorage.getItem("tasks"));    // 從 localStorage 取得資料
+//             let updated_tasks = [];   // 準備用來放要存到 localStorage 裡的資料
 
-            tasks.forEach(function(task, i){
-                if(this_id != task.item_id){
-                updated_tasks.push(task);
-                }
-            });
+//             tasks.forEach(function(task, i){
+//                 if(this_id != task.item_id){
+//                 updated_tasks.push(task);
+//                 }
+//             });
 
-            // 回存至 localStorage
-            localStorage.setItem("tasks", JSON.stringify(updated_tasks));
+//             // 回存至 localStorage
+//             localStorage.setItem("tasks", JSON.stringify(updated_tasks));
             
 
-            if(cart_list.length == 1){
-                inside_cart.style.display = "block";
-                pay_money.innerHTML = "商品一覽";
-                pay_money.href = "./shopping _page.html";
+//             if(cart_list.length == 1){
+//                 inside_cart.style.display = "block";
+//                 pay_money.innerHTML = "商品一覽";
+//                 pay_money.href = "./shopping _page.html";
 
-                // 清空localStorage
-                localStorage.clear();
-            }
-        }
-    }
-})
+//                 // 清空localStorage
+//                 localStorage.clear();
+//             }
+//         }
+//     }
+// })
 
 // document.addEventListener("click", function(e){
 //     if(e.target.classList.contains("cart_plus")){
