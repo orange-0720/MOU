@@ -68,7 +68,7 @@ div.hamburger{
         position: fixed;
         top: 22px;
         left: 5%;
-        z-index: 990;
+        z-index: 999;
         overflow: hidden;
         width: 20px
     }
@@ -147,6 +147,8 @@ header{
         width: 100%;
         flex-wrap: wrap;
         position: relative;
+        top: 0;
+        background-color: #f8f8f8;
         padding: 10px 0px 5px 0px;
         flex-direction: column;
         border-bottom: 1px solid #ededed;
@@ -1003,7 +1005,6 @@ div.shopping_cart{
         align-self: center;
         margin-left: 20px;
         transition: 0.3s;
-        margin-right: 20px;
     }
 }
 @media screen and (max-width: 575px){
@@ -1021,7 +1022,6 @@ div.shopping_cart{
         align-self: center;
         margin-left: 20px;
         transition: 0.3s;
-        margin-right: 20px;
     }
 }
 
@@ -1775,10 +1775,11 @@ div.footer_list div.footer_nav{
 @media screen and (max-width: 575px){
     div.footer_list div.footer_nav{
         display: flex;
+        flex-wrap: wrap;
         flex:0;
-        flex-direction: column;
-        justify-content: space-evenly;
-        order: 3;
+        flex-direction: row;
+        justify-content: flex-start;
+        order: 5;
     }
 }
 
@@ -1929,6 +1930,7 @@ div.footer_list div.footer_nav div.footer_qa  a:first-child{
     div.footer_qa{
         margin: 10px 0px;
         transition: 0.5s;
+        width: calc(100% / 2);
     }
 
 
@@ -1948,12 +1950,12 @@ div.footer_list div.footer_nav div.footer_qa  a:first-child{
     div.footer_knowledge > p{
         display: block;
         font-size: 20px;
-        padding: 5px 40px;
-        text-align: center;
+        padding: 5px 0px 5px 10%;
+        text-align: left;
         background-image: url(../icon/plus\(white\).png);
         background-repeat: no-repeat;
         background-size: 15px;
-        background-position: top 55%  right 0px;
+        background-position: top 55%  right 12%;
     }
     div.footer_list div.footer_nav div.footer_intro > a:nth-of-type(1) ,
     div.footer_list div.footer_nav div.footer_product > a:nth-of-type(1),
@@ -1964,11 +1966,21 @@ div.footer_list div.footer_nav div.footer_qa  a:first-child{
     div.footer_list div.footer_nav div.footer_product >a,
     div.footer_list div.footer_nav div.footer_knowledge > a{
         opacity: 0;
+        text-align: left;
+        padding: 5px 0;
+        padding-left: 15%;
         pointer-events: none;
         background-image: url(../icon/index-right-white.png);
         background-repeat: no-repeat;
         background-size: 10px;
-        background-position: top 55% right 0px ;
+        background-position: top 55% right 15% ;
+    }
+
+    div.footer_list div.footer_nav div.footer_process > a,
+    div.footer_list div.footer_nav div.footer_qa > a{
+        text-align: left;
+        padding: 5px 0px;
+        padding-left: 10%;
     }
     .footer_nav_open{
         display: block !important;
