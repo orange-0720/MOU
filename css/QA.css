@@ -230,6 +230,7 @@ div.page_guide > a:nth-child(3){
         background-color: #ededed;
         text-align: center;
         vertical-align: bottom;  
+        padding-top: 140px;
     }
     
     div.page_guide > a{

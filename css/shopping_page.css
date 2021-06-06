@@ -81,7 +81,8 @@ div.page_guide{
         padding: 10px;
         width: 100%;
         background-color: #ededed;
-        text-align: center;  
+        text-align: center; 
+        padding-top: 100px; 
     }
 }
 

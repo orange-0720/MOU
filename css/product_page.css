@@ -49,6 +49,7 @@ main{
         display: flex;
         flex-direction: column;
         margin-top: 30px;
+        padding-top: 80px;
     }
 }
 
