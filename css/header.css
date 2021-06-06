@@ -147,7 +147,10 @@ header{
         width: 100%;
         flex-wrap: wrap;
         position: relative;
+        /* position: fixed;
         top: 0;
+        left: 0;
+        z-index: 300; */
         background-color: #f8f8f8;
         padding: 10px 0px 5px 0px;
         flex-direction: column;
@@ -1737,7 +1740,7 @@ div.footer_list div.footer_logo > img{
 
     div.footer_list div.footer_logo > img{
         width: 100px;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
     }
 }
 

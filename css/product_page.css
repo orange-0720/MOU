@@ -1626,9 +1626,6 @@ div.tab_list div.tab_intro > label{
         font-size: 0;
         padding: 0 5%;
         background-color: #f8f8f8;
-        position: sticky;
-        top: 0;
-        left: 0;
         text-align: center;
     }
 
