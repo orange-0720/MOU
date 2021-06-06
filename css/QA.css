@@ -871,6 +871,7 @@ aside.aside section > ul >li.item7{
 
     aside.aside h2{
         margin-top: 70px;
+        font-size: 20px;
         width: 100%;
         color: black;
         padding-left: 10% ;
@@ -890,7 +891,7 @@ aside.aside section > ul >li.item7{
     aside.aside section > label{
         display: inline-block;
         width: 100%;
-        font-size: 20px;
+        font-size: 16px;
         margin-top: 20px;
         background-image: url(../icon/down-arrow.png);
         background-repeat: no-repeat;

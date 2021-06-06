@@ -458,7 +458,6 @@ div.hothat div.bestseller section:first-child::after{
     content: "Top 1";
     width: 100px;
     padding: 5px;
-    border-radius: 10px 10px 0px 0px;
     color: #f8f8f8;
     background-color: black;
     position: absolute;
@@ -510,7 +509,6 @@ div.hothat div.bestseller section:nth-of-type(2)::after{
     content: "Top 2";
     width: 100px;
     padding: 5px;
-    border-radius: 10px 10px 0px 0px;
     color: #f8f8f8;
     background-color: black;
     position: absolute;
@@ -563,7 +561,6 @@ div.hothat div.bestseller section:last-child::after{
     width: 100px;
     padding: 5px;
     color: #f8f8f8;
-    border-radius: 10px 10px 0px 0px;
     background-color: black;
     position: absolute;
     top: -33px;

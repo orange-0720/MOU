@@ -111,7 +111,8 @@ div.design_list{
         display: flex;
         flex-direction: column;
         padding: 0 5%;
-        padding-bottom: 100px;  
+        padding-bottom: 100px;
+        z-index: 200;
     }
 }
 
@@ -635,21 +636,27 @@ div.design_article section.next_step label:hover{
         text-align: center;
     }
     
+    div.design_list div.select_detail div.design_article p{
+        font-size: 20px;
+        padding: 5px 0px;
+        font-weight: bold;
+    }
+
     div.design_article section.color{
         margin: 40px 0px;
     }
     
     div.design_article p.two{
-        font-size: 20px;
+        font-size: 16px !important;
         margin-bottom: 5px;
-        font-weight: bold;
+        font-weight: initial !important;
     }
     
     div.design_article section.color label{
         margin: 5px 5px;
         width: auto;
         height: auto;
-        padding: 5%;
+        padding: 4%;
         display: inline-block;
         cursor: pointer;
         transition: 0.3s; 
@@ -715,21 +722,28 @@ div.design_article section.next_step label:hover{
         display: none;
         text-align: center;
     }
-    
+
+    div.design_list div.select_detail div.design_article p{
+        font-size: 20px;
+        padding: 5px 0px;
+        font-weight: bold;
+    }
+
     div.design_article section.color{
         margin: 40px 0px;
     }
     
     div.design_article p.two{
-        font-size: 20px;
+        font-size: 16px !important;
         margin-bottom: 5px;
+        font-weight: initial !important;
     }
     
     div.design_article section.color label{
-        margin: 5px 5px;
+        margin: 5px 10px;
         width: auto;
         height: auto;
-        padding: 5%;
+        padding: 4%;
         display: inline-block;
         cursor: pointer;
         transition: 0.3s; 
@@ -1183,8 +1197,8 @@ div.design_detail > textarea{
     }
     
     div.design_detail div.logo_detail > section p{
-        width: 60%;
-        padding: 10px ;
+        width: 50%;
+        padding: 10px 0px ;
         text-align: center;
         border-bottom:1px solid black;
         vertical-align: bottom;
@@ -1346,8 +1360,8 @@ div.design_detail > textarea{
     
     div.design_detail div.logo_detail > section p{
         width: 60%;
-        padding: 10px ;
-        text-align: center;
+        padding: 10px 0 10px 10% ;
+        text-align: left;
         border-bottom:1px solid black;
         vertical-align: bottom;
         margin-top: 10px;
@@ -1357,7 +1371,7 @@ div.design_detail > textarea{
     
     div.design_detail div.logo_detail > section span.name{
         display: inline-block;
-        margin-left: 10px;
+        margin-left: 5px;
         font-weight: bold;
     }
     
@@ -1750,7 +1764,7 @@ div.put_in section p.price_note{
         border-radius: 8px;
         display:inline-block;
         text-decoration: none;
-        margin:20px 10%;
+        margin:15px 10%;
         margin-bottom: 5px;
         font-size: 20px;
         transition: 0.4s;
@@ -1863,7 +1877,7 @@ div.put_in section p.price_note{
         border-radius: 8px;
         display:inline-block;
         text-decoration: none;
-        margin:20px 10%;
+        margin:15px 10%;
         margin-bottom: 5px;
         font-size: 20px;
         transition: 0.4s;

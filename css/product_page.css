@@ -609,6 +609,7 @@ aside.aside section > ul >li.item7{
 
     aside.aside h2{
         margin-top: 70px;
+        font-size: 20px;
         width: 100%;
         color: black;
         padding-left: 10% ;
@@ -628,7 +629,7 @@ aside.aside section > ul >li.item7{
     aside.aside section > label{
         display: inline-block;
         width: 100%;
-        font-size: 20px;
+        font-size: 16px;
         margin-top: 20px;
         background-image: url(../icon/down-arrow.png);
         background-repeat: no-repeat;
@@ -1050,7 +1051,7 @@ div.product_article > h1{
         width: 100%;
         text-align: center;
         padding: 0;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
     }
 }
 
@@ -1124,7 +1125,7 @@ div.product_article section.color > label{
         margin: 10px auto;
         margin-right: 10px;
         width: auto;
-        padding: 5%;
+        padding: 3%;
         height: auto;
         display: inline-block;
         transition: 0.3s;

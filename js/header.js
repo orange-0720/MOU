@@ -45,8 +45,8 @@ var ham_btn = document.getElementById("hamburger");
 var ham_under = document.getElementById("hamburger_under_line");
 var ham_middle = document.getElementById("hamburger_middle_line");
 var ham_top = document.getElementById("hamburger_top_line");
+var header = document.getElementById("header");
 var header_nav = document.getElementById("header_nav");
-
 
 ham_btn.addEventListener("click", function(){
     // alert("hello");
@@ -54,7 +54,10 @@ ham_btn.addEventListener("click", function(){
     ham_middle.classList.toggle("middle_line");
     ham_under.classList.toggle("donw_up");
     header_nav.classList.toggle("nav_open");
+    header.classList.toggle("change");
 })
+
+
 
 // 購物車談窗
 
@@ -63,22 +66,23 @@ var cart_close_btn = document.getElementsByClassName("shopping_cart_close")[0]
 var shopping_cart_list = document.getElementsByClassName("shopping_cart_list")[0];
 var pay_btn = document.getElementsByClassName("pay_money")[0];
 
+// document.addEventListener("click", function(e){
+//     if(e.target.closest("div.cart_open")){
+//         shopping_cart_list.classList.add("cart_open");
+//     }else{
+//         shopping_cart_list.classList.remove("cart_open");
+//     }
+// })
 
 cart_btn.addEventListener("click", function(){
     shopping_cart_list.classList.toggle("cart_open");
+
 })
 
 cart_close_btn.addEventListener("click", function(){
     shopping_cart_list.classList.toggle("cart_open");
 })
 
-// document.addEventListener("click", function(e){
-//     if(e.target.closest("div.shopping_cart_list")){
-//         shopping_cart_list.classList.add("cart_open");
-//     }else{
-//         shopping_cart_list.classList.remove("cart_open");
-//     }
-// })
 
 /* 購物車點擊刪除等功能 */
 document.addEventListener("click", function(e){
