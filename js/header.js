@@ -46,18 +46,41 @@ var ham_under = document.getElementById("hamburger_under_line");
 var ham_middle = document.getElementById("hamburger_middle_line");
 var ham_top = document.getElementById("hamburger_top_line");
 var header = document.getElementById("header");
+var background_el = document.getElementById("background_el");
 var header_nav = document.getElementById("header_nav");
 
+// 漢堡選單
 ham_btn.addEventListener("click", function(){
-    // alert("hello");
     ham_top.classList.toggle("up_donw");
     ham_middle.classList.toggle("middle_line");
     ham_under.classList.toggle("donw_up");
     header_nav.classList.toggle("nav_open");
+    background_el.classList.toggle("on");
     header.classList.toggle("change");
 })
 
+background_el.addEventListener("click", function(){
+    ham_top.classList.toggle("up_donw");
+    ham_middle.classList.toggle("middle_line");
+    ham_under.classList.toggle("donw_up");
+    header_nav.classList.toggle("nav_open");
+    background_el.classList.toggle("on");
+    header.classList.toggle("change");
+});
 
+// header導覽列展開
+
+document.addEventListener("click", function(e){
+    if(window.innerWidth <= 767){
+        console.log(e.target);
+        if(e.target.classList.contains("prevent")){
+           
+            e.preventDefault();
+            let slide_el = e.target.nextElementSibling;
+            slide_el.classList.toggle("prevent_open");
+        }
+    }
+})
 
 // 購物車談窗
 

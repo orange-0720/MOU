@@ -101,15 +101,16 @@ div.hamburger{
     }
 }
 
-#background{
-    position: absolute;
+#background_el{
+    position: fixed;
+    top: 0;
     left: -100%;
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 100;
 }
-#background.on{
+#background_el.on{
     left: 0 !important;
 
 }
@@ -375,9 +376,9 @@ nav.header_nav > div  a:hover{
         height: 100%;
         z-index: 700;
         background-color: black;
-        padding-top: 50px;
+        padding-top: 70px;
         transition: 0.5s;
-        /* overflow-y: auto; */
+        overflow-y: auto;
     }
     .nav_open{
         position: fixed;
@@ -390,7 +391,7 @@ nav.header_nav > div  a:hover{
         margin: 0;
         text-decoration: none;
         color: black;
-        padding: 20px 10px 20px 50px;
+        padding: 20px 10px 20px 40px;
         display: inline-block ;
         transition: 0.2s;
         /* width: 300px; */
@@ -419,15 +420,16 @@ nav.header_nav > div  a:hover{
     nav.header_nav{
         position: fixed;
         width: 180px;
-        display: flex;
+        display: block;
         flex-direction: column;
         left: -100%;
         top: 0;
         height: 100%;
         z-index: 700;
         background-color: black;
-        padding-top: 50px;
+        padding-top: 70px;
         transition: 0.5s;
+        overflow-y: auto;
     }
     .nav_open{
         position: fixed;
@@ -441,10 +443,9 @@ nav.header_nav > div  a:hover{
         margin: 0;
         text-decoration: none;
         color: black;
-        padding: 20px 10px 20px 50px;
+        padding: 20px 10px 20px 40px;
         display: inline-block ;
         transition: 0.2s;
-        /* width: 300px; */
         width: 100%;
         text-align: left;
         font-size: 16px;
@@ -528,7 +529,7 @@ nav.header_nav > div > a{
 }
 @media screen and (min-width:576px) and (max-width:767px){
     nav.header_nav > div{
-        display: flex;
+        display: block;
         position: relative;
         background-image: url(../icon/plus.png);
         background-repeat: no-repeat;
@@ -539,18 +540,27 @@ nav.header_nav > div > a{
         margin: 0px;
         text-decoration: none;
         color: black;
-        padding: 20px 10px 20px 50px;
+        padding: 15px 10px 15px 40px;
         display: inline-block;
         transition: 0.2s;
-        width: 300px;
+        width: 100%;
         text-align: left;
         font-size: 16px;
         color: #f8f8f8;
+    }
+
+    div.nav_brand > a,
+    div.nav_shopping > a,
+    div.nav_knowledge > a{
+        background-image: url(../icon/plus\(white\).png);
+        background-repeat: no-repeat;
+        background-size: 15px;
+        background-position: top 50% right 20px;
     }
 }
 @media screen and (max-width: 575px){
     nav.header_nav > div{
-        display: flex;
+        display: block;
         position: relative;
         background-image: url(../icon/plus.png);
         background-repeat: no-repeat;
@@ -561,13 +571,22 @@ nav.header_nav > div > a{
         margin: 0px;
         text-decoration: none;
         color: black;
-        padding: 20px 10px 20px 50px;
+        padding: 15px 10px 15px 40px;
         display: inline-block;
         transition: 0.2s;
-        width: 300px;
+        width: 100%;
         text-align: left;
         font-size: 16px;
         color: #f8f8f8;
+    }
+
+    div.nav_brand > a,
+    div.nav_shopping > a,
+    div.nav_knowledge > a{
+        background-image: url(../icon/plus\(white\).png);
+        background-repeat: no-repeat;
+        background-size: 15px;
+        background-position: top 50% right 20px;
     }
 }
 
@@ -644,28 +663,44 @@ nav.header_nav div.nav_knowledge div.knowledge_list{
     nav.header_nav div.nav_brand div.brand_list,
     nav.header_nav div.nav_shopping div.shopping_list,
     nav.header_nav div.nav_knowledge div.knowledge_list{
-    display: none;
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    width: 200px;
-    background-color: black;
-    z-index: 100;
-    text-align: center;
+        display: block;
+        position: static;
+        width: 100%;
+        background-color: black;
+        z-index: 100;
+        text-align: center;
+        height: 0;
+        opacity: 0;
+        pointer-events: none;
+        transition: 0s;
+    }
+
+    .prevent_open{
+        height: auto !important;
+        opacity: 1 !important;
+        pointer-events: initial !important;
     }
 }
 @media screen and (max-width: 575px){
     nav.header_nav div.nav_brand div.brand_list,
     nav.header_nav div.nav_shopping div.shopping_list,
     nav.header_nav div.nav_knowledge div.knowledge_list{
-    display: none;
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    width: 200px;
-    background-color: black;
-    z-index: 100;
-    text-align: center;
+        display: block;
+        position: static;
+        width: 100%;
+        background-color: black;
+        z-index: 100;
+        text-align: center;
+        height: 0;
+        opacity: 0;
+        pointer-events: none;
+        transition: 0s;
+    }
+
+    .prevent_open{
+        height: auto !important;
+        opacity: 1 !important;
+        pointer-events: initial !important;
     }
 }
 
@@ -674,14 +709,14 @@ nav.header_nav div.nav_shopping:hover div.shopping_list,
 nav.header_nav div.nav_knowledge:hover div.knowledge_list{
     display: block;
 }
-
 nav.header_nav div.nav_brand div.brand_list > a,
-nav.header_nav div.nav_shopping:hover div.shopping_list > a,
+nav.header_nav div.nav_shopping div.shopping_list > a,
 nav.header_nav div.nav_knowledge div.knowledge_list > a{
     display: block;
-    width: 100px;
+    width: 100%;
     padding: 5px 10px;
     text-decoration: none;
+    background-color: black;
     color: #f8f8f8;
     text-align: center;
     border-bottom: 1px solid #f8f8f8;
@@ -714,28 +749,36 @@ nav.header_nav div.nav_knowledge div.knowledge_list > a{
 }
 @media screen and (min-width:576px) and (max-width:767px){
     nav.header_nav div.nav_brand div.brand_list > a,
-    nav.header_nav div.nav_shopping:hover div.shopping_list > a,
+    nav.header_nav div.nav_shopping div.shopping_list > a,
     nav.header_nav div.nav_knowledge div.knowledge_list > a{
-        display: none;
-        width: 200px;
-        padding: 10px 10px;
+        display: block;
+        width: 100%;
+        padding: 5px 10px 10px 50px;
         text-decoration: none;
         color: #f8f8f8;
-        text-align: center;
-        border-bottom: 1px solid #f8f8f8;
+        text-align: left;
+        border-bottom: 0px;
+        background-image: url(../icon/index-right-white.png);
+        background-position: top 7px right 10px;
+        background-size: 10px;
+        background-repeat: no-repeat;
     } 
 }
 @media screen and (max-width: 575px){
     nav.header_nav div.nav_brand div.brand_list > a,
-    nav.header_nav div.nav_shopping:hover div.shopping_list > a,
+    nav.header_nav div.nav_shopping div.shopping_list > a,
     nav.header_nav div.nav_knowledge div.knowledge_list > a{
-        display: none;
-        width: 200px;
-        padding: 10px 10px;
+        display: block;
+        width: 100%;
+        padding: 5px 10px 10px 50px;
         text-decoration: none;
         color: #f8f8f8;
-        text-align: center;
-        border-bottom: 1px solid #f8f8f8;
+        text-align: left;
+        border-bottom: 0px;
+        background-image: url(../icon/index-right-white.png);
+        background-position: top 12px right 10px;
+        background-size: 10px;
+        background-repeat: no-repeat;
     } 
 }
 
@@ -1264,7 +1307,7 @@ div.shopping_cart_list > section.payment_block > a.pay_money{
         display: block;
         opacity: 0;
         border: 1px solid black;
-        transition: all 1s;
+        transition: all 0.5s;
     }
     
     .cart_open{
@@ -1384,7 +1427,7 @@ div.shopping_cart_list > section.payment_block > a.pay_money{
         display: block;
         opacity: 0;
         border: 1px solid black;
-        transition: all 1s;
+        transition: all 0.5s;
     }
     
     .cart_open{
@@ -1499,7 +1542,7 @@ div.shopping_cart_list > section.payment_block > a.pay_money{
     div.shopping_cart_list{
         position: absolute;
         right: 10px;
-        top: 85px;
+        top: 135px;
         width: calc(100% - 20px);
         transform: translateY(-500px);
         margin: 0 auto;
@@ -1508,7 +1551,7 @@ div.shopping_cart_list > section.payment_block > a.pay_money{
         z-index: 2;
         display: block;
         border: 1px solid black;
-        transition: all 1s;
+        transition: all 0.5s;
     }
     
     .cart_open{
@@ -1585,7 +1628,7 @@ div.shopping_cart_list > section.payment_block > a.pay_money{
         z-index: 2;
         display: none;
         border: 1px solid black;
-        transition: all 1s;
+        transition: all 0.5s;
     }
     
     .cart_open{

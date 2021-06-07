@@ -2,7 +2,7 @@ var design_start = document.getElementsByClassName("start")[0];
 var jump_back = document.getElementsByClassName("jump_back")[0];
 var design_page = document.getElementsByClassName("design_page")[0];
 var body = document.getElementsByTagName("body")[0];
-var header = document.getElementById("header");
+// var header = document.getElementById("header");
 
 design_start.addEventListener("click", function(){
     header.classList.toggle("disapear");
@@ -63,21 +63,21 @@ console.log("desing_img的offsetTop =" + design_img_offsetTop );
 big_photo.addEventListener("mousedown", function(e){
     let big_photo_left = e.pageX - design_img_offsetLeft - e.target.offsetLeft;
     let big_photo_top = e.pageY - design_img_offsetTop - e.target.offsetTop;
-    console.log(e)
-    console.log(e.target)
-    console.log("e.pageX =" + e.pageX );
-    console.log("e.pageY =" + e.pageY);
-    console.log("e.target的offsetLeft =" + e.target.offsetLeft);
-    console.log("e.target的offsetTop =" + e.target.offsetTop);
-    console.log("big_photo_left =" + big_photo_left);
-    console.log("big_photo_top =" + big_photo_top)
+    // console.log(e)
+    // console.log(e.target)
+    // console.log("e.pageX =" + e.pageX );
+    // console.log("e.pageY =" + e.pageY);
+    // console.log("e.target的offsetLeft =" + e.target.offsetLeft);
+    // console.log("e.target的offsetTop =" + e.target.offsetTop);
+    // console.log("big_photo_left =" + big_photo_left);
+    // console.log("big_photo_top =" + big_photo_top)
     const move = e=>{
         big_photo.style.left = e.pageX - big_photo_left - design_img_offsetLeft + "px";
         big_photo.style.top = e.pageY - big_photo_top - design_img_offsetTop + "px";
     }
 
     document.addEventListener("mousemove", move);
-
+    
     big_photo.addEventListener("mouseup", function(e){
         document.removeEventListener("mousemove", move);
     })

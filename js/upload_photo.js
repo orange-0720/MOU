@@ -33,6 +33,6 @@ pick_photo.addEventListener("change", function(){
 
 simple.addEventListener("change", function(){
     big_photo.style.display = "none";
-    file_bt.classList.toggle("prevent");
+    file_bt.classList.toggle("prevent_stop");
 
 })
