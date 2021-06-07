@@ -63,6 +63,7 @@ console.log("desing_img的offsetTop =" + design_img_offsetTop );
 big_photo.addEventListener("mousedown", function(e){
     let big_photo_left = e.pageX - design_img_offsetLeft - e.target.offsetLeft;
     let big_photo_top = e.pageY - design_img_offsetTop - e.target.offsetTop;
+    let limit = document.getElementsByClassName("limit")[0];
     // console.log(e)
     // console.log(e.target)
     // console.log("e.pageX =" + e.pageX );
@@ -76,9 +77,38 @@ big_photo.addEventListener("mousedown", function(e){
         big_photo.style.top = e.pageY - big_photo_top - design_img_offsetTop + "px";
     }
 
+    limit.classList.add("show_up");
     document.addEventListener("mousemove", move);
-    
+
     big_photo.addEventListener("mouseup", function(e){
         document.removeEventListener("mousemove", move);
+        limit.classList.remove("show_up");
+    })
+});
+
+big_photo.addEventListener("touchstart", function(e){
+    e.preventDefault();
+    let big_photo_left = e.pageX - design_img_offsetLeft - e.target.offsetLeft;
+    let big_photo_top = e.pageY - design_img_offsetTop - e.target.offsetTop;
+    let limit = document.getElementsByClassName("limit")[0];
+    // console.log(e)
+    // console.log(e.target)
+    // console.log("e.pageX =" + e.pageX );
+    // console.log("e.pageY =" + e.pageY);
+    // console.log("e.target的offsetLeft =" + e.target.offsetLeft);
+    // console.log("e.target的offsetTop =" + e.target.offsetTop);
+    // console.log("big_photo_left =" + big_photo_left);
+    // console.log("big_photo_top =" + big_photo_top)
+    const move = e=>{
+        big_photo.style.left = e.pageX - big_photo_left - design_img_offsetLeft + "px";
+        big_photo.style.top = e.pageY - big_photo_top - design_img_offsetTop + "px";
+    }
+
+    limit.classList.add("show_up");
+    document.addEventListener("touchmove", move);
+
+    big_photo.addEventListener("touchend", function(e){
+        document.removeEventListener("touchmove", move);
+        limit.classList.remove("show_up");
     })
 });

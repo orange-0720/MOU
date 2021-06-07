@@ -29,6 +29,8 @@ pick_photo.addEventListener("change", function(){
         //     console.log(this.height);
         // })
     })
+    let advice = document.getElementsByClassName("advice")[0];
+    advice.classList.add("show_up")
 })
 
 simple.addEventListener("change", function(){

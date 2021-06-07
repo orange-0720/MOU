@@ -1994,34 +1994,46 @@ div.design_img > section > img.img_el{
     max-width: 100%;
 }
 
-div.design_img > img{
-    position: absolute;
-    left: 41%;
-    top: 58%;
-    z-index: 5;
-}
-
 div.design_img div.limit{
     position: absolute;
     width:45%;
     height: 25%;
-    border: 2px dotted black;
     top: 55%;
     left: 50%;
     transform: translateX(-50%);
+    overflow: hidden;
 }
 
+.show_up{
+    border: 2px dotted black !important;
+    display: block !important;
+}
+
+div.design_img > div.limit> img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 5;
+    transform: translate(-50% ,-50%);
+    /* width: 100px; */
+}
+
+
+
+/* 提醒文字 */
 div.design_img p.advice{
     position: absolute;
     font-weight: bold;
     font-size: 20px;
+    width: 60%;
     background-color: black;
     color: #ffd900;
     padding: 10px 20px;
     left: 50%;
-    bottom: -10px;
+    bottom: 0px;
     transform: translateX(-50%);
-    line-height: 2rem;
+    line-height: 2rem; 
+    text-align: center;
     display: none;
 }
 
@@ -2030,7 +2042,7 @@ div.design_img p.advice > span{
     position: absolute;
     background-color: black;
     top: -10px;
-    left: 5%;
+    left: 45%;
     width: 50px;
     height: 50px;
     transform: rotate(45deg);
@@ -2057,11 +2069,50 @@ div.design_img p.advice > span{
         height: 600px;
     }
     
-    div.design_img > img{
+    div.design_img div.limit{
+        position: absolute;
+        width:45%;
+        height: 15%;
+        /* border: 2px dotted black; */
+        top: 55%;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+    }
+
+    div.design_img > div.limit > img{
         position: absolute;
         width: 80px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50% ,-50%);
+    }
+
+    div.design_img p.advice{
+        position: absolute;
+        font-weight: bold;
+        font-size: 20px;
+        width: 70%;
+        background-color: black;
+        color: #ffd900;
+        padding: 10px 20px;
+        left: 50%;
+        bottom: 75px;
+        transform: translateX(-50%);
+        line-height: 2rem; 
+        text-align: center;
+    }
+    
+    div.design_img p.advice > span{
+        display: inline-block;
+        position: absolute;
+        background-color: black;
+        top: -10px;
         left: 42%;
-        top: 57%;
+        width: 50px;
+        height: 50px;
+        transform: rotate(45deg);
+        z-index: -1;
     }
 }
 @media screen and (min-width:768px) and (max-width:991px){
@@ -2089,11 +2140,50 @@ div.design_img p.advice > span{
         max-width: initial;
     }
 
-    div.design_img > img{
+    div.design_img div.limit{
+        position: absolute;
+        width:45%;
+        height: 12%;
+        /* border: 2px dotted black; */
+        top: 55%;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+    }
+
+    div.design_img > div.limit > img{
         width: 50px;
         position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50% ,-50%);
+    }
+
+    div.design_img p.advice{
+        position: absolute;
+        font-weight: bold;
+        font-size: 20px;
+        width: 90%;
+        background-color: black;
+        color: #ffd900;
+        padding: 10px 20px;
+        left: 50%;
+        bottom: 70px;
+        transform: translateX(-50%);
+        line-height: 2rem; 
+        text-align: center;
+    }
+    
+    div.design_img p.advice > span{
+        display: inline-block;
+        position: absolute;
+        background-color: black;
+        top: -10px;
         left: 42%;
-        top: 57%;
+        width: 50px;
+        height: 50px;
+        transform: rotate(45deg);
+        z-index: -1;
     }
 }
 @media screen and (min-width:576px) and (max-width:767px){
@@ -2122,12 +2212,50 @@ div.design_img p.advice > span{
         max-width: 100%;
     }
     
-    div.design_img > img{
-        width: 18%;
+    div.design_img div.limit{
+        position: absolute;
+        width:45%;
+        height: 25%;
+        /* border: 2px dotted black; */
+        top: 55%;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+    }
+
+    div.design_img > div.limit > img{
+        width: 36%;
         position: absolute;
         left: 50%;
-        top: 58%;
+        top: 50%;
+        transform: translate(-50% ,-50%);
+    }
+
+    div.design_img p.advice{
+        position: absolute;
+        font-weight: bold;
+        font-size: 20px;
+        width: 60%;
+        background-color: black;
+        color: #ffd900;
+        padding: 10px 20px;
+        left: 50%;
+        bottom: -25px;
         transform: translateX(-50%);
+        line-height: 2rem; 
+        text-align: center;
+    }
+    
+    div.design_img p.advice > span{
+        display: inline-block;
+        position: absolute;
+        background-color: black;
+        top: -10px;
+        left: 42%;
+        width: 50px;
+        height: 50px;
+        transform: rotate(45deg);
+        z-index: -1;
     }
 }
 @media screen and (max-width: 575px){
@@ -2149,15 +2277,53 @@ div.design_img p.advice > span{
         height: auto;
     }
     
-    
-    
-    div.design_img > img{
-        width: 17%;
+    div.design_img div.limit{
+        position: absolute;
+        width:45%;
+        height: 25%;
+        /* border: 2px dotted black; */
+        top: 55%;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+    }
+
+    div.design_img > div.limit > img{
+        width: 36%;
         position: absolute;
         left: 50%;
-        top: 58%;
-        transform: translateX(-50%);
+        top: 50%;
+        transform: translate(-50% ,-50%);
     }
+
+    div.design_img p.advice{
+        position: absolute;
+        font-weight: bold;
+        font-size: 20px;
+        width: 100%;
+        background-color: black;
+        color: #ffd900;
+        padding: 10px 20px;
+        left: 50%;
+        bottom: -40px;
+        transform: translateX(-50%);
+        line-height: 2rem; 
+        text-align: center;
+    }
+    
+    div.design_img p.advice > span{
+        display: inline-block;
+        position: absolute;
+        background-color: black;
+        top: -10px;
+        left: 40%;
+        width: 50px;
+        height: 50px;
+        transform: rotate(45deg);
+        z-index: -1;
+    }
+
+
 }
 
 
