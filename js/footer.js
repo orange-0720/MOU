@@ -6,6 +6,7 @@ var footer_product_all = document.getElementsByClassName("footer_product_all");
 var footer_know_all = document.getElementsByClassName("footer_know_all");
 
 footer_nav_list1.onclick = function(){
+    this.classList.toggle("change_bkc")
     document.getElementsByClassName("footer_intro")[0].classList.toggle("slide_down");
     for(let i = 0; i<footer_brand_all.length;i++){
         footer_brand_all[i].classList.toggle("footer_nav_open")
@@ -13,6 +14,7 @@ footer_nav_list1.onclick = function(){
 }
 
 footer_nav_list2.onclick = function(){
+    this.classList.toggle("change_bkc")
     document.getElementsByClassName("footer_product")[0].classList.toggle("slide_down");
     for(let i = 0; i<footer_product_all.length;i++){
         footer_product_all[i].classList.toggle("footer_nav_open")
@@ -20,6 +22,7 @@ footer_nav_list2.onclick = function(){
 }
 
 footer_nav_list3.onclick = function(){
+    this.classList.toggle("change_bkc")
     document.getElementsByClassName("footer_knowledge")[0].classList.toggle("slide_down");
     for(let i = 0; i<footer_know_all.length;i++){
         footer_know_all[i].classList.toggle("footer_nav_open")

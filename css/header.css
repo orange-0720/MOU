@@ -588,6 +588,10 @@ nav.header_nav > div > a{
         background-size: 15px;
         background-position: top 50% right 20px;
     }
+
+    .change_bkc{
+        background-image: url(../icon/minus-white.png) !important;
+    }
 }
 
 .showup_el{
