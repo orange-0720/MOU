@@ -16,7 +16,7 @@ btn.addEventListener("click",function(e){
     email_el.style.border = "1px solid #737578";
     password_el.style.border = "1px solid #737578";
     setTimeout(function(){
-      window.location.assign("http://127.0.0.1:5501/index.html");
+      window.location.assign("https://orange-0720.github.io/TDF102_17/index.html");
     },3000);
 
   }else{

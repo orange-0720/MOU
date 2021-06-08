@@ -19,7 +19,7 @@ btn.addEventListener("click",function(e){
         email_el.style.border = "1px solid #737578";
         password_el.style.border = "1px solid #737578";
         setTimeout(function(){
-          window.location.assign("http://127.0.0.1:5501/login.html");
+          window.location.assign("https://orange-0720.github.io/TDF102_17/login.html");
         },3000);
   }else{
       if(email_el.value.indexOf("@") < 0 || email_el.value.indexOf(".com") < 0){
