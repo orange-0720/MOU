@@ -464,6 +464,7 @@ aside.aside section{
 
 aside.aside button#aside_open{
     display: none;
+    cursor: pointer;
 }
 
 aside.aside section > input{
@@ -2544,6 +2545,7 @@ article#about-wear div.cap_hat >section.cap_3 > p{
         background-color: black;
         margin:0 auto;
         transition: 0.5s;
+        cursor: pointer;
     
     }
     
@@ -2560,6 +2562,7 @@ article#about-wear div.cap_hat >section.cap_3 > p{
         background-repeat: no-repeat;
         background-size: 90%;
         background-position: center;
+        transition: 0.5s;
         
     }
     
@@ -2617,6 +2620,7 @@ article#about-wear div.cap_hat >section.cap_3 > p{
         background-color: #f8f8f8;
         margin:60px auto;
         transition: 0.5s;
+        cursor: pointer;
     }
     
     article#about-wear div.canvas_hat:hover{
@@ -2663,6 +2667,7 @@ article#about-wear div.cap_hat >section.cap_3 > p{
         background-color: #ededed;
         text-align: center;
         padding:  0px;
+        transition: 0.5s;
     }
        
     article#about-wear div.canvas_hat >section.canvas_1 > img,
@@ -2687,6 +2692,7 @@ article#about-wear div.cap_hat >section.cap_3 > p{
         background-color: black;
         margin:0 auto;
         transition: 0.5s;
+        cursor: pointer;
     }
     
     article#about-wear div.knitted_hat:hover{
@@ -2734,6 +2740,7 @@ article#about-wear div.cap_hat >section.cap_3 > p{
         background-color: #ededed;
         text-align: center;
         padding:  0px;
+        transition: 0.5s;
     }
     
     article#about-wear div.knitted_hat >section.knitted_1 > img,
@@ -2764,6 +2771,7 @@ article#about-wear div.cap_hat >section.cap_3 > p{
         transition: 0.5s;
         margin-top: 30px;
         font-size: 0;
+        cursor: pointer;
     }
     
     article#about-wear div.cap_hat:hover{
@@ -2811,6 +2819,7 @@ article#about-wear div.cap_hat >section.cap_3 > p{
         background-color: #ededed;
         text-align: center;
         padding:  0px;
+        transition: 0.5s;
     }
     
     article#about-wear div.cap_hat >section.cap_1 > img,

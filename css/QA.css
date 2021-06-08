@@ -333,6 +333,7 @@ aside.aside section{
 
 aside.aside button#aside_open{
     display: none;
+    cursor: pointer;
 }
 
 aside.aside section > input{

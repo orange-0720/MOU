@@ -1152,7 +1152,7 @@ div.design_detail > textarea{
         background-image: url(../icon/check-mark.png);
         background-repeat: no-repeat;
         background-size: 50px;
-        background-position: top 3px left 40px;
+        background-position: top 3px left 50%;
     }
     
     input#simple:checked ~ h3,
@@ -1322,7 +1322,7 @@ div.design_detail > textarea{
         background-image: url(../icon/check-mark.png);
         background-repeat: no-repeat;
         background-size: 50px;
-        background-position: top 3px left 40px;
+        background-position: top 3px left 50%;
     }
     
     input#simple:checked ~ h3,
@@ -1373,12 +1373,12 @@ div.design_detail > textarea{
     }
 
     div.design_detail div.logo_detail > section p{
-        width: 100%;
+        display: inline-block;
+        min-width: 80%;
         padding: 5px;
         text-align: left;
         border-bottom:1px solid black;
         vertical-align: bottom;
-        margin-top: 10px;
         margin: 10px auto 10px auto;
         font-size: 16px;
     }
@@ -1457,6 +1457,7 @@ div.put_in >button{
     font-size: 20px;
     transition: 0.4s;
     border: 0px;
+    cursor: pointer;
 }
 
 div.put_in > button:hover{
@@ -2029,6 +2030,7 @@ div.design_img > div.limit> img{
     top: 50%;
     z-index: 5;
     transform: translate(-50% ,-50%);
+    cursor: pointer;
     /* width: 100px; */
 }
 

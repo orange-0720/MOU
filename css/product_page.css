@@ -71,6 +71,7 @@ aside.aside section{
 
 aside.aside button#aside_open{
     display: none;
+    cursor: pointer;
 }
 
 aside.aside section > input{
@@ -1308,6 +1309,7 @@ div.product_article a.start{
     text-align: center;
     margin: 30px auto;
     padding: 10px;
+    cursor: pointer;
 }
 @media screen and (min-width:768px) and (max-width:991px){
     div.product_article a.start{

@@ -594,6 +594,10 @@ nav.header_nav > div > a{
     }
 }
 
+.change_bkc{
+    background-image: url(../icon/minus-white.png) !important;
+}
+
 .showup_el{
     display: none !important;
 }
@@ -1315,6 +1319,7 @@ div.shopping_cart_list > section.shopping_block > ul.cart_list > li > div.shoppi
     background-repeat: no-repeat;
     background-size: 30px;
     background-position: center;
+    cursor: pointer;
 
 }
 
@@ -1909,6 +1914,7 @@ div.footer_intro > p,
 div.footer_product > p,
 div.footer_knowledge > p{
     display: none;
+    cursor: pointer;
 }
 
 div.footer_list div.footer_nav div.footer_intro > a ,
