@@ -471,6 +471,7 @@ div#qa_alert{
     height:100vh;
     background-color:rgba(0,0,0,0.5);
     display:none;
+    z-index: 201 !important;
 }
   
 #qa_jump{
