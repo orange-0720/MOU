@@ -443,12 +443,20 @@
   
     <script>
         var jump_window = document.getElementById("jump_window");
+        var close_btn = document.getElementById("qa_close")
         jump_window.addEventListener("click", function(e){
             let qa_alert = document.getElementById("qa_alert");
-            let close = document.getElementById("qa_close")
             qa_alert.style.display = "block";
             qa_alert.classList.add("fadein");
         });
+
+        close_btn.addEventListener("click", function(){
+            let qa_alert = document.getElementById("qa_alert");
+            qa_alert.classList.remove("fadein");
+            qa_alert.style.display = "none";
+        })
+        
+
         document.addEventListener("click", function(e){
             if(e.target.closest("section#qa_jump")){
                 let qa_jump = e.target.closest("section");
