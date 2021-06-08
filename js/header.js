@@ -90,11 +90,12 @@ background_el.addEventListener("click", function(){
 
 document.addEventListener("click", function(e){
     if(window.innerWidth <= 767){
-        console.log(e.target);
+        let showup_el = e.target.closest("div").querySelector("a.showup_el");
+        
         if(e.target.classList.contains("prevent")){
-           
             e.preventDefault();
             let slide_el = e.target.nextElementSibling;
+            showup_el.classList.toggle("showup_add");
             slide_el.classList.toggle("prevent_open");
         }
     }

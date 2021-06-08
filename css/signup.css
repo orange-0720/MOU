@@ -627,6 +627,8 @@ section.signup_detail >form > input.signup_checked{
     cursor: pointer;
     text-align: center;
     transition: 0.3s;
+    appearance: none;
+
 }
 
 section.signup_detail > form > input.signup_checked:hover{

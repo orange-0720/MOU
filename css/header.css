@@ -590,6 +590,14 @@ nav.header_nav > div > a{
     }
 }
 
+.showup_el{
+    display: none !important;
+}
+
+.showup_add{
+    display: block !important;
+}
+
 /* 當頁底線 */
 
 header a#on_page{

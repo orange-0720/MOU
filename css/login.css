@@ -352,6 +352,7 @@ div.login_list form input.login_bt{
     cursor: pointer;
     outline: none;
     transition: 0.3s;
+    appearance: none;
 }
 
 div.login_list form input.login_bt:hover{
@@ -373,7 +374,6 @@ div.login_list form input.login_bt:hover{
         font-weight: bold;
         font-size: 20px;
         cursor: pointer;
-        outline: none;
         transition: 0.3s;
         outline: none;
     }
