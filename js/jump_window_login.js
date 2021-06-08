@@ -16,7 +16,7 @@ btn.addEventListener("click",function(e){
     email_el.style.border = "1px solid #737578";
     password_el.style.border = "1px solid #737578";
     setTimeout(function(){
-      parent.window.location.assign("http://127.0.0.1:5501/index.html");
+      window.location.assign("http://127.0.0.1:5501/index.html");
     },3000);
 
   }else{
