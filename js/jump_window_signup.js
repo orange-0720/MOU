@@ -7,6 +7,7 @@ const twitter = document.getElementById("twitter")
 
 
 btn.addEventListener("click",function(e){
+  e.preventDefault()
   let email_el = document.getElementById("mail");
   let password_el = document.getElementById("password");
   let password_again_el = document.getElementById("password_again");
@@ -17,24 +18,40 @@ btn.addEventListener("click",function(e){
         qa_alert.style.display = "block";
         email_el.style.border = "1px solid #737578";
         password_el.style.border = "1px solid #737578";
+        setTimeout(function(){
+          parent.window.location.assign("http://127.0.0.1:5501/login.html");
+        },3000);
   }else{
       if(email_el.value.indexOf("@") < 0 || email_el.value.indexOf(".com") < 0){
-        email_el.focus();
+        // email_el.focus();
         email_el.style.border = "1px solid red";
         let form_mail_el = document.getElementsByClassName("form_mail")[0];
         let str = '<p class="insert_element" style="color:red;margin-left:calc((100% - 300px) / 2)">e-mail格式有誤，請確認!</p>'
-        form_mail_el.insertAdjacentHTML("afterend", str);
+        if(email_el.nextElementSibling){
+          email_el.focus();
+        }else{
+          form_mail_el.insertAdjacentHTML("beforeend", str); 
+        }
+             
       }else if(password_el.value.length < 8){
-        password_el.focus();
+        // password_el.focus();
         password_el.style.border = "1px solid red";
         let form_password_el = document.getElementsByClassName("form_password")[0];
         let pass_str = '<p class="insert_element" style="color:red;margin-left:calc((100% - 300px) / 2)">密碼至少8個字元!</p>'
-        form_password_el.insertAdjacentHTML("afterend", pass_str);
+        if(password_el.nextElementSibling){
+          password_el.focus();
+        }else{
+          form_password_el.insertAdjacentHTML("beforeend", pass_str);
+        };
       }else if(password_el.value !== password_again_el.value){
         password_again_el.style.border = "1px solid red";
         let password_check = document.getElementsByClassName("password_check")[0];
         let pass_check_str = '<p class="insert_element" style="color:red;margin-left:calc((100% - 300px) / 2)">密碼不吻合!</p>';
-        password_check.insertAdjacentHTML("afterend", pass_check_str);
+        if(password_again_el.nextElementSibling){
+          password_again_el.focus();
+        }else{
+          password_check.insertAdjacentHTML("beforeend", pass_check_str);
+        }
       }
     }
 });

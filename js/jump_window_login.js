@@ -7,7 +7,7 @@ const twitter = document.getElementById("twitter")
 
 
 btn.addEventListener("click",function(e){
-  e.preventDefault;
+  e.preventDefault();
   let email_el = document.getElementById("mail");
   let password_el = document.getElementById("password")
   if(email_el.value.indexOf("@") >0 && email_el.value.indexOf(".com") > 0 && password_el.value.length >= 8){
@@ -15,9 +15,9 @@ btn.addEventListener("click",function(e){
     qa_alert.style.display = "block";
     email_el.style.border = "1px solid #737578";
     password_el.style.border = "1px solid #737578";
-
-    let insert_element = document.getElementsByClassName("insert_element");
-    insert_element.setAttribute("style", "display = none");
+    setTimeout(function(){
+      parent.window.location.assign("http://127.0.0.1:5501/index.html");
+    },3000);
 
   }else{
       if(email_el.value.indexOf("@") < 0 || email_el.value.indexOf(".com") < 0){
@@ -25,14 +25,21 @@ btn.addEventListener("click",function(e){
         email_el.style.border = "1px solid red";
         let form_mail_el = document.getElementsByClassName("form_mail")[0];
         let str = '<p class="insert_element" style="color:red;dispaly:block">e-mail格式有誤，請確認!</p>'
-        form_mail_el.insertAdjacentHTML("afterend", str);
-        
+        if(email_el.nextElementSibling){
+          email_el.focus();
+        }else{
+          form_mail_el.insertAdjacentHTML("beforeend", str);
+        };
       }else if(password_el.value.length < 8){
         password_el.focus();
         password_el.style.border = "1px solid red";
         let form_password_el = document.getElementsByClassName("form_password")[0];
         let pass_str = '<p class="insert_element" style="color:red;dispaly:block">密碼至少8個字元!</p>'
-        form_password_el.insertAdjacentHTML("afterend", pass_str);
+        if(password_el.nextElementSibling){
+          password_el.focus();
+        }else{
+          form_password_el.insertAdjacentHTML("beforeend", pass_str);
+        }
       }
   }
 });

@@ -1041,6 +1041,7 @@ div.shopping_cart{
     margin-left: 20px;
     transition: 0.3s;
     cursor: pointer;
+    position: relative;
 }
 @media screen and (min-width:992px) and (max-width:1199px){
     section.member > a,
@@ -1135,6 +1136,20 @@ div.shopping_cart_list{
     transition: 1s;
 }
 
+.cart_number{
+    position: absolute;
+    top: -20px;
+    left: 55%;
+    transform: translateX(-50%);
+    padding-bottom: 10px;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    color: #ffd900;
+    background-color: black;
+}
 div.shopping_cart_list > p{
     text-align: center;
     padding: 10px;
@@ -1218,10 +1233,24 @@ div.shopping_cart_list > section.shopping_block > ul.cart_list > li > div.shoppi
     align-items: center;
 }
 
-div.shopping_cart_list > section.shopping_block > ul.cart_list > li > div.shopping_detail_list > img{
+div.shopping_cart_list > section.shopping_block > ul.cart_list > li > div.shopping_detail_list > div {
     display: inline-block;
     width: calc((100% + 40px) / 5);
-    padding: 15px;
+    position: relative;
+}
+
+div.shopping_cart_list > section.shopping_block > ul.cart_list > li > div.shopping_detail_list > div >img {
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+}
+
+.logo_img{
+    width: 28% !important;
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    transform: translate(-50% , -50%);
 }
 
 div.shopping_cart_list > section.shopping_block > ul.cart_list > li > div.shopping_detail_list > p{
@@ -1281,6 +1310,17 @@ div.shopping_cart_list > section.payment_block{
     width: 100%;
     padding: 5px 0px;
     border-top: 1px dotted black;
+}
+div.shopping_cart_list > section.payment_block > p.cart_total{
+    text-align: right;
+    padding-bottom: 5px;
+    padding-right: 5%;
+    border-bottom: 1px dotted black;
+}
+
+div.shopping_cart_list > section.payment_block > p.cart_total > span{
+    padding: 0px 5px;
+    font-weight: bold;
 }
 
 div.shopping_cart_list > section.payment_block > a.pay_money{
@@ -2404,6 +2444,11 @@ footer a#pagetop:hover{
 .fadein{
     opacity:0;
     animation:fadein 1s ease 1 forwards;
+}
+
+.fade_out{
+    opacity: 0 !important;
+    transition: 0.5s !important;
 }
 
 /* 回頁首結束 */
