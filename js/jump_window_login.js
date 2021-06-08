@@ -17,7 +17,7 @@ btn.addEventListener("click",function(e){
     password_el.style.border = "1px solid #737578";
     setTimeout(function(){
       window.location.assign("https://orange-0720.github.io/TDF102_17/index.html");
-    },3000);
+    },5000);
 
   }else{
       if(email_el.value.indexOf("@") < 0 || email_el.value.indexOf(".com") < 0){
