@@ -413,7 +413,7 @@ nav.header_nav > div  a:hover{
     nav.header_nav > a:hover,
     nav.header_nav > div  a:hover{
     border-bottom: 0px ;
-    color: #ffd900;
+    color: #f8f8f8;
     }
 }
 @media screen and (max-width: 575px){
@@ -460,7 +460,7 @@ nav.header_nav > div  a:hover{
     nav.header_nav > a:hover,
     nav.header_nav > div  a:hover{
     border-bottom: 0px ;
-    color: #ffd900;
+    color: #f8f8f8;
     }
 }
 
