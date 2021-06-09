@@ -1755,8 +1755,88 @@ div.shopping_cart_list > section.payment_block > a.pay_money{
     }
 }
 
-
 /* 購物車結束 */
+
+/* 確認刪除彈窗 */
+
+@keyframes fadein{
+    0%{
+      opacity:0;
+    }
+    100%{
+      opacity:1
+    }
+}
+  
+@keyframes fadeout{
+    0%{
+      opacity:1;
+    }
+    100%{
+      opacity:1;
+    }
+}
+  
+div#delete_alert{
+    position:fixed;
+    z-index: 201 !important;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    background-color:rgba(0,0,0,0.5);
+    display:none;
+}
+  
+#delete_question{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:400px;
+    max-width: 80%;
+    padding:10px 0px;
+    background-color:white;
+    text-align:center;
+    border-radius:30px;
+    z-index: 999;
+}
+
+#delete_question > h2{
+    margin: 0px;
+    padding: 20px;
+}
+
+#delete_question > button{
+    appearance: none;
+    margin: 3%;
+    padding: 5px 10px;
+    width: 30%;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    border: 0px;
+}
+
+#delete_question > button:hover{
+    background-color: #ffd900;
+    color: black;
+}
+
+.fadein{
+    opacity:0;
+    animation:fadein 1s ease 1 forwards;
+    z-index: 200 !important;
+}
+  
+.fadeout{
+    opacity:1;
+    animation:fadeout 1s ease 1 forwards;
+}
+
+/* 確認刪除彈窗結束 */
 
 /* footer */
 footer{

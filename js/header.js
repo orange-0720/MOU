@@ -136,8 +136,21 @@ document.addEventListener("click", function(e){
         let cart_total_price = document.getElementsByClassName("cart_total_price")[0];
         let cart_all_price = document.getElementsByClassName("cart_all_price")[0].innerHTML;
         let cart_number = document.getElementsByClassName("cart_number")[0]
-        if(confirm("確定刪除此商品??")){
+        let delete_alert = document.getElementById("delete_alert");
+        let delete_question = document.getElementById("delete_question");
+        let delete_confirm = document.getElementById("delete_confirm");
+        let delete_cancele = document.getElementById("delete_cancele");
+
+        delete_alert.classList.add("fadein");
+        delete_alert.style.display = "block";
+
+
+        delete_confirm.addEventListener("click", function(){
             let target_price = e.target.previousElementSibling.querySelector("span").innerHTML;
+
+            delete_alert.classList.remove("fadein");
+            delete_alert.style.display = "none";
+
             shopping_list.closest("li").classList.add("fade_out");
             setTimeout(function(){
                 shopping_list.closest("li").remove()    
@@ -177,7 +190,24 @@ document.addEventListener("click", function(e){
                 // 清空localStorage
                 localStorage.clear();
             }
-        }
+        });
+
+        delete_cancele.addEventListener("click", function(){
+            delete_alert.classList.remove("fadein");
+            delete_alert.style.display = "none";
+        });
+
+        document.addEventListener("click", function(e){
+            if(e.target.closest("section#delete_question")){
+                let delete_question = e.target.closest("section");
+                if(delete_question.classList.contains("qa_jump")){
+                console.log("點擊在頁面上")
+                }
+            }else if(e.target.closest("div#delete_alert")){
+                delete_alert.classList.remove("fadein");
+                delete_alert.style.display = "none";
+            }
+        })
     }
 })
 
