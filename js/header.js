@@ -141,11 +141,10 @@ document.addEventListener("click", function(e){
         let delete_confirm = document.getElementById("delete_confirm");
         let delete_cancele = document.getElementById("delete_cancele");
 
-        delete_alert.classList.add("fadein");
-        delete_alert.style.display = "block";
+        // delete_alert.classList.add("fadein");
+        // delete_alert.style.display = "block";
 
-
-        delete_confirm.addEventListener("click", function(){
+        if(confirm("確認是否刪除")){
             let target_price = e.target.previousElementSibling.querySelector("span").innerHTML;
 
             delete_alert.classList.remove("fadein");
@@ -158,7 +157,7 @@ document.addEventListener("click", function(e){
             document.getElementsByClassName("cart_all_price")[0].innerHTML = parseInt(cart_all_price) - parseInt(target_price);
             let list_number = cart_list.length;
             console.log(list_number)
-            document.getElementsByClassName("cart_number")[0].innertext =  parseInt(list_number) -1;
+            document.getElementsByClassName("cart_number")[0].innerHTML =  parseInt(list_number) -1;
 
 
             // localStorage內刪除再更新
@@ -190,24 +189,24 @@ document.addEventListener("click", function(e){
                 // 清空localStorage
                 localStorage.clear();
             }
-        });
+        };
 
-        delete_cancele.addEventListener("click", function(){
-            delete_alert.classList.remove("fadein");
-            delete_alert.style.display = "none";
-        });
+        // delete_cancele.addEventListener("click", function(){
+        //     delete_alert.classList.remove("fadein");
+        //     delete_alert.style.display = "none";
+        // });
 
-        document.addEventListener("click", function(e){
-            if(e.target.closest("section#delete_question")){
-                let delete_question = e.target.closest("section");
-                if(delete_question.classList.contains("qa_jump")){
-                console.log("點擊在頁面上")
-                }
-            }else if(e.target.closest("div#delete_alert")){
-                delete_alert.classList.remove("fadein");
-                delete_alert.style.display = "none";
-            }
-        })
+        // document.addEventListener("click", function(e){
+        //     if(e.target.closest("section#delete_question")){
+        //         let delete_question = e.target.closest("section");
+        //         if(delete_question.classList.contains("qa_jump")){
+        //         console.log("點擊在頁面上")
+        //         }
+        //     }else if(e.target.closest("div#delete_alert")){
+        //         delete_alert.classList.remove("fadein");
+        //         delete_alert.style.display = "none";
+        //     }
+        // })
     }
 })
 
