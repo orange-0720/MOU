@@ -1684,7 +1684,7 @@ div.shopping_cart_list > section.payment_block > a.pay_money{
         margin: 0 auto;
         background-color: #f8f8f8;
         color: black;
-        z-index: -1;
+        display: none;
         opacity: 0;
         border: 1px solid black;
         transition: all 0.5s;
@@ -1693,7 +1693,6 @@ div.shopping_cart_list > section.payment_block > a.pay_money{
     .cart_open{
         display: block !important;
         opacity: 1 !important;
-        z-index: 20 !important;
         transition: 1s;
     }
     
