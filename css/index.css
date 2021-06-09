@@ -409,12 +409,12 @@ div.hothat div.bestseller section{
 @media screen and (max-width: 575px){
     div.hothat div.bestseller section{
         display: block;
-        width: 100%;
-        margin: 30px auto;
+        width: 70%;
+        margin: 60px auto;
         text-align: center;
-        border: 0px solid black;
+        border: 1px solid black;
         background-color: #f8f8f8;
-        border-radius: 0px;
+        border-radius: 10px;
         transition: 0.5s;
     } 
 }
@@ -443,6 +443,7 @@ div.hothat div.bestseller section > img{
 @media screen and (max-width: 575px){
     div.hothat div.bestseller section > img{
         margin-top: 50px;
+        max-width: 100%;
     }
 }
 
@@ -494,14 +495,15 @@ div.hothat div.bestseller section:first-child::after{
 @media screen and (max-width: 575px){
     div.hothat div.bestseller section:first-child::after{
         content: "Top 1";
-        width: 100px;
+        width: 40%;
         padding: 5px;
         color: #f8f8f8;
         background-color: black;
         position: absolute;
-        top: 10px;
+        top: -33px;
         left: 50%;
         transform: translateX(-50%) ;
+        border-radius: 10px 10px 0px 0px;
     }
 }
 
@@ -545,14 +547,15 @@ div.hothat div.bestseller section:nth-of-type(2)::after{
 @media screen and (max-width: 575px){
     div.hothat div.bestseller section:nth-of-type(2)::after{
         content: "Top 2";
-        width: 100px;
+        width: 40%;
         padding: 5px;
         color: #f8f8f8;
         background-color: black;
         position: absolute;
-        top: 10px;
+        top: -33px;
         left: 50%;
         transform: translateX(-50%) ;
+        border-radius: 10px 10px 0px 0px;
     }
 }
 
@@ -596,14 +599,15 @@ div.hothat div.bestseller section:last-child::after{
 @media screen and (max-width: 575px){
     div.hothat div.bestseller section:last-child::after{
         content: "Top 3";
-        width: 100px;
+        width: 40%;
         padding: 5px;
         color: #f8f8f8;
         background-color: black;
         position: absolute;
-        top: 10px;
+        top: -33px;
         left: 50%;
-        transform: translateX(-50%) ;
+        transform: translateX(-50%);
+        border-radius: 10px 10px 0px 0px;
     }
 }
 
