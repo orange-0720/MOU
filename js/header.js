@@ -158,7 +158,7 @@ document.addEventListener("click", function(e){
             document.getElementsByClassName("cart_all_price")[0].innerHTML = parseInt(cart_all_price) - parseInt(target_price);
             let list_number = cart_list.length;
             console.log(list_number)
-            document.getElementsByClassName("cart_number")[0].innerHTML =  parseInt(list_number) -1;
+            document.getElementsByClassName("cart_number")[0].innertext =  parseInt(list_number) -1;
 
 
             // localStorage內刪除再更新
