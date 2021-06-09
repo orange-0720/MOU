@@ -465,6 +465,7 @@ div.hothat div.bestseller section:first-child::after{
     top: -33px;
     left: 50%;
     transform: translate(-50%);
+    border-radius: 10px 10px 0px 0px;
 }
 @media screen and (min-width:992px) and (max-width:1199px){
     div.hothat div.bestseller section:first-child::after{
@@ -517,6 +518,7 @@ div.hothat div.bestseller section:nth-of-type(2)::after{
     top: -33px;
     left: 50%;
     transform: translate(-50%);
+    border-radius: 10px 10px 0px 0px;
 }
 @media screen and (min-width:992px) and (max-width:1199px){
     div.hothat div.bestseller section:nth-of-type(2)::after{
@@ -569,6 +571,7 @@ div.hothat div.bestseller section:last-child::after{
     top: -33px;
     left: 50%;
     transform: translate(-50%);
+    border-radius: 10px 10px 0px 0px;
 }
 @media screen and (min-width:992px) and (max-width:1199px){
     div.hothat div.bestseller section:last-child::after{
@@ -790,8 +793,8 @@ main div.hothat > a:hover{
 }
 @media screen and (max-width: 575px){
     main div.hothat > a:hover{
-        background-color: black;
-        color: white;
+        background-color: #ffd900;
+        color: black;
     }
 }
 
@@ -1021,8 +1024,8 @@ div.about_jump a:hover{
     }
     
     div.about_jump a:hover{
-        background-color: black;
-        color:white;
+        background-color: #ffd900;
+        color: black;
     }
 }
 @media screen and (max-width: 575px){
@@ -1063,8 +1066,8 @@ div.about_jump a:hover{
     }
     
     div.about_jump a:hover{
-        background-color: black;
-        color:white;
+        background-color: #ffd900;
+        color: black;
     }
 }
 
