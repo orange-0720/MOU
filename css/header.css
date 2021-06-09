@@ -1154,12 +1154,12 @@ div.shopping_cart_list{
 
 .cart_number{
     position: absolute;
-    top: -17px;
-    left: 60%;
+    top: -18px;
+    left: 66%;
     transform: translateX(-50%);
     padding-bottom: 5px;
-    width: 20px;
-    height: 20px;
+    width: 23px;
+    height: 23px;
     text-align: center;
     display: inline-block;
     border-radius: 50%;
