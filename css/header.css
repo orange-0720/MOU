@@ -1154,8 +1154,8 @@ div.shopping_cart_list{
 
 .cart_number{
     position: absolute;
-    top: -18px;
-    left: 66%;
+    top: -16px;
+    left: 70%;
     transform: translateX(-50%);
     padding-bottom: 5px;
     width: 23px;
