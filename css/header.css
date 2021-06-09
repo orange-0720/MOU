@@ -1240,6 +1240,7 @@ div.shopping_cart_list > section.shopping_block > ul.cart_list > li > div.shoppi
 div.shopping_cart_list > section.shopping_block > ul.cart_list > li > div.shopping_li_list > i{
     flex: 1;
     border-bottom: 1px dotted black;
+    font-style: initial;
 }
 
 div.shopping_cart_list > section.shopping_block > ul.cart_list > li > div.shopping_detail_list{
@@ -1272,7 +1273,7 @@ div.shopping_cart_list > section.shopping_block > ul.cart_list > li > div.shoppi
 div.shopping_cart_list > section.shopping_block > ul.cart_list > li > div.shopping_detail_list > p{
     display: inline-block;
     width: calc((100% + 40px) / 5);
-    padding: 15px;
+    padding: 5px;
 }
 
 div.shopping_cart_list > section.shopping_block > ul.cart_list > li > div.shopping_detail_list > section{

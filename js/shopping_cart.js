@@ -12,7 +12,7 @@ put_in.addEventListener("click",function(){
     let pay_money = document.getElementsByClassName("pay_money")[0];
     var small_pic = document.getElementById("big_photo");
     let shopping_cart = document.getElementsByClassName("shopping_cart")[0];
-    price += parseInt(count_price);
+    price = parseInt(count_price);
     console.log(price)
 
 
@@ -47,8 +47,8 @@ put_in.addEventListener("click",function(){
     )
     if(pay_money.previousElementSibling){
         let cart_all_price = document.getElementsByClassName("cart_all_price")[0];
-        cart_all_price.innerHTML = price;
-        // console.log("price");
+        document.getElementsByClassName("cart_all_price")[0].innerHTML = parseInt(cart_all_price.innerHTML) + price;
+        
     }else{
         pay_money.insertAdjacentHTML("beforebegin",
         `
