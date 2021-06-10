@@ -613,7 +613,7 @@ section.signup_detail> form > section.signup_note{
     text-align: center;
 }
 
-section.signup_detail >form > input.signup_checked{
+section.signup_detail >form > button.signup_checked{
     display: block;
     width: 300px;
     padding: 10px;
@@ -631,7 +631,7 @@ section.signup_detail >form > input.signup_checked{
 
 }
 
-section.signup_detail > form > input.signup_checked:hover{
+section.signup_detail > form > button.signup_checked:hover{
     background-color: #ffd900;
     color: black;
     transform: translateY(-5px);
@@ -642,7 +642,7 @@ section.signup_detail > form > input.signup_checked:hover{
         text-align: center;
     }
     
-    section.signup_detail > form > input.signup_checked{
+    section.signup_detail > form > button.signup_checked{
         display: block;
         width: 300px;
         max-width: 80%;
@@ -659,7 +659,7 @@ section.signup_detail > form > input.signup_checked:hover{
         transition: 0.3s;
     }
     
-    section.signup_detail > input.signup_checked:hover{
+    section.signup_detail > button.signup_checked:hover{
         background-color: #ffd900;
         color: black;
         transform: translateY(-5px);
@@ -671,7 +671,7 @@ section.signup_detail > form > input.signup_checked:hover{
         text-align: center;
     }
     
-    section.signup_detail > form > input.signup_checked{
+    section.signup_detail > form > button.signup_checked{
         display: block;
         width: 300px;
         max-width: 80%;
@@ -688,7 +688,7 @@ section.signup_detail > form > input.signup_checked:hover{
         transition: 0.3s;
     }
     
-    section.signup_detail > input.signup_checked:hover{
+    section.signup_detail > button.signup_checked:hover{
         background-color: #ffd900;
         color: black;
         transform: translateY(-5px);
