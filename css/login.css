@@ -337,7 +337,7 @@ div.login_list form label.form_password{
     }
 }
 
-div.login_list form input.login_bt{
+div.login_list form button.login_bt{
     display: inline-block;
     width: 300px;
     padding: 10px;
@@ -355,13 +355,13 @@ div.login_list form input.login_bt{
     appearance: none;
 }
 
-div.login_list form input.login_bt:hover{
+div.login_list form button.login_bt:hover{
     background-color: #ffd900;
     color: black;
     transform: translateY(-10px);
 }
 @media screen and (max-width: 575px){
-    div.login_list form input.login_bt{
+    div.login_list form button.login_bt{
         display: inline-block;
         width: 100%;
         padding: 10px;
@@ -378,7 +378,7 @@ div.login_list form input.login_bt:hover{
         outline: none;
     }
     
-    div.login_list form input.login_bt:hover{
+    div.login_list form button.login_bt:hover{
         background-color: #ffd900;
         color: black;
         transform: translateY(-10px);
